@@ -1,0 +1,10 @@
+com/appcelerator/InetTiBeacon/BuildConfig.java
+ com.appcelerator.InetTiBeacon.BuildConfig
+com/appcelerator/InetTiBeacon/InettibeaconAppInfo.java
+ com.appcelerator.InetTiBeacon.InettibeaconAppInfo
+com/appcelerator/InetTiBeacon/InettibeaconActivity.java
+ com.appcelerator.InetTiBeacon.InettibeaconActivity
+com/appcelerator/InetTiBeacon/InettibeaconApplication.java
+ com.appcelerator.InetTiBeacon.InettibeaconApplication
+com/appcelerator/InetTiBeacon/AssetCryptImpl.java
+ com.appcelerator.InetTiBeacon.AssetCryptImpl

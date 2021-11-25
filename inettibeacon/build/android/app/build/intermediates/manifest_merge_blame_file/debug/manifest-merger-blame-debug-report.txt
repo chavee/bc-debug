@@ -1,0 +1,252 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.appcelerator.InetTiBeacon"
+4    android:versionCode="1"
+5    android:versionName="1.0.5" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="30" />
+10    <!-- for beacon permission -->
+11    <uses-permission
+11-->D:\GIANT\ww2\inettibeacon\build\android\app\src\debug\AndroidManifest.xml:4:7-69
+12        android:name="android.permission.BLUETOOTH"
+12-->D:\GIANT\ww2\inettibeacon\build\android\app\src\debug\AndroidManifest.xml:4:24-67
+13        android:required="false" />
+13-->[org.altbeacon:android-beacon-library:2.19.3] C:\Users\5610110106\.gradle\caches\transforms-3\6909ddea53f7e7cd4929377a0cc2768b\transformed\jetified-android-beacon-library-2.19.3\AndroidManifest.xml:12:9-33
+14    <uses-permission
+14-->D:\GIANT\ww2\inettibeacon\build\android\app\src\debug\AndroidManifest.xml:5:7-75
+15        android:name="android.permission.BLUETOOTH_ADMIN"
+15-->D:\GIANT\ww2\inettibeacon\build\android\app\src\debug\AndroidManifest.xml:5:24-73
+16        android:required="false" />
+16-->[org.altbeacon:android-beacon-library:2.19.3] C:\Users\5610110106\.gradle\caches\transforms-3\6909ddea53f7e7cd4929377a0cc2768b\transformed\jetified-android-beacon-library-2.19.3\AndroidManifest.xml:15:9-33
+17    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+17-->D:\GIANT\ww2\inettibeacon\build\android\app\src\debug\AndroidManifest.xml:6:7-80
+17-->D:\GIANT\ww2\inettibeacon\build\android\app\src\debug\AndroidManifest.xml:6:24-78
+18    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+18-->D:\GIANT\ww2\inettibeacon\build\android\app\src\debug\AndroidManifest.xml:7:7-86
+18-->D:\GIANT\ww2\inettibeacon\build\android\app\src\debug\AndroidManifest.xml:7:24-84
+19    <uses-permission android:name="android.permission.INTERNET" />
+19-->D:\GIANT\ww2\inettibeacon\build\android\app\src\main\AndroidManifest.xml:6:2-63
+19-->D:\GIANT\ww2\inettibeacon\build\android\app\src\main\AndroidManifest.xml:6:19-61
+20    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+20-->D:\GIANT\ww2\inettibeacon\build\android\app\src\main\AndroidManifest.xml:10:2-72
+20-->D:\GIANT\ww2\inettibeacon\build\android\app\src\main\AndroidManifest.xml:10:19-70
+21    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+21-->D:\GIANT\ww2\inettibeacon\build\android\app\src\main\AndroidManifest.xml:14:2-75
+21-->D:\GIANT\ww2\inettibeacon\build\android\app\src\main\AndroidManifest.xml:14:19-73
+22    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+22-->[org.altbeacon:android-beacon-library:2.19.3] C:\Users\5610110106\.gradle\caches\transforms-3\6909ddea53f7e7cd4929377a0cc2768b\transformed\jetified-android-beacon-library-2.19.3\AndroidManifest.xml:16:5-81
+22-->[org.altbeacon:android-beacon-library:2.19.3] C:\Users\5610110106\.gradle\caches\transforms-3\6909ddea53f7e7cd4929377a0cc2768b\transformed\jetified-android-beacon-library-2.19.3\AndroidManifest.xml:16:22-78
+23    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+23-->[org.altbeacon:android-beacon-library:2.19.3] C:\Users\5610110106\.gradle\caches\transforms-3\6909ddea53f7e7cd4929377a0cc2768b\transformed\jetified-android-beacon-library-2.19.3\AndroidManifest.xml:17:5-81
+23-->[org.altbeacon:android-beacon-library:2.19.3] C:\Users\5610110106\.gradle\caches\transforms-3\6909ddea53f7e7cd4929377a0cc2768b\transformed\jetified-android-beacon-library-2.19.3\AndroidManifest.xml:17:22-78
+24
+25    <queries>
+25-->[androidx.media:media:1.3.1] C:\Users\5610110106\.gradle\caches\transforms-3\0c4dc429f85024171f0623c58fc778b8\transformed\media-1.3.1\AndroidManifest.xml:24:5-28:15
+26        <intent>
+26-->[androidx.media:media:1.3.1] C:\Users\5610110106\.gradle\caches\transforms-3\0c4dc429f85024171f0623c58fc778b8\transformed\media-1.3.1\AndroidManifest.xml:25:9-27:18
+27            <action android:name="android.media.browse.MediaBrowserService" />
+27-->[androidx.media:media:1.3.1] C:\Users\5610110106\.gradle\caches\transforms-3\0c4dc429f85024171f0623c58fc778b8\transformed\media-1.3.1\AndroidManifest.xml:26:13-79
+27-->[androidx.media:media:1.3.1] C:\Users\5610110106\.gradle\caches\transforms-3\0c4dc429f85024171f0623c58fc778b8\transformed\media-1.3.1\AndroidManifest.xml:26:21-76
+28        </intent>
+29    </queries>
+30
+31    <application
+31-->D:\GIANT\ww2\inettibeacon\build\android\app\src\main\AndroidManifest.xml:20:2-31:16
+32        android:name="com.appcelerator.InetTiBeacon.InettibeaconApplication"
+32-->D:\GIANT\ww2\inettibeacon\build\android\app\src\main\AndroidManifest.xml:20:77-115
+33        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+33-->[androidx.core:core:1.5.0] C:\Users\5610110106\.gradle\caches\transforms-3\63b10e308df2af733a910f8cf1fc7cef\transformed\core-1.5.0\AndroidManifest.xml:24:18-86
+34        android:debuggable="true"
+35        android:icon="@drawable/appicon"
+35-->D:\GIANT\ww2\inettibeacon\build\android\app\src\main\AndroidManifest.xml:20:15-47
+36        android:label="InetTiBeacon"
+36-->D:\GIANT\ww2\inettibeacon\build\android\app\src\main\AndroidManifest.xml:20:48-76
+37        android:theme="@style/Theme.Titanium.App"
+37-->D:\GIANT\ww2\inettibeacon\build\android\app\src\main\AndroidManifest.xml:20:152-193
+38        android:usesCleartextTraffic="true" >
+38-->D:\GIANT\ww2\inettibeacon\build\android\app\src\main\AndroidManifest.xml:20:116-151
+39        <service
+39-->D:\GIANT\ww2\inettibeacon\build\android\app\src\debug\AndroidManifest.xml:9:9-10:19
+40            android:name="com.radiusnetworks.ibeacon.service.IBeaconService"
+40-->D:\GIANT\ww2\inettibeacon\build\android\app\src\debug\AndroidManifest.xml:9:121-185
+41            android:enabled="true"
+41-->D:\GIANT\ww2\inettibeacon\build\android\app\src\debug\AndroidManifest.xml:9:18-40
+42            android:exported="true"
+42-->D:\GIANT\ww2\inettibeacon\build\android\app\src\debug\AndroidManifest.xml:9:41-64
+43            android:isolatedProcess="false"
+43-->D:\GIANT\ww2\inettibeacon\build\android\app\src\debug\AndroidManifest.xml:9:65-96
+44            android:label="iBeacon" >
+44-->D:\GIANT\ww2\inettibeacon\build\android\app\src\debug\AndroidManifest.xml:9:97-120
+45        </service>
+46        <service
+46-->D:\GIANT\ww2\inettibeacon\build\android\app\src\debug\AndroidManifest.xml:11:9-17:19
+47            android:name="com.radiusnetworks.ibeacon.IBeaconIntentProcessor"
+47-->D:\GIANT\ww2\inettibeacon\build\android\app\src\debug\AndroidManifest.xml:11:41-105
+48            android:enabled="true" >
+48-->D:\GIANT\ww2\inettibeacon\build\android\app\src\debug\AndroidManifest.xml:11:18-40
+49            <meta-data
+49-->D:\GIANT\ww2\inettibeacon\build\android\app\src\debug\AndroidManifest.xml:12:15-74
+50                android:name="background"
+50-->D:\GIANT\ww2\inettibeacon\build\android\app\src\debug\AndroidManifest.xml:12:26-51
+51                android:value="true" />
+51-->D:\GIANT\ww2\inettibeacon\build\android\app\src\debug\AndroidManifest.xml:12:52-72
+52
+53            <intent-filter android:priority="1" >
+53-->D:\GIANT\ww2\inettibeacon\build\android\app\src\debug\AndroidManifest.xml:13:11-16:27
+53-->D:\GIANT\ww2\inettibeacon\build\android\app\src\debug\AndroidManifest.xml:13:26-46
+54                <action android:name="com.appcelerator.InetTiBeacon.DID_RANGING" />
+54-->D:\GIANT\ww2\inettibeacon\build\android\app\src\debug\AndroidManifest.xml:14:13-79
+54-->D:\GIANT\ww2\inettibeacon\build\android\app\src\debug\AndroidManifest.xml:14:21-77
+55                <action android:name="com.appcelerator.InetTiBeacon.DID_MONITORING" />
+55-->D:\GIANT\ww2\inettibeacon\build\android\app\src\debug\AndroidManifest.xml:15:13-82
+55-->D:\GIANT\ww2\inettibeacon\build\android\app\src\debug\AndroidManifest.xml:15:21-80
+56            </intent-filter>
+57        </service>
+58
+59        <activity
+60            android:name="com.appcelerator.InetTiBeacon.InettibeaconActivity"
+61            android:alwaysRetainTaskState="true"
+62            android:configChanges="density|fontScale|keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+63            android:label="@string/app_name"
+64            android:theme="@style/Theme.Titanium" >
+65            <intent-filter>
+66                <action android:name="android.intent.action.MAIN" />
+67
+68                <category android:name="android.intent.category.LAUNCHER" />
+69            </intent-filter>
+70        </activity>
+71        <activity
+71-->[org.appcelerator:titanium:10.0.2] C:\Users\5610110106\.gradle\caches\transforms-3\2b3a3641b4cc84025611674ef944b1f6\transformed\jetified-titanium-10.0.2\AndroidManifest.xml:10:9-12:197
+72            android:name="org.appcelerator.titanium.TiActivity"
+72-->[org.appcelerator:titanium:10.0.2] C:\Users\5610110106\.gradle\caches\transforms-3\2b3a3641b4cc84025611674ef944b1f6\transformed\jetified-titanium-10.0.2\AndroidManifest.xml:11:13-64
+73            android:configChanges="density|fontScale|keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" />
+73-->[org.appcelerator:titanium:10.0.2] C:\Users\5610110106\.gradle\caches\transforms-3\2b3a3641b4cc84025611674ef944b1f6\transformed\jetified-titanium-10.0.2\AndroidManifest.xml:12:13-194
+74        <activity
+74-->[org.appcelerator:titanium:10.0.2] C:\Users\5610110106\.gradle\caches\transforms-3\2b3a3641b4cc84025611674ef944b1f6\transformed\jetified-titanium-10.0.2\AndroidManifest.xml:13:9-16:67
+75            android:name="org.appcelerator.titanium.TiTranslucentActivity"
+75-->[org.appcelerator:titanium:10.0.2] C:\Users\5610110106\.gradle\caches\transforms-3\2b3a3641b4cc84025611674ef944b1f6\transformed\jetified-titanium-10.0.2\AndroidManifest.xml:14:13-75
+76            android:configChanges="density|fontScale|keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+76-->[org.appcelerator:titanium:10.0.2] C:\Users\5610110106\.gradle\caches\transforms-3\2b3a3641b4cc84025611674ef944b1f6\transformed\jetified-titanium-10.0.2\AndroidManifest.xml:15:13-194
+77            android:theme="@style/Theme.AppDerived.Translucent" />
+77-->[org.appcelerator:titanium:10.0.2] C:\Users\5610110106\.gradle\caches\transforms-3\2b3a3641b4cc84025611674ef944b1f6\transformed\jetified-titanium-10.0.2\AndroidManifest.xml:16:13-64
+78        <activity
+78-->[org.appcelerator:titanium:10.0.2] C:\Users\5610110106\.gradle\caches\transforms-3\2b3a3641b4cc84025611674ef944b1f6\transformed\jetified-titanium-10.0.2\AndroidManifest.xml:17:9-20:69
+79            android:name="ti.modules.titanium.media.TiCameraActivity"
+79-->[org.appcelerator:titanium:10.0.2] C:\Users\5610110106\.gradle\caches\transforms-3\2b3a3641b4cc84025611674ef944b1f6\transformed\jetified-titanium-10.0.2\AndroidManifest.xml:18:13-70
+80            android:configChanges="density|fontScale|keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+80-->[org.appcelerator:titanium:10.0.2] C:\Users\5610110106\.gradle\caches\transforms-3\2b3a3641b4cc84025611674ef944b1f6\transformed\jetified-titanium-10.0.2\AndroidManifest.xml:19:13-194
+81            android:theme="@style/Theme.Titanium.Dark.Fullscreen" />
+81-->[org.appcelerator:titanium:10.0.2] C:\Users\5610110106\.gradle\caches\transforms-3\2b3a3641b4cc84025611674ef944b1f6\transformed\jetified-titanium-10.0.2\AndroidManifest.xml:20:13-66
+82        <activity
+82-->[org.appcelerator:titanium:10.0.2] C:\Users\5610110106\.gradle\caches\transforms-3\2b3a3641b4cc84025611674ef944b1f6\transformed\jetified-titanium-10.0.2\AndroidManifest.xml:21:9-24:66
+83            android:name="ti.modules.titanium.media.TiVideoActivity"
+83-->[org.appcelerator:titanium:10.0.2] C:\Users\5610110106\.gradle\caches\transforms-3\2b3a3641b4cc84025611674ef944b1f6\transformed\jetified-titanium-10.0.2\AndroidManifest.xml:22:13-69
+84            android:configChanges="density|fontScale|keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+84-->[org.appcelerator:titanium:10.0.2] C:\Users\5610110106\.gradle\caches\transforms-3\2b3a3641b4cc84025611674ef944b1f6\transformed\jetified-titanium-10.0.2\AndroidManifest.xml:23:13-194
+85            android:theme="@style/Theme.AppDerived.Fullscreen" />
+85-->[org.appcelerator:titanium:10.0.2] C:\Users\5610110106\.gradle\caches\transforms-3\2b3a3641b4cc84025611674ef944b1f6\transformed\jetified-titanium-10.0.2\AndroidManifest.xml:24:13-63
+86        <activity android:name="ti.modules.titanium.ui.android.TiPreferencesActivity" />
+86-->[org.appcelerator:titanium:10.0.2] C:\Users\5610110106\.gradle\caches\transforms-3\2b3a3641b4cc84025611674ef944b1f6\transformed\jetified-titanium-10.0.2\AndroidManifest.xml:25:9-89
+86-->[org.appcelerator:titanium:10.0.2] C:\Users\5610110106\.gradle\caches\transforms-3\2b3a3641b4cc84025611674ef944b1f6\transformed\jetified-titanium-10.0.2\AndroidManifest.xml:25:19-86
+87
+88        <provider
+88-->[org.appcelerator:titanium:10.0.2] C:\Users\5610110106\.gradle\caches\transforms-3\2b3a3641b4cc84025611674ef944b1f6\transformed\jetified-titanium-10.0.2\AndroidManifest.xml:27:9-31:50
+89            android:name="org.appcelerator.titanium.io.TiFileProvider"
+89-->[org.appcelerator:titanium:10.0.2] C:\Users\5610110106\.gradle\caches\transforms-3\2b3a3641b4cc84025611674ef944b1f6\transformed\jetified-titanium-10.0.2\AndroidManifest.xml:28:13-71
+90            android:authorities="com.appcelerator.InetTiBeacon.tifileprovider"
+90-->[org.appcelerator:titanium:10.0.2] C:\Users\5610110106\.gradle\caches\transforms-3\2b3a3641b4cc84025611674ef944b1f6\transformed\jetified-titanium-10.0.2\AndroidManifest.xml:29:13-66
+91            android:exported="false"
+91-->[org.appcelerator:titanium:10.0.2] C:\Users\5610110106\.gradle\caches\transforms-3\2b3a3641b4cc84025611674ef944b1f6\transformed\jetified-titanium-10.0.2\AndroidManifest.xml:30:13-37
+92            android:grantUriPermissions="true" />
+92-->[org.appcelerator:titanium:10.0.2] C:\Users\5610110106\.gradle\caches\transforms-3\2b3a3641b4cc84025611674ef944b1f6\transformed\jetified-titanium-10.0.2\AndroidManifest.xml:31:13-47
+93
+94        <service
+94-->[org.appcelerator:titanium:10.0.2] C:\Users\5610110106\.gradle\caches\transforms-3\2b3a3641b4cc84025611674ef944b1f6\transformed\jetified-titanium-10.0.2\AndroidManifest.xml:33:9-36:72
+95            android:name="com.appcelerator.aps.APSAnalyticsService"
+95-->[org.appcelerator:titanium:10.0.2] C:\Users\5610110106\.gradle\caches\transforms-3\2b3a3641b4cc84025611674ef944b1f6\transformed\jetified-titanium-10.0.2\AndroidManifest.xml:34:13-68
+96            android:exported="false"
+96-->[org.appcelerator:titanium:10.0.2] C:\Users\5610110106\.gradle\caches\transforms-3\2b3a3641b4cc84025611674ef944b1f6\transformed\jetified-titanium-10.0.2\AndroidManifest.xml:35:13-37
+97            android:permission="android.permission.BIND_JOB_SERVICE" />
+97-->[org.appcelerator:titanium:10.0.2] C:\Users\5610110106\.gradle\caches\transforms-3\2b3a3641b4cc84025611674ef944b1f6\transformed\jetified-titanium-10.0.2\AndroidManifest.xml:36:13-69
+98
+99        <receiver
+99-->[org.altbeacon:android-beacon-library:2.19.3] C:\Users\5610110106\.gradle\caches\transforms-3\6909ddea53f7e7cd4929377a0cc2768b\transformed\jetified-android-beacon-library-2.19.3\AndroidManifest.xml:20:9-28:20
+100            android:name="org.altbeacon.beacon.startup.StartupBroadcastReceiver"
+100-->[org.altbeacon:android-beacon-library:2.19.3] C:\Users\5610110106\.gradle\caches\transforms-3\6909ddea53f7e7cd4929377a0cc2768b\transformed\jetified-android-beacon-library-2.19.3\AndroidManifest.xml:21:13-81
+101            android:exported="false" >
+101-->[org.altbeacon:android-beacon-library:2.19.3] C:\Users\5610110106\.gradle\caches\transforms-3\6909ddea53f7e7cd4929377a0cc2768b\transformed\jetified-android-beacon-library-2.19.3\AndroidManifest.xml:22:13-37
+102            <intent-filter>
+102-->[org.altbeacon:android-beacon-library:2.19.3] C:\Users\5610110106\.gradle\caches\transforms-3\6909ddea53f7e7cd4929377a0cc2768b\transformed\jetified-android-beacon-library-2.19.3\AndroidManifest.xml:23:13-27:29
+103                <action android:name="android.intent.action.BOOT_COMPLETED" />
+103-->[org.altbeacon:android-beacon-library:2.19.3] C:\Users\5610110106\.gradle\caches\transforms-3\6909ddea53f7e7cd4929377a0cc2768b\transformed\jetified-android-beacon-library-2.19.3\AndroidManifest.xml:24:17-79
+103-->[org.altbeacon:android-beacon-library:2.19.3] C:\Users\5610110106\.gradle\caches\transforms-3\6909ddea53f7e7cd4929377a0cc2768b\transformed\jetified-android-beacon-library-2.19.3\AndroidManifest.xml:24:25-76
+104                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+104-->[org.altbeacon:android-beacon-library:2.19.3] C:\Users\5610110106\.gradle\caches\transforms-3\6909ddea53f7e7cd4929377a0cc2768b\transformed\jetified-android-beacon-library-2.19.3\AndroidManifest.xml:25:17-87
+104-->[org.altbeacon:android-beacon-library:2.19.3] C:\Users\5610110106\.gradle\caches\transforms-3\6909ddea53f7e7cd4929377a0cc2768b\transformed\jetified-android-beacon-library-2.19.3\AndroidManifest.xml:25:25-84
+105                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+105-->[org.altbeacon:android-beacon-library:2.19.3] C:\Users\5610110106\.gradle\caches\transforms-3\6909ddea53f7e7cd4929377a0cc2768b\transformed\jetified-android-beacon-library-2.19.3\AndroidManifest.xml:26:17-90
+105-->[org.altbeacon:android-beacon-library:2.19.3] C:\Users\5610110106\.gradle\caches\transforms-3\6909ddea53f7e7cd4929377a0cc2768b\transformed\jetified-android-beacon-library-2.19.3\AndroidManifest.xml:26:25-87
+106            </intent-filter>
+107        </receiver>
+108
+109        <service
+109-->[org.altbeacon:android-beacon-library:2.19.3] C:\Users\5610110106\.gradle\caches\transforms-3\6909ddea53f7e7cd4929377a0cc2768b\transformed\jetified-android-beacon-library-2.19.3\AndroidManifest.xml:30:9-35:38
+110            android:name="org.altbeacon.beacon.service.BeaconService"
+110-->[org.altbeacon:android-beacon-library:2.19.3] C:\Users\5610110106\.gradle\caches\transforms-3\6909ddea53f7e7cd4929377a0cc2768b\transformed\jetified-android-beacon-library-2.19.3\AndroidManifest.xml:31:13-70
+111            android:enabled="true"
+111-->[org.altbeacon:android-beacon-library:2.19.3] C:\Users\5610110106\.gradle\caches\transforms-3\6909ddea53f7e7cd4929377a0cc2768b\transformed\jetified-android-beacon-library-2.19.3\AndroidManifest.xml:32:13-35
+112            android:exported="false"
+112-->[org.altbeacon:android-beacon-library:2.19.3] C:\Users\5610110106\.gradle\caches\transforms-3\6909ddea53f7e7cd4929377a0cc2768b\transformed\jetified-android-beacon-library-2.19.3\AndroidManifest.xml:33:13-37
+113            android:isolatedProcess="false"
+113-->[org.altbeacon:android-beacon-library:2.19.3] C:\Users\5610110106\.gradle\caches\transforms-3\6909ddea53f7e7cd4929377a0cc2768b\transformed\jetified-android-beacon-library-2.19.3\AndroidManifest.xml:34:13-44
+114            android:label="beacon" />
+114-->[org.altbeacon:android-beacon-library:2.19.3] C:\Users\5610110106\.gradle\caches\transforms-3\6909ddea53f7e7cd4929377a0cc2768b\transformed\jetified-android-beacon-library-2.19.3\AndroidManifest.xml:35:13-35
+115        <service
+115-->[org.altbeacon:android-beacon-library:2.19.3] C:\Users\5610110106\.gradle\caches\transforms-3\6909ddea53f7e7cd4929377a0cc2768b\transformed\jetified-android-beacon-library-2.19.3\AndroidManifest.xml:36:9-39:40
+116            android:name="org.altbeacon.beacon.BeaconIntentProcessor"
+116-->[org.altbeacon:android-beacon-library:2.19.3] C:\Users\5610110106\.gradle\caches\transforms-3\6909ddea53f7e7cd4929377a0cc2768b\transformed\jetified-android-beacon-library-2.19.3\AndroidManifest.xml:37:13-70
+117            android:enabled="true"
+117-->[org.altbeacon:android-beacon-library:2.19.3] C:\Users\5610110106\.gradle\caches\transforms-3\6909ddea53f7e7cd4929377a0cc2768b\transformed\jetified-android-beacon-library-2.19.3\AndroidManifest.xml:38:13-35
+118            android:exported="false" />
+118-->[org.altbeacon:android-beacon-library:2.19.3] C:\Users\5610110106\.gradle\caches\transforms-3\6909ddea53f7e7cd4929377a0cc2768b\transformed\jetified-android-beacon-library-2.19.3\AndroidManifest.xml:39:13-37
+119        <service
+119-->[org.altbeacon:android-beacon-library:2.19.3] C:\Users\5610110106\.gradle\caches\transforms-3\6909ddea53f7e7cd4929377a0cc2768b\transformed\jetified-android-beacon-library-2.19.3\AndroidManifest.xml:40:9-50:19
+120            android:name="org.altbeacon.beacon.service.ScanJob"
+120-->[org.altbeacon:android-beacon-library:2.19.3] C:\Users\5610110106\.gradle\caches\transforms-3\6909ddea53f7e7cd4929377a0cc2768b\transformed\jetified-android-beacon-library-2.19.3\AndroidManifest.xml:41:13-64
+121            android:exported="false"
+121-->[org.altbeacon:android-beacon-library:2.19.3] C:\Users\5610110106\.gradle\caches\transforms-3\6909ddea53f7e7cd4929377a0cc2768b\transformed\jetified-android-beacon-library-2.19.3\AndroidManifest.xml:42:13-37
+122            android:permission="android.permission.BIND_JOB_SERVICE" >
+122-->[org.altbeacon:android-beacon-library:2.19.3] C:\Users\5610110106\.gradle\caches\transforms-3\6909ddea53f7e7cd4929377a0cc2768b\transformed\jetified-android-beacon-library-2.19.3\AndroidManifest.xml:43:13-69
+123            <meta-data
+123-->[org.altbeacon:android-beacon-library:2.19.3] C:\Users\5610110106\.gradle\caches\transforms-3\6909ddea53f7e7cd4929377a0cc2768b\transformed\jetified-android-beacon-library-2.19.3\AndroidManifest.xml:44:13-46:45
+124                android:name="immediateScanJobId"
+124-->[org.altbeacon:android-beacon-library:2.19.3] C:\Users\5610110106\.gradle\caches\transforms-3\6909ddea53f7e7cd4929377a0cc2768b\transformed\jetified-android-beacon-library-2.19.3\AndroidManifest.xml:45:17-50
+125                android:value="208352939" />
+125-->[org.altbeacon:android-beacon-library:2.19.3] C:\Users\5610110106\.gradle\caches\transforms-3\6909ddea53f7e7cd4929377a0cc2768b\transformed\jetified-android-beacon-library-2.19.3\AndroidManifest.xml:46:17-42
+126            <meta-data
+126-->[org.altbeacon:android-beacon-library:2.19.3] C:\Users\5610110106\.gradle\caches\transforms-3\6909ddea53f7e7cd4929377a0cc2768b\transformed\jetified-android-beacon-library-2.19.3\AndroidManifest.xml:47:13-49:45
+127                android:name="periodicScanJobId"
+127-->[org.altbeacon:android-beacon-library:2.19.3] C:\Users\5610110106\.gradle\caches\transforms-3\6909ddea53f7e7cd4929377a0cc2768b\transformed\jetified-android-beacon-library-2.19.3\AndroidManifest.xml:48:17-49
+128                android:value="208352940" />
+128-->[org.altbeacon:android-beacon-library:2.19.3] C:\Users\5610110106\.gradle\caches\transforms-3\6909ddea53f7e7cd4929377a0cc2768b\transformed\jetified-android-beacon-library-2.19.3\AndroidManifest.xml:49:17-42
+129        </service>
+130        <service
+130-->[org.altbeacon:android-beacon-library:2.19.3] C:\Users\5610110106\.gradle\caches\transforms-3\6909ddea53f7e7cd4929377a0cc2768b\transformed\jetified-android-beacon-library-2.19.3\AndroidManifest.xml:51:9-58:19
+131            android:name="org.altbeacon.bluetooth.BluetoothTestJob"
+131-->[org.altbeacon:android-beacon-library:2.19.3] C:\Users\5610110106\.gradle\caches\transforms-3\6909ddea53f7e7cd4929377a0cc2768b\transformed\jetified-android-beacon-library-2.19.3\AndroidManifest.xml:52:13-68
+132            android:exported="false"
+132-->[org.altbeacon:android-beacon-library:2.19.3] C:\Users\5610110106\.gradle\caches\transforms-3\6909ddea53f7e7cd4929377a0cc2768b\transformed\jetified-android-beacon-library-2.19.3\AndroidManifest.xml:53:13-37
+133            android:permission="android.permission.BIND_JOB_SERVICE" >
+133-->[org.altbeacon:android-beacon-library:2.19.3] C:\Users\5610110106\.gradle\caches\transforms-3\6909ddea53f7e7cd4929377a0cc2768b\transformed\jetified-android-beacon-library-2.19.3\AndroidManifest.xml:54:13-69
+134            <meta-data
+134-->[org.altbeacon:android-beacon-library:2.19.3] C:\Users\5610110106\.gradle\caches\transforms-3\6909ddea53f7e7cd4929377a0cc2768b\transformed\jetified-android-beacon-library-2.19.3\AndroidManifest.xml:55:13-57:46
+135                android:name="jobId"
+135-->[org.altbeacon:android-beacon-library:2.19.3] C:\Users\5610110106\.gradle\caches\transforms-3\6909ddea53f7e7cd4929377a0cc2768b\transformed\jetified-android-beacon-library-2.19.3\AndroidManifest.xml:56:17-37
+136                android:value="1799803768" />
+136-->[org.altbeacon:android-beacon-library:2.19.3] C:\Users\5610110106\.gradle\caches\transforms-3\6909ddea53f7e7cd4929377a0cc2768b\transformed\jetified-android-beacon-library-2.19.3\AndroidManifest.xml:57:17-43
+137        </service>
+138    </application>
+139
+140</manifest>

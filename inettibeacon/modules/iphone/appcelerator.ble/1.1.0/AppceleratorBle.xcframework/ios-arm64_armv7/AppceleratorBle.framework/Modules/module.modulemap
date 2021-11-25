@@ -1,0 +1,11 @@
+framework module AppceleratorBle {
+  umbrella header "AppceleratorBle.h"
+
+  export *
+  module * { export * }
+}
+
+module AppceleratorBle.Swift {
+    header "AppceleratorBle-Swift.h"
+    requires objc
+}

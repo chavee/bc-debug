@@ -1,0 +1,4 @@
+"d:/GIANT/ww2/inettibeacon/build/android/app/src/main/java/com/appcelerator/InetTiBeacon/AssetCryptImpl.java"
+"d:/GIANT/ww2/inettibeacon/build/android/app/src/main/java/com/appcelerator/InetTiBeacon/InettibeaconActivity.java"
+"d:/GIANT/ww2/inettibeacon/build/android/app/src/main/java/com/appcelerator/InetTiBeacon/InettibeaconAppInfo.java"
+"d:/GIANT/ww2/inettibeacon/build/android/app/src/main/java/com/appcelerator/InetTiBeacon/InettibeaconApplication.java"

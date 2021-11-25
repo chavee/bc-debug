@@ -1,0 +1,271 @@
+
+11/24/2021, 8:15:57 PM
+
+Operating System
+  Name                        = Microsoft Windows 10 Education
+  Version                     = 10.0.19042
+  Architecture                = 64bit
+  # CPUs                      = 8
+  Memory                      = 6401531904
+
+Node.js
+  Node.js Version             = 14.18.0
+  npm Version                 = 7.24.0
+
+Titanium CLI
+  CLI Version                 = 5.3.2
+
+Titanium SDK
+  SDK Version                 = 10.0.2.GA
+  SDK Path                    = C:\ProgramData\Titanium\mobilesdk\win32\10.0.2.GA
+  Target Platform             = android
+
+Command
+  C:\Program Files\nodejs\node.exe C:\Users\5610110106\AppData\Roaming\npm\node_modules\titanium\bin\titanium build --project-dir d:\GIANT\ww2\inettibeacon --log-level info --platform android --color --no-prompt --target device --device-id 33007f3ec12cb2ad --sdk 10.0.2.GA
+
+[DEBUG]  Detecting modules in d:\GIANT\ww2\inettibeacon\node_modules
+[DEBUG]  Detecting modules in C:\ProgramData\Titanium\modules
+[DEBUG]  Detecting modules in d:\GIANT\ww2\inettibeacon\modules
+[DEBUG]  Detecting modules in C:\ProgramData\Application Data\Titanium\modules
+[DEBUG]  Detected android module: facebook 11.0.2 @ C:\ProgramData\Titanium\modules\android\facebook\11.0.2
+[DEBUG]  Detected android module: hyperloop 7.0.4 @ C:\ProgramData\Titanium\modules\android\hyperloop\7.0.4
+[DEBUG]  Detected android module: ti.map 5.3.2 @ C:\ProgramData\Titanium\modules\android\ti.map\5.3.2
+[DEBUG]  Detected android module: ti.cloudpush 7.1.0 @ C:\ProgramData\Titanium\modules\android\ti.cloudpush\7.1.0
+[DEBUG]  Detected android module: ti.identity 3.0.2 @ C:\ProgramData\Titanium\modules\android\ti.identity\3.0.2
+[DEBUG]  Detected android module: ti.webdialog 2.0.0 @ C:\ProgramData\Titanium\modules\android\ti.webdialog\2.0.0
+[DEBUG]  Detected ios module: appcelerator.ble 1.1.0 @ d:\GIANT\ww2\inettibeacon\modules\iphone\appcelerator.ble\1.1.0
+[DEBUG]  Detected android module: com.liferay.beacons 4.0.1 @ d:\GIANT\ww2\inettibeacon\modules\android\com.liferay.beacons\4.0.1
+[DEBUG]  Detected commonjs module: ti.cloud 3.2.11 @ C:\ProgramData\Titanium\modules\commonjs\ti.cloud\3.2.11
+[DEBUG]  Detected android module: ti.playservices 17.5.0 @ C:\ProgramData\Titanium\modules\android\ti.playservices\17.5.0
+[DEBUG]  Detected android module: facebook 11.0.2 @ C:\ProgramData\Application Data\Titanium\modules\android\facebook\11.0.2
+[DEBUG]  Detected android module: ti.identity 3.0.2 @ C:\ProgramData\Application Data\Titanium\modules\android\ti.identity\3.0.2
+[DEBUG]  Detected android module: ti.playservices 17.5.0 @ C:\ProgramData\Application Data\Titanium\modules\android\ti.playservices\17.5.0
+[DEBUG]  Detected android module: hyperloop 7.0.4 @ C:\ProgramData\Application Data\Titanium\modules\android\hyperloop\7.0.4
+[DEBUG]  Detected android module: ti.map 5.3.2 @ C:\ProgramData\Application Data\Titanium\modules\android\ti.map\5.3.2
+[DEBUG]  Detected commonjs module: ti.cloud 3.2.11 @ C:\ProgramData\Application Data\Titanium\modules\commonjs\ti.cloud\3.2.11
+[DEBUG]  Detected android module: ti.webdialog 2.0.0 @ C:\ProgramData\Application Data\Titanium\modules\android\ti.webdialog\2.0.0
+[DEBUG]  Detected android module: ti.cloudpush 7.1.0 @ C:\ProgramData\Application Data\Titanium\modules\android\ti.cloudpush\7.1.0
+[DEBUG]  Looking for Titanium module id=hyperloop version=latest platform=android deploy-type=test
+[INFO]   Found Titanium module id=hyperloop version=7.0.4 platform=android deploy-type=test path=C:\ProgramData\Application Data\Titanium\modules\android\hyperloop\7.0.4
+[DEBUG]  Looking for Titanium module id=ti.cloud version=latest platform=commonjs deploy-type=test
+[INFO]   Found Titanium module id=ti.cloud version=3.2.11 platform=commonjs deploy-type=test path=C:\ProgramData\Application Data\Titanium\modules\commonjs\ti.cloud\3.2.11
+[DEBUG]  Looking for Titanium module id=com.liferay.beacons version=latest platform=android deploy-type=test
+[INFO]   Found Titanium module id=com.liferay.beacons version=4.0.1 platform=android deploy-type=test path=d:\GIANT\ww2\inettibeacon\modules\android\com.liferay.beacons\4.0.1
+[DEBUG]  Detecting plugins in d:\GIANT\ww2\inettibeacon\plugins
+[DEBUG]  Detected plugin: ti.alloy @ d:\GIANT\ww2\inettibeacon\plugins\ti.alloy
+[DEBUG]  Looking for Titanium plugin id=ti.alloy version=1.0
+[INFO]   Found Titanium plugin id=ti.alloy version=1.0 
+[TRACE]  Snapshotting build directory
+[DEBUG]  Titanium SDK Android directory: C:\ProgramData\Titanium\mobilesdk\win32\10.0.2.GA\android
+[INFO]   Deploy type: test
+[INFO]   Building for target: device
+[INFO]   Building for device: 33007f3ec12cb2ad
+[INFO]   Targeting Android SDK API: 30
+[INFO]   Building for the following architectures: arm64-v8a, armeabi-v7a, x86, x86_64
+[INFO]   Signing with keystore: C:\ProgramData\Titanium\mobilesdk\win32\10.0.2.GA\android\dev_keystore (tidev)
+[DEBUG]  App ID: com.appcelerator.InetTiBeacon
+[DEBUG]  Classname: Inettibeacon
+[INFO]   Debugging disabled
+[INFO]   Profiler disabled
+[INFO]   Transpile javascript: true
+[INFO]   Generate source maps: true
+[INFO]   Found Alloy app in d:\GIANT\ww2\inettibeacon\app
+[INFO]   Executing Alloy compile: cmd /s /c alloy.cmd compile d:\GIANT\ww2\inettibeacon\app --config platform=android,version=0,simtype=none,devicefamily=none,deploytype=test,target=device
+[INFO]   Alloy compiler completed successfully
+[INFO]   Starting Hyperloop assembly
+[TRACE]  hyperloop:generateMetabase: Setting initial task state to "created"
+[TRACE]  hyperloop:generateMetabase: Starting task
+[TRACE]  hyperloop:generateMetabase: Changing task state from "created" to "running"
+[TRACE]  hyperloop:generateMetabase: Generating metabase for JARs: C:\Users\5610110106\.gradle\caches\transforms-3\75f244c3020f896728375347edaca30e\transformed\customview-1.1.0-api.jar,C:\Users\5610110106\.gradle\caches\transforms-3\d0f8dbe0b4fc545f8bdbf0d76595677d\transformed\core-1.5.0-api.jar,C:\Users\5610110106\.gradle\caches\transforms-3\4b6c8cb0736b4eb8dca54cc98d66eb55\transformed\swiperefreshlayout-1.1.0-api.jar,C:\Users\5610110106\.gradle\caches\modules-2\files-2.1\org.java-websocket\Java-WebSocket\1.5.1\382b302303c830a7edb20c9ed61c4ac2cdf7a7a4\Java-WebSocket-1.5.1.jar,C:\Users\5610110106\.gradle\caches\transforms-3\dc4df0e71339e3bf8b0b08b9febb911c\transformed\appcompat-resources-1.3.0-api.jar,C:\Users\5610110106\.gradle\caches\transforms-3\d557d86b43e75fddb0fdfd6ed601e982\transformed\legacy-support-core-utils-1.0.0-api.jar,C:\Users\5610110106\.gradle\caches\transforms-3\4897d1ebf882d53a19142103ed068d3f\transformed\lifecycle-livedata-core-2.3.1-api.jar,C:\Users\5610110106\.gradle\caches\transforms-3\7c60016cb4b4510e0b74abac0ce1c206\transformed\recyclerview-selection-1.1.0-api.jar,C:\Users\5610110106\.gradle\caches\transforms-3\22098959e515674808c1038eb6be1334\transformed\viewpager-1.0.0-api.jar,C:\Users\5610110106\.gradle\caches\transforms-3\f50c6ff5aa9a387591bcd038f85573cb\transformed\lifecycle-viewmodel-2.3.1-api.jar,C:\Users\5610110106\.gradle\caches\modules-2\files-2.1\androidx.arch.core\core-common\2.1.0\b3152fc64428c9354344bd89848ecddc09b6f07e\core-common-2.1.0.jar,C:\Users\5610110106\.gradle\caches\transforms-3\e26fe22944c28a9c0d3e85ba43af12c4\transformed\viewpager2-1.0.0-api.jar,C:\Users\5610110106\.gradle\caches\transforms-3\a4889592b46f07d3cd9d319022f55cae\transformed\lifecycle-livedata-2.0.0-api.jar,C:\Users\5610110106\.gradle\caches\transforms-3\3050a41f1bff47ffbc2d960a7e55f167\transformed\documentfile-1.0.0-api.jar,C:\Users\5610110106\.gradle\caches\transforms-3\8cf9739b1627fde3ad2675ef9a3ef7f9\transformed\coordinatorlayout-1.1.0-api.jar,C:\Users\5610110106\.gradle\caches\transforms-3\c6782752956dd322d427195987b19742\transformed\fragment-1.3.4-api.jar,C:\Users\5610110106\AppData\Local\Android\Sdk\platforms\android-30\android.jar,C:\Users\5610110106\.gradle\caches\transforms-3\1829a6819e64705232cc520092154585\transformed\cardview-1.0.0-api.jar,C:\Users\5610110106\.gradle\caches\transforms-3\9503bacf90b21b83d7273eb0e7221eed\transformed\constraintlayout-2.0.1-api.jar,C:\Users\5610110106\.gradle\caches\modules-2\files-2.1\androidx.lifecycle\lifecycle-common\2.3.1\fc466261d52f4433863642fb40d12441ae274a98\lifecycle-common-2.3.1.jar,C:\Users\5610110106\.gradle\caches\transforms-3\9770ad65f9d8f0d2b08969bbb616a173\transformed\appcompat-1.3.0-api.jar,C:\Users\5610110106\.gradle\caches\transforms-3\9cfc51a9812dd4fd266f2baa32c0f6fe\transformed\vectordrawable-1.1.0-api.jar,C:\Users\5610110106\.gradle\caches\modules-2\files-2.1\androidx.collection\collection\1.1.0\1f27220b47669781457de0d600849a5de0e89909\collection-1.1.0.jar,C:\Users\5610110106\.gradle\caches\transforms-3\1ced79fca7ac182cf98139c41c73563e\transformed\annotation-experimental-1.0.0-api.jar,C:\Users\5610110106\.gradle\caches\transforms-3\033545345f5135fe6e4170d1cc3e95f3\transformed\drawerlayout-1.1.1-api.jar,C:\Users\5610110106\.gradle\caches\transforms-3\f9015c9192c13e111a9600b8e4f3850f\transformed\lifecycle-runtime-2.3.1-api.jar,C:\Users\5610110106\.gradle\caches\modules-2\files-2.1\org.slf4j\slf4j-api\1.7.25\da76ca59f6a57ee3102f8f9bd9cee742973efa8a\slf4j-api-1.7.25.jar,C:\Users\5610110106\.gradle\caches\modules-2\files-2.1\androidx.annotation\annotation\1.2.0\57136ff68ee784c6e19db34ed4a175338fadfde1\annotation-1.2.0.jar,C:\Users\5610110106\.gradle\caches\transforms-3\3590b15812bfaf9362b345102f20eca5\transformed\cursoradapter-1.0.0-api.jar,C:\Users\5610110106\.gradle\caches\transforms-3\e63c16579631ffa3168519191c3d7017\transformed\interpolator-1.0.0-api.jar,C:\Users\5610110106\.gradle\caches\transforms-3\1bb2e44f452117abfc79565c69690193\transformed\loader-1.0.0-api.jar,C:\Users\5610110106\.gradle\caches\transforms-3\76e8f61254b6b1b2a506e1b05b7c30bd\transformed\core-runtime-2.1.0-api.jar,C:\Users\5610110106\.gradle\caches\transforms-3\041fd59c865c3492aba64b627ffffb81\transformed\savedstate-1.1.0-api.jar,C:\Users\5610110106\.gradle\caches\transforms-3\88f714324a7deaca4cf5f8a225bf275e\transformed\localbroadcastmanager-1.0.0-api.jar,C:\Users\5610110106\.gradle\caches\modules-2\files-2.1\androidx.constraintlayout\constraintlayout-solver\2.0.1\30988fe2d77f3fe3bf7551bb8a8b795fad7e7226\constraintlayout-solver-2.0.1.jar,C:\Users\5610110106\.gradle\caches\transforms-3\41771fa7328ba415de0fff4f105defa7\transformed\dynamicanimation-1.0.0-api.jar,C:\Users\5610110106\.gradle\caches\transforms-3\dc844b1011d2337620da29677378691e\transformed\recyclerview-1.2.0-api.jar,C:\Users\5610110106\.gradle\caches\transforms-3\9d48abea995f4220db270bbb85435689\transformed\lifecycle-viewmodel-savedstate-2.3.1-api.jar,C:\Users\5610110106\.gradle\caches\transforms-3\75192ad5ded9373153b4f60888762765\transformed\print-1.0.0-api.jar,C:\Users\5610110106\.gradle\caches\transforms-3\30f4d4d77a9fa912aa419bd66f643b47\transformed\transition-1.4.1-api.jar,C:\Users\5610110106\.gradle\caches\transforms-3\e2a2922368f10231159b3c772cba4cfa\transformed\material-1.3.0-api.jar,C:\Users\5610110106\.gradle\caches\transforms-3\aad015eaeb82bc756e3a669566d59a1c\transformed\titanium-10.0.2-api.jar,C:\Users\5610110106\.gradle\caches\transforms-3\73ffe5dc1f03cfb36c73d67da3cdb2e8\transformed\activity-1.2.3-api.jar,C:\Users\5610110106\.gradle\caches\transforms-3\66940f97aa57ccf6077a69ef7bb223a1\transformed\versionedparcelable-1.1.1-api.jar,C:\Users\5610110106\.gradle\caches\modules-2\files-2.1\jaxen\jaxen\1.2.0\c10535a925bd35129a4329bc75065cc6b5293f2c\jaxen-1.2.0.jar,C:\Users\5610110106\.gradle\caches\transforms-3\6d9b48d5c6b4f696357ddf10ef9ac9d6\transformed\media-1.3.1-api.jar,C:\Users\5610110106\.gradle\caches\transforms-3\480646aef89496e841f198eb5564653e\transformed\exifinterface-1.3.2-api.jar,C:\Users\5610110106\.gradle\caches\transforms-3\abcf41c95dfaff9c1d8972bb17057dc0\transformed\vectordrawable-animated-1.1.0-api.jar
+[INFO]   [Hyperloop] Using system metabase cache file at d:\GIANT\ww2\inettibeacon\build\hyperloop\android\metabase\hyperloop_android-30_metabase.9bd2371520cf9832149e640416013b059a3059fb.json.gz
+[TRACE]  hyperloop:generateMetabase: Changing task state from "running" to "finished"
+[TRACE]  hyperloop:generateMetabase: Finished task in 2s 856.550ms
+[TRACE]  hyperloop:scanReferences: Setting initial task state to "created"
+[TRACE]  hyperloop:scanReferences: Starting task
+[TRACE]  hyperloop:scanReferences: Changing task state from "created" to "running"
+[TRACE]  hyperloop:scanReferences: Input files changed, do incremental task run
+[TRACE]  hyperloop:scanReferences: Searching for hyperloop requires in: d:\GIANT\ww2\inettibeacon\Resources\android\alloy\controllers\inet_beacon\beacon.js
+[TRACE]  hyperloop:scanReferences: Checking require for: /alloy
+[TRACE]  hyperloop:scanReferences: Checking require for: appcelerator.ble
+[TRACE]  hyperloop:scanReferences: Checking require for: com.liferay.beacons
+[TRACE]  hyperloop:scanReferences: Changing task state from "running" to "finished"
+[TRACE]  hyperloop:scanReferences: Finished task in 0s 180.920ms
+[TRACE]  hyperloop:generateSources: Setting initial task state to "created"
+[TRACE]  hyperloop:generateSources: Starting task
+[TRACE]  hyperloop:generateSources: Changing task state from "created" to "running"
+[TRACE]  hyperloop:generateSources: Input files changed, do incremental task run
+[INFO]   hyperloop:generateSources: Skipping Hyperloop wrapper generation, no usage found ...
+[TRACE]  hyperloop:generateSources: Changing task state from "running" to "finished"
+[TRACE]  hyperloop:generateSources: Finished task in 0s 27.283ms
+[INFO]   Processing libraries
+[INFO]   Generating root project files
+[INFO]   Generating gradle project: app
+[INFO]   Analyzing Resources directory
+[INFO]   Analyzing NPM package files
+[INFO]   Analyzing plugin-contributed files
+[INFO]   Analyzing module files
+[DEBUG]  Copying CSS files
+[TRACE]  process-css: Setting initial task state to "created"
+[TRACE]  process-css: Starting task
+[TRACE]  process-css: Changing task state from "created" to "running"
+[INFO]   Processing JavaScript files
+[TRACE]  process-js: Setting initial task state to "created"
+[TRACE]  process-js: Starting task
+[TRACE]  process-js: Changing task state from "created" to "running"
+[DEBUG]  Copying Drawables
+[TRACE]  process-drawables: Setting initial task state to "created"
+[TRACE]  process-drawables: Starting task
+[TRACE]  process-drawables: Changing task state from "created" to "running"
+[DEBUG]  Copying Splash Screens
+[TRACE]  process-splashes: Setting initial task state to "created"
+[TRACE]  process-splashes: Starting task
+[TRACE]  process-splashes: Changing task state from "created" to "running"
+[DEBUG]  Copying resources
+[TRACE]  copy-resources: Setting initial task state to "created"
+[TRACE]  copy-resources: Starting task
+[TRACE]  copy-resources: Changing task state from "created" to "running"
+[TRACE]  process-css: Nothing changed, skip task run
+[TRACE]  process-js: Input files changed, do incremental task run
+[TRACE]  process-drawables: Nothing changed, skip task run
+[TRACE]  process-splashes: Output files changed, do full task run
+[TRACE]  copy-resources: Output files changed, do full task run
+[TRACE]  process-drawables: Changing task state from "running" to "finished"
+[TRACE]  process-drawables: Finished task in 0s 52.147ms
+[DEBUG]  process-splashes: Copying d:\GIANT\ww2\inettibeacon\Resources\android\images\res-land-xhdpi\default.png => d:\GIANT\ww2\inettibeacon\build\android\app\src\main\res\drawable-land-xhdpi\background.png
+[DEBUG]  process-splashes: Copying d:\GIANT\ww2\inettibeacon\Resources\android\images\res-land-hdpi\default.png => d:\GIANT\ww2\inettibeacon\build\android\app\src\main\res\drawable-land-hdpi\background.png
+[DEBUG]  process-splashes: Copying d:\GIANT\ww2\inettibeacon\Resources\android\images\res-land-ldpi\default.png => d:\GIANT\ww2\inettibeacon\build\android\app\src\main\res\drawable-land-ldpi\background.png
+[DEBUG]  process-splashes: Copying d:\GIANT\ww2\inettibeacon\Resources\android\images\res-land-xxhdpi\default.png => d:\GIANT\ww2\inettibeacon\build\android\app\src\main\res\drawable-land-xxhdpi\background.png
+[DEBUG]  process-splashes: Copying d:\GIANT\ww2\inettibeacon\Resources\android\images\res-land-xxxhdpi\default.png => d:\GIANT\ww2\inettibeacon\build\android\app\src\main\res\drawable-land-xxxhdpi\background.png
+[DEBUG]  process-splashes: Copying d:\GIANT\ww2\inettibeacon\Resources\android\images\res-long-land-hdpi\default.png => d:\GIANT\ww2\inettibeacon\build\android\app\src\main\res\drawable-long-land-hdpi\background.png
+[DEBUG]  process-splashes: Copying d:\GIANT\ww2\inettibeacon\Resources\android\images\res-long-land-ldpi\default.png => d:\GIANT\ww2\inettibeacon\build\android\app\src\main\res\drawable-long-land-ldpi\background.png
+[DEBUG]  process-splashes: Copying d:\GIANT\ww2\inettibeacon\Resources\android\images\res-long-land-mdpi\default.png => d:\GIANT\ww2\inettibeacon\build\android\app\src\main\res\drawable-long-land-mdpi\background.png
+[DEBUG]  process-splashes: Copying d:\GIANT\ww2\inettibeacon\Resources\android\images\res-long-port-ldpi\default.png => d:\GIANT\ww2\inettibeacon\build\android\app\src\main\res\drawable-long-port-ldpi\background.png
+[DEBUG]  process-splashes: Copying d:\GIANT\ww2\inettibeacon\Resources\android\images\res-notlong-land-hdpi\default.png => d:\GIANT\ww2\inettibeacon\build\android\app\src\main\res\drawable-notlong-land-hdpi\background.png
+[DEBUG]  process-splashes: Copying d:\GIANT\ww2\inettibeacon\Resources\android\images\res-land-mdpi\default.png => d:\GIANT\ww2\inettibeacon\build\android\app\src\main\res\drawable-land-mdpi\background.png
+[DEBUG]  process-splashes: Copying d:\GIANT\ww2\inettibeacon\Resources\android\images\res-long-port-hdpi\default.png => d:\GIANT\ww2\inettibeacon\build\android\app\src\main\res\drawable-long-port-hdpi\background.png
+[DEBUG]  process-splashes: Copying d:\GIANT\ww2\inettibeacon\Resources\android\images\res-notlong-port-ldpi\default.png => d:\GIANT\ww2\inettibeacon\build\android\app\src\main\res\drawable-notlong-port-ldpi\background.png
+[DEBUG]  process-splashes: Copying d:\GIANT\ww2\inettibeacon\Resources\android\images\res-notlong-port-hdpi\default.png => d:\GIANT\ww2\inettibeacon\build\android\app\src\main\res\drawable-notlong-port-hdpi\background.png
+[DEBUG]  process-splashes: Copying d:\GIANT\ww2\inettibeacon\Resources\android\images\res-notlong-land-ldpi\default.png => d:\GIANT\ww2\inettibeacon\build\android\app\src\main\res\drawable-notlong-land-ldpi\background.png
+[DEBUG]  process-splashes: Copying d:\GIANT\ww2\inettibeacon\Resources\android\images\res-notlong-land-mdpi\default.png => d:\GIANT\ww2\inettibeacon\build\android\app\src\main\res\drawable-notlong-land-mdpi\background.png
+[DEBUG]  process-splashes: Copying d:\GIANT\ww2\inettibeacon\Resources\android\images\res-notlong-port-mdpi\default.png => d:\GIANT\ww2\inettibeacon\build\android\app\src\main\res\drawable-notlong-port-mdpi\background.png
+[DEBUG]  process-splashes: Copying d:\GIANT\ww2\inettibeacon\Resources\android\images\res-port-hdpi\default.png => d:\GIANT\ww2\inettibeacon\build\android\app\src\main\res\drawable-port-hdpi\background.png
+[DEBUG]  process-splashes: Copying d:\GIANT\ww2\inettibeacon\Resources\android\images\res-port-ldpi\default.png => d:\GIANT\ww2\inettibeacon\build\android\app\src\main\res\drawable-port-ldpi\background.png
+[DEBUG]  process-splashes: Copying d:\GIANT\ww2\inettibeacon\Resources\android\images\res-port-xhdpi\default.png => d:\GIANT\ww2\inettibeacon\build\android\app\src\main\res\drawable-port-xhdpi\background.png
+[DEBUG]  process-splashes: Copying d:\GIANT\ww2\inettibeacon\Resources\android\images\res-port-xxhdpi\default.png => d:\GIANT\ww2\inettibeacon\build\android\app\src\main\res\drawable-port-xxhdpi\background.png
+[DEBUG]  process-splashes: Copying d:\GIANT\ww2\inettibeacon\Resources\android\images\res-port-mdpi\default.png => d:\GIANT\ww2\inettibeacon\build\android\app\src\main\res\drawable-port-mdpi\background.png
+[DEBUG]  copy-resources: Copying C:\ProgramData\Application Data\Titanium\modules\commonjs\ti.cloud\3.2.11\manifest => d:\GIANT\ww2\inettibeacon\build\android\app\src\main\assets\Resources\ti.cloud\manifest
+[DEBUG]  process-splashes: Copying d:\GIANT\ww2\inettibeacon\Resources\android\images\res-port-xxxhdpi\default.png => d:\GIANT\ww2\inettibeacon\build\android\app\src\main\res\drawable-port-xxxhdpi\background.png
+[DEBUG]  Copying d:\GIANT\ww2\inettibeacon\platform\android => d:\GIANT\ww2\inettibeacon\build\android\app\src\main
+[DEBUG]  process-splashes: Copying d:\GIANT\ww2\inettibeacon\Resources\android\default.png => d:\GIANT\ww2\inettibeacon\build\android\app\src\main\res\drawable\background.png
+[DEBUG]  copy-resources: Copying d:\GIANT\ww2\inettibeacon\Resources\android\readme.md => d:\GIANT\ww2\inettibeacon\build\android\app\src\main\assets\Resources\readme.md
+[DEBUG]  copy-resources: Copying C:\ProgramData\Application Data\Titanium\modules\commonjs\ti.cloud\3.2.11\LICENSE => d:\GIANT\ww2\inettibeacon\build\android\app\src\main\assets\Resources\ti.cloud\LICENSE
+[DEBUG]  copy-resources: Copying C:\ProgramData\Application Data\Titanium\modules\commonjs\ti.cloud\3.2.11\package.json => d:\GIANT\ww2\inettibeacon\build\android\app\src\main\assets\Resources\ti.cloud\package.json
+[DEBUG]  copy-resources: Copying d:\GIANT\ww2\inettibeacon\Resources\android\appicon.png => d:\GIANT\ww2\inettibeacon\build\android\app\src\main\assets\Resources\appicon.png
+[TRACE]  process-splashes: Changing task state from "running" to "finished"
+[TRACE]  process-splashes: Finished task in 0s 104.934ms
+[DEBUG]  process-js: Copying and minifying d:\GIANT\ww2\inettibeacon\Resources\android\alloy\controllers\inet_beacon\beacon.js => d:\GIANT\ww2\inettibeacon\build\android\assets\alloy\controllers\inet_beacon\beacon.js
+[TRACE]  copy-resources: Changing task state from "running" to "finished"
+[TRACE]  copy-resources: Finished task in 1s 213.243ms
+[TRACE]  process-css: Changing task state from "running" to "finished"
+[TRACE]  process-css: Finished task in 1s 223.952ms
+[TRACE]  process-js: Changing task state from "running" to "finished"
+[TRACE]  process-js: Finished task in 1s 234.153ms
+[INFO]   Writing bootstrap json
+[INFO]   Encrypting javascript assets...
+[DEBUG]  Encrypting: d:\GIANT\ww2\inettibeacon\build\android\assets\_app_props_.json
+[DEBUG]  Encrypting: d:\GIANT\ww2\inettibeacon\build\android\assets\_env_.json
+[DEBUG]  Encrypting: d:\GIANT\ww2\inettibeacon\build\android\assets\alloy\controllers\inet_beacon\beacon.js
+[DEBUG]  Encrypting: d:\GIANT\ww2\inettibeacon\build\android\assets\ti.kernel.js
+[DEBUG]  Encrypting: d:\GIANT\ww2\inettibeacon\build\android\assets\ti.main.js
+[DEBUG]  Encrypting: d:\GIANT\ww2\inettibeacon\build\android\assets\app.js
+[DEBUG]  Encrypting: d:\GIANT\ww2\inettibeacon\build\android\assets\alloy\CFG.js
+[DEBUG]  Encrypting: d:\GIANT\ww2\inettibeacon\build\android\assets\alloy.bootstrap.js
+[DEBUG]  Encrypting: d:\GIANT\ww2\inettibeacon\build\android\assets\alloy.js
+[DEBUG]  Encrypting: d:\GIANT\ww2\inettibeacon\build\android\assets\alloy\backbone.js
+[DEBUG]  Encrypting: d:\GIANT\ww2\inettibeacon\build\android\assets\alloy\constants.js
+[DEBUG]  Encrypting: d:\GIANT\ww2\inettibeacon\build\android\assets\alloy\underscore.js
+[DEBUG]  Encrypting: d:\GIANT\ww2\inettibeacon\build\android\assets\alloy\widget.js
+[DEBUG]  Encrypting: d:\GIANT\ww2\inettibeacon\build\android\assets\alloy\styles\index.js
+[DEBUG]  Encrypting: d:\GIANT\ww2\inettibeacon\build\android\assets\alloy\controllers\BaseController.js
+[DEBUG]  Encrypting: d:\GIANT\ww2\inettibeacon\build\android\assets\alloy\controllers\index.js
+[DEBUG]  Encrypting: d:\GIANT\ww2\inettibeacon\build\android\assets\alloy\sync\localStorage.js
+[DEBUG]  Encrypting: d:\GIANT\ww2\inettibeacon\build\android\assets\alloy\sync\properties.js
+[DEBUG]  Encrypting: d:\GIANT\ww2\inettibeacon\build\android\assets\alloy\sync\sql.js
+[DEBUG]  Encrypting: d:\GIANT\ww2\inettibeacon\build\android\assets\alloy\styles\inet_beacon\beacon.js
+[DEBUG]  Encrypting: d:\GIANT\ww2\inettibeacon\build\android\assets\ti.cloud\ti.cloud.js
+[DEBUG]  Encrypting: d:\GIANT\ww2\inettibeacon\build\android\assets\ti.internal\bootstrap.json
+[DEBUG]  Copying d:\GIANT\ww2\inettibeacon\build\android\app\src\main\assets\Resources\appicon.png => d:\GIANT\ww2\inettibeacon\build\android\app\src\main\res\drawable\appicon.png
+[INFO]   Writing encryption key...
+[INFO]   Generating import/require index file
+[INFO]   Generating Java files
+[INFO]   Generating i18n files
+[DEBUG]  Compiling localization files
+[DEBUG]  Writing en strings => d:\GIANT\ww2\inettibeacon\build\android\app\src\main\res\values\ti_i18n_strings.xml
+[INFO]   Generating theme file: d:\GIANT\ww2\inettibeacon\build\android\app\src\main\res\values\ti_styles.xml
+[INFO]   Generating semantic colors resources
+[DEBUG]  Skipping colorset generation as "semantic.colors.json" file does not exist
+[DEBUG]  Copying template C:\ProgramData\Titanium\mobilesdk\win32\10.0.2.GA\android\templates\build\AppInfo.java => d:\GIANT\ww2\inettibeacon\build\android\app\src\main\java\com\appcelerator\InetTiBeacon\InettibeaconAppInfo.java
+[DEBUG]  Copying template C:\ProgramData\Titanium\mobilesdk\win32\10.0.2.GA\android\templates\build\App.java => d:\GIANT\ww2\inettibeacon\build\android\app\src\main\java\com\appcelerator\InetTiBeacon\InettibeaconApplication.java
+[DEBUG]  Copying template C:\ProgramData\Titanium\mobilesdk\win32\10.0.2.GA\android\templates\build\Activity.java => d:\GIANT\ww2\inettibeacon\build\android\app\src\main\java\com\appcelerator\InetTiBeacon\InettibeaconActivity.java
+[DEBUG]  Copying C:\ProgramData\Titanium\mobilesdk\win32\10.0.2.GA\android\templates\build\gitignore => d:\GIANT\ww2\inettibeacon\build\android\.gitignore
+[INFO]   Generating main "AndroidManifest.xml" files
+[INFO]   Building app
+[INFO]   [GRADLE] > Task :app:preBuild UP-TO-DATE
+[INFO]   [GRADLE] > Task :app:preDebugBuild UP-TO-DATE
+[INFO]   [GRADLE] > Task :app:compileDebugAidl NO-SOURCE
+[INFO]   [GRADLE] > Task :app:compileDebugRenderscript NO-SOURCE
+[INFO]   [GRADLE] > Task :app:generateDebugBuildConfig UP-TO-DATE
+[INFO]   [GRADLE] > Task :app:javaPreCompileDebug UP-TO-DATE
+[INFO]   [GRADLE] > Task :app:checkDebugAarMetadata UP-TO-DATE
+[INFO]   [GRADLE] > Task :app:generateDebugResValues UP-TO-DATE
+[INFO]   [GRADLE] > Task :app:generateDebugResources UP-TO-DATE
+[INFO]   [GRADLE] > Task :app:mergeDebugResources UP-TO-DATE
+[INFO]   [GRADLE] > Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+[INFO]   [GRADLE] > Task :app:extractDeepLinksDebug UP-TO-DATE
+[INFO]   [GRADLE] > Task :app:processDebugMainManifest UP-TO-DATE
+[INFO]   [GRADLE] > Task :app:processDebugManifest UP-TO-DATE
+[INFO]   [GRADLE] > Task :app:processDebugManifestForPackage UP-TO-DATE
+[INFO]   [GRADLE] > Task :app:processDebugResources UP-TO-DATE
+[INFO]   [GRADLE] > Task :app:compileDebugJavaWithJavac
+[INFO]   [GRADLE] > Task :app:compileDebugSources
+[INFO]   [GRADLE] > Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+[INFO]   [GRADLE] > Task :app:mergeDebugShaders UP-TO-DATE
+[INFO]   [GRADLE] > Task :app:compileDebugShaders NO-SOURCE
+[INFO]   [GRADLE] > Task :app:generateDebugAssets UP-TO-DATE
+[INFO]   [GRADLE] > Task :app:mergeDebugAssets
+[INFO]   [GRADLE] > Task :app:processDebugJavaRes NO-SOURCE
+[INFO]   [GRADLE] > Task :app:mergeDebugJavaResource UP-TO-DATE
+[INFO]   [GRADLE] > Task :app:checkDebugDuplicateClasses UP-TO-DATE
+[INFO]   [GRADLE] > Task :app:desugarDebugFileDependencies UP-TO-DATE
+[INFO]   [GRADLE] > Task :app:compressDebugAssets
+[INFO]   [GRADLE] > Task :app:mergeExtDexDebug UP-TO-DATE
+[INFO]   [GRADLE] > Task :app:mergeLibDexDebug UP-TO-DATE
+[INFO]   [GRADLE] > Task :app:dexBuilderDebug
+[INFO]   [GRADLE] > Task :app:mergeDebugJniLibFolders
+[INFO]   [GRADLE] > Task :app:mergeProjectDexDebug
+[INFO]   [GRADLE] > Task :app:validateSigningDebug UP-TO-DATE
+[INFO]   [GRADLE] > Task :app:writeDebugAppMetadata UP-TO-DATE
+[INFO]   [GRADLE] > Task :app:writeDebugSigningConfigVersions UP-TO-DATE
+[INFO]   [GRADLE] > Task :app:mergeDebugNativeLibs
+[INFO]   [GRADLE] 
+[INFO]   [GRADLE] > Task :app:stripDebugDebugSymbols
+[INFO]   [GRADLE] Unable to strip the following libraries, packaging them as they are: libti.cloak.so.
+[INFO]   [GRADLE] 
+[INFO]   [GRADLE] > Task :app:packageDebug
+[INFO]   [GRADLE] > Task :app:assembleDebug
+[INFO]   [GRADLE] 
+[INFO]   [GRADLE] BUILD SUCCESSFUL in 10s
+[INFO]   [GRADLE] 29 actionable tasks: 9 executed, 20 up-to-date
+[INFO]   Writing build manifest: d:\GIANT\ww2\inettibeacon\build\android\build-manifest.json
+[INFO]   Making sure the adb server is running
+[INFO]   Installing apk: d:\GIANT\ww2\inettibeacon\build\android\app\build\outputs\apk\debug\app-debug.apk
+[INFO]   Installing app on device: SM-A510F
+[TRACE]  Checking if package manager service is started
+[TRACE]  Package manager has started
+[TRACE]  Executing: C:\Users\5610110106\AppData\Local\Android\Sdk\platform-tools\adb.exe -s 33007f3ec12cb2ad install -r -d d:\GIANT\ww2\inettibeacon\build\android\app\build\outputs\apk\debug\app-debug.apk
+[INFO]   App successfully installed
+[INFO]   Starting app: com.appcelerator.InetTiBeacon/.InettibeaconActivity
+[DEBUG]  Trying to start the app...
+[INFO]   Application pid: 29426
+-- Start application log -----------------------------------------------------
+[INFO]   Project built successfully in 1m 29s 51ms

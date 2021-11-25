@@ -1,0 +1,808 @@
+2021-10-10 11:44:26 +0000 [MT] Initial pipeline context: <IDEDistributionProcessingPipelineContext: 0x7fd2f725a880; archive(resolved)='<IDEArchive: 0x7fd2efa9ce50>', distributionTask(resolved)='2', distributionDestination(resolved)='1', distributionMethod(resolved)='<IDEDistributionMethodiOSAdHoc: 0x7fd2efb203f0>', team(resolved)='<IDEProvisioningBasicTeam: 0x7fd2f990ec10; teamID='ZGE5H849X4', teamName='NEXPIE COMPANY LIMITED'>'>
+	Chain (13, self inclusive):
+	<IDEDistributionProcessingPipelineContext: 0x7fd2f725a880; archive = '<IDEArchive: 0x7fd2efa9ce50>', distributionMethod='<IDEDistributionMethodiOSAdHoc: 0x7fd2efb203f0>', team='<IDEProvisioningBasicTeam: 0x7fd2f990ec10; teamID='ZGE5H849X4', teamName='NEXPIE COMPANY LIMITED'>'>
+	<IDEDistributionProcessingPipelineContext: 0x7fd2f994fe70; archive = '<IDEArchive: 0x7fd2efa9ce50>', distributionMethod='<IDEDistributionMethodiOSAdHoc: 0x7fd2efb203f0>', team='<IDEProvisioningBasicTeam: 0x7fd2f990ec10; teamID='ZGE5H849X4', teamName='NEXPIE COMPANY LIMITED'>'>
+	<IDEDistributionContext: 0x7fd2f9924b20; archive = '<IDEArchive: 0x7fd2efa9ce50>', distributionMethod='<IDEDistributionMethodiOSAdHoc: 0x7fd2efb203f0>', team='<IDEProvisioningBasicTeam: 0x7fd2f990ec10; teamID='ZGE5H849X4', teamName='NEXPIE COMPANY LIMITED'>'>
+	<IDEDistributionContext: 0x7fd2efb48c80; archive = '<IDEArchive: 0x7fd2efa9ce50>', distributionMethod='<IDEDistributionMethodiOSAdHoc: 0x7fd2efb203f0>', team='<IDEProvisioningBasicTeam: 0x7fd2f990ec10; teamID='ZGE5H849X4', teamName='NEXPIE COMPANY LIMITED'>'>
+	<IDEDistributionContext: 0x7fd2efaed950; archive = '<IDEArchive: 0x7fd2efa9ce50>', distributionMethod='<IDEDistributionMethodiOSAdHoc: 0x7fd2efb203f0>', team='<IDEProvisioningBasicTeam: 0x7fd2f990ec10; teamID='ZGE5H849X4', teamName='NEXPIE COMPANY LIMITED'>'>
+	<IDEDistributionContext: 0x7fd2f99147e0; archive = '<IDEArchive: 0x7fd2efa9ce50>', distributionMethod='<IDEDistributionMethodiOSAdHoc: 0x7fd2efb203f0>', team='<IDEProvisioningBasicTeam: 0x7fd2f990ec10; teamID='ZGE5H849X4', teamName='NEXPIE COMPANY LIMITED'>'>
+	<IDEDistributionContext: 0x7fd2f7220f80; archive = '<IDEArchive: 0x7fd2efa9ce50>', distributionMethod='<IDEDistributionMethodiOSAdHoc: 0x7fd2efb203f0>', team='<IDEProvisioningBasicTeam: 0x7fd2f990ec10; teamID='ZGE5H849X4', teamName='NEXPIE COMPANY LIMITED'>'>
+	<IDEDistributionContext: 0x7fd2f9908e20; archive = '<IDEArchive: 0x7fd2efa9ce50>', distributionMethod='<IDEDistributionMethodiOSAdHoc: 0x7fd2efb203f0>', team='<IDEProvisioningBasicTeam: 0x7fd2f990ec10; teamID='ZGE5H849X4', teamName='NEXPIE COMPANY LIMITED'>'>
+	<IDEDistributionContext: 0x7fd2efae9830; archive = '<IDEArchive: 0x7fd2efa9ce50>', distributionMethod='<IDEDistributionMethodiOSAdHoc: 0x7fd2efb203f0>', team='<IDEProvisioningBasicTeam: 0x7fd2f990ec10; teamID='ZGE5H849X4', teamName='NEXPIE COMPANY LIMITED'>'>
+	<IDEDistributionContext: 0x7fd2efaeca50; archive = '<IDEArchive: 0x7fd2efa9ce50>', distributionMethod='<IDEDistributionMethodiOSAdHoc: 0x7fd2efb203f0>', team='(null)'>
+	<IDEDistributionContext: 0x7fd2efae5900; archive = '<IDEArchive: 0x7fd2efa9ce50>', distributionMethod='<IDEDistributionMethodiOSAdHoc: 0x7fd2efb203f0>', team='(null)'>
+	<IDEDistributionContext: 0x7fd2efb0ec60; archive = '<IDEArchive: 0x7fd2efa9ce50>', distributionMethod='<IDEDistributionMethodiOSAdHoc: 0x7fd2efb203f0>', team='(null)'>
+	<IDEDistributionContext: 0x7fd2edbd2e30; archive = '<IDEArchive: 0x7fd2efa9ce50>', distributionMethod='(null)', team='(null)'>
+</IDEDistributionProcessingPipelineContext: 0x7fd2f725a880>
+2021-10-10 11:44:26 +0000 [MT] Processing step: IDEDistributionCreateDestRootStep
+2021-10-10 11:44:26 +0000 [MT] Processing step: IDEDistributionCopyItemStep
+2021-10-10 11:44:26 +0000 [MT] Running /usr/bin/ditto '-V' '/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app' '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app'
+2021-10-10 11:44:26 +0000  >>> Copying /Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app 
+2021-10-10 11:44:26 +0000  copying file ./_CodeSignature/CodeResources ... 
+2021-10-10 11:44:26 +0000  14981 bytes for ./_CodeSignature/CodeResources
+2021-10-10 11:44:26 +0000  copying file ./LaunchImage-1100-Portrait-2436h@3x.png ... 
+2021-10-10 11:44:26 +0000  417310 bytes for ./LaunchImage-1100-Portrait-2436h@3x.png
+copying file ./iTunesArtwork ... 
+2021-10-10 11:44:26 +0000  121895 bytes for ./iTunesArtwork
+2021-10-10 11:44:26 +0000  copying file ./LaunchImage-1200-Landscape-1792h@2x.png ... 
+2021-10-10 11:44:26 +0000  548300 bytes for ./LaunchImage-1200-Landscape-1792h@2x.png
+2021-10-10 11:44:26 +0000  copying file ./ti.cloud/LICENSE ... 
+2021-10-10 11:44:26 +0000  122 bytes for ./ti.cloud/LICENSE
+copying file ./ti.cloud/manifest ... 
+2021-10-10 11:44:26 +0000  492 bytes for ./ti.cloud/manifest
+copying file ./ti.cloud/package.json ... 
+172 bytes for ./ti.cloud/package.json
+copying file ./AppIcon60x60@2x.png ... 
+2021-10-10 11:44:26 +0000  21087 bytes for ./AppIcon60x60@2x.png
+copying file ./InetTiBeacon ... 
+2021-10-10 11:44:26 +0000  1616976 bytes for ./InetTiBeacon
+copying file ./LaunchImage-1100-Landscape-2436h@3x.png ... 
+2021-10-10 11:44:26 +0000  503768 bytes for ./LaunchImage-1100-Landscape-2436h@3x.png
+2021-10-10 11:44:26 +0000  copying file ./LaunchImage-800-667h@2x.png ... 
+2021-10-10 11:44:26 +0000  198206 bytes for ./LaunchImage-800-667h@2x.png
+2021-10-10 11:44:26 +0000  copying file ./LaunchImage-1200-Portrait-2688h@3x.png ... 
+2021-10-10 11:44:26 +0000  614136 bytes for ./LaunchImage-1200-Portrait-2688h@3x.png
+copying file ./readme.md ... 
+2021-10-10 11:44:26 +0000  576 bytes for ./readme.md
+2021-10-10 11:44:26 +0000  copying file ./LaunchImage-700-Portrait~ipad.png ... 
+2021-10-10 11:44:26 +0000  193157 bytes for ./LaunchImage-700-Portrait~ipad.png
+2021-10-10 11:44:26 +0000  copying file ./Assets.car ... 
+2021-10-10 11:44:27 +0000  1287231 bytes for ./Assets.car
+2021-10-10 11:44:27 +0000  copying file ./AppIcon76x76@2x~ipad.png ... 
+2021-10-10 11:44:27 +0000  28017 bytes for ./AppIcon76x76@2x~ipad.png
+copying file ./LaunchImage-800-Portrait-736h@3x.png ... 
+2021-10-10 11:44:27 +0000  350744 bytes for ./LaunchImage-800-Portrait-736h@3x.png
+2021-10-10 11:44:27 +0000  copying file ./LaunchImage-700@2x.png ... 
+2021-10-10 11:44:27 +0000  131420 bytes for ./LaunchImage-700@2x.png
+2021-10-10 11:44:27 +0000  copying file ./LaunchImage-700-568h@2x.png ... 
+2021-10-10 11:44:27 +0000  162522 bytes for ./LaunchImage-700-568h@2x.png
+2021-10-10 11:44:27 +0000  copying file ./LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib ... 
+2021-10-10 11:44:27 +0000  2421 bytes for ./LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib
+2021-10-10 11:44:27 +0000  copying file ./LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib ... 
+896 bytes for ./LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib
+copying file ./LaunchScreen.storyboardc/Info.plist ... 
+258 bytes for ./LaunchScreen.storyboardc/Info.plist
+copying file ./LaunchImage-1200-Portrait-1792h@2x.png ... 
+2021-10-10 11:44:27 +0000  419731 bytes for ./LaunchImage-1200-Portrait-1792h@2x.png
+copying file ./LaunchImage-700-Landscape@2x~ipad.png ... 
+2021-10-10 11:44:27 +0000  446976 bytes for ./LaunchImage-700-Landscape@2x~ipad.png
+2021-10-10 11:44:27 +0000  copying file ./Frameworks/libswiftCoreImage.dylib ... 
+2021-10-10 11:44:27 +0000  335088 bytes for ./Frameworks/libswiftCoreImage.dylib
+2021-10-10 11:44:27 +0000  copying file ./Frameworks/libswiftObjectiveC.dylib ... 
+2021-10-10 11:44:27 +0000  400128 bytes for ./Frameworks/libswiftObjectiveC.dylib
+2021-10-10 11:44:27 +0000  copying file ./Frameworks/libswiftCore.dylib ... 
+2021-10-10 11:44:27 +0000  23297584 bytes for ./Frameworks/libswiftCore.dylib
+2021-10-10 11:44:27 +0000  copying file ./Frameworks/libswiftCoreGraphics.dylib ... 
+2021-10-10 11:44:27 +0000  857648 bytes for ./Frameworks/libswiftCoreGraphics.dylib
+copying file ./Frameworks/libswiftUIKit.dylib ... 
+2021-10-10 11:44:27 +0000  655632 bytes for ./Frameworks/libswiftUIKit.dylib
+2021-10-10 11:44:27 +0000  copying file ./Frameworks/libswiftMetal.dylib ... 
+2021-10-10 11:44:27 +0000  395712 bytes for ./Frameworks/libswiftMetal.dylib
+2021-10-10 11:44:27 +0000  copying file ./Frameworks/libswiftDispatch.dylib ... 
+2021-10-10 11:44:27 +0000  1377376 bytes for ./Frameworks/libswiftDispatch.dylib
+2021-10-10 11:44:27 +0000  copying file ./Frameworks/libswiftos.dylib ... 
+2021-10-10 11:44:27 +0000  396976 bytes for ./Frameworks/libswiftos.dylib
+2021-10-10 11:44:27 +0000  copying file ./Frameworks/AppceleratorBle.framework/_CodeSignature/CodeResources ... 
+2021-10-10 11:44:27 +0000  1798 bytes for ./Frameworks/AppceleratorBle.framework/_CodeSignature/CodeResources
+copying file ./Frameworks/AppceleratorBle.framework/AppceleratorBle ... 
+2021-10-10 11:44:27 +0000  646672 bytes for ./Frameworks/AppceleratorBle.framework/AppceleratorBle
+copying file ./Frameworks/AppceleratorBle.framework/Info.plist ... 
+2021-10-10 11:44:27 +0000  727 bytes for ./Frameworks/AppceleratorBle.framework/Info.plist
+copying file ./Frameworks/libswiftCoreFoundation.dylib ... 
+335296 bytes for ./Frameworks/libswiftCoreFoundation.dylib
+copying file ./Frameworks/libswiftDarwin.dylib ... 
+2021-10-10 11:44:27 +0000  499744 bytes for ./Frameworks/libswiftDarwin.dylib
+2021-10-10 11:44:27 +0000  copying file ./Frameworks/TitaniumKit.framework/_CodeSignature/CodeResources ... 
+2021-10-10 11:44:27 +0000  1798 bytes for ./Frameworks/TitaniumKit.framework/_CodeSignature/CodeResources
+2021-10-10 11:44:27 +0000  copying file ./Frameworks/TitaniumKit.framework/TitaniumKit ... 
+2021-10-10 11:44:27 +0000  1095600 bytes for ./Frameworks/TitaniumKit.framework/TitaniumKit
+2021-10-10 11:44:27 +0000  copying file ./Frameworks/TitaniumKit.framework/Info.plist ... 
+761 bytes for ./Frameworks/TitaniumKit.framework/Info.plist
+copying file ./Frameworks/libswiftQuartzCore.dylib ... 
+2021-10-10 11:44:27 +0000  338272 bytes for ./Frameworks/libswiftQuartzCore.dylib
+2021-10-10 11:44:27 +0000  copying file ./Frameworks/libswiftFoundation.dylib ... 
+2021-10-10 11:44:27 +0000  11552336 bytes for ./Frameworks/libswiftFoundation.dylib
+2021-10-10 11:44:27 +0000  copying file ./Frameworks/libswiftCoreLocation.dylib ... 
+2021-10-10 11:44:27 +0000  401520 bytes for ./Frameworks/libswiftCoreLocation.dylib
+2021-10-10 11:44:27 +0000  copying file ./modules/ui/images/photoDefault.png ... 
+2021-10-10 11:44:27 +0000  3126 bytes for ./modules/ui/images/photoDefault.png
+copying file ./modules/ui/images/badge.png ... 
+2021-10-10 11:44:27 +0000  1130 bytes for ./modules/ui/images/badge.png
+copying file ./modules/ui/images/closeButton.png ... 
+2021-10-10 11:44:27 +0000  361 bytes for ./modules/ui/images/closeButton.png
+copying file ./modules/appcelerator.ble/README ... 
+381 bytes for ./modules/appcelerator.ble/README
+copying file ./embedded.mobileprovision ... 
+13061 bytes for ./embedded.mobileprovision
+copying file ./LaunchImage-800-Landscape-736h@3x.png ... 
+2021-10-10 11:44:27 +0000  539739 bytes for ./LaunchImage-800-Landscape-736h@3x.png
+2021-10-10 11:44:27 +0000  copying file ./LaunchImage-700-Portrait@2x~ipad.png ... 
+2021-10-10 11:44:27 +0000  422033 bytes for ./LaunchImage-700-Portrait@2x~ipad.png
+2021-10-10 11:44:27 +0000  copying file ./LaunchImage-700-Landscape~ipad.png ... 
+2021-10-10 11:44:27 +0000  177978 bytes for ./LaunchImage-700-Landscape~ipad.png
+2021-10-10 11:44:27 +0000  copying file ./Info.plist ... 
+2021-10-10 11:44:27 +0000  2984 bytes for ./Info.plist
+copying file ./LaunchImage-1200-Landscape-2688h@3x.png ... 
+2021-10-10 11:44:27 +0000  950592 bytes for ./LaunchImage-1200-Landscape-2688h@3x.png
+copying file ./_index_.json ... 
+2021-10-10 11:44:27 +0000  839 bytes for ./_index_.json
+2021-10-10 11:44:27 +0000  copying file ./PkgInfo ... 
+2021-10-10 11:44:27 +0000  8 bytes for ./PkgInfo
+copying file ./iTunesArtwork@2x ... 
+2021-10-10 11:44:27 +0000  207661 bytes for ./iTunesArtwork@2x
+2021-10-10 11:44:27 +0000 [MT] /usr/bin/ditto exited with 0
+2021-10-10 11:44:27 +0000 [MT] Processing step: IDEDistributionEmbedProfileStep
+2021-10-10 11:44:27 +0000 [MT] Skipping profile for item: <IDEDistributionItem: 0x7fd2ef9edae0; bundleID='com.appcelerator.BluetoothLowEnergy', path='<DVTFilePath:0x7fd2ef9cc0d0:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/AppceleratorBle.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2ef9ee530; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2efb5fce0; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2efb55ea0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='(null)', teamID='ZGE5H849X4', identifier='com.appcelerator.BluetoothLowEnergy', executablePath='<DVTFilePath:0x7fd2ef9ce0e0:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/AppceleratorBle.framework/AppceleratorBle'>', hardenedRuntime='0'>'>
+2021-10-10 11:44:27 +0000 [MT] Skipping profile for item: <IDEDistributionItem: 0x7fd2ef9ee820; bundleID='com.appcelerator.TitaniumKit', path='<DVTFilePath:0x7fd2ef9e3bb0:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/TitaniumKit.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2ef9f2230; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2f9921cd0; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2ef8b9360>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='(null)', teamID='ZGE5H849X4', identifier='com.appcelerator.TitaniumKit', executablePath='<DVTFilePath:0x7fd2ef9d8130:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/TitaniumKit.framework/TitaniumKit'>', hardenedRuntime='0'>'>
+2021-10-10 11:44:27 +0000 [MT] Skipping profile for item: <IDEDistributionItem: 0x7fd2ef9efa50; bundleID='com.apple.dt.runtime.swiftCore', path='<DVTFilePath:0x7fd2efb19930:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftCore.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2efb391f0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2f9921cd0; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2ef8ccb70>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='(null)', teamID='ZGE5H849X4', identifier='com.apple.dt.runtime.swiftCore', executablePath='<DVTFilePath:0x7fd2efb19930:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftCore.dylib'>', hardenedRuntime='0'>'>
+2021-10-10 11:44:27 +0000 [MT] Skipping profile for item: <IDEDistributionItem: 0x7fd2ef8f5cd0; bundleID='com.apple.dt.runtime.swiftCoreFoundation', path='<DVTFilePath:0x7fd2ef9e2af0:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftCoreFoundation.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2ef8f60d0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2efafce30; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2efafcd40>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='(null)', teamID='ZGE5H849X4', identifier='com.apple.dt.runtime.swiftCoreFoundation', executablePath='<DVTFilePath:0x7fd2ef9e2af0:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftCoreFoundation.dylib'>', hardenedRuntime='0'>'>
+2021-10-10 11:44:27 +0000 [MT] Skipping profile for item: <IDEDistributionItem: 0x7fd2efb3ec10; bundleID='com.apple.dt.runtime.swiftCoreGraphics', path='<DVTFilePath:0x7fd2efb2a0f0:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftCoreGraphics.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2ef8fbf80; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2efafd080; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2edd58fb0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='(null)', teamID='ZGE5H849X4', identifier='com.apple.dt.runtime.swiftCoreGraphics', executablePath='<DVTFilePath:0x7fd2efb2a0f0:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftCoreGraphics.dylib'>', hardenedRuntime='0'>'>
+2021-10-10 11:44:27 +0000 [MT] Skipping profile for item: <IDEDistributionItem: 0x7fd2f9905c40; bundleID='com.apple.dt.runtime.swiftCoreImage', path='<DVTFilePath:0x7fd2ef9e2380:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftCoreImage.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2efae2720; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2f7229c30; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2ef9b5cd0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='(null)', teamID='ZGE5H849X4', identifier='com.apple.dt.runtime.swiftCoreImage', executablePath='<DVTFilePath:0x7fd2ef9e2380:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftCoreImage.dylib'>', hardenedRuntime='0'>'>
+2021-10-10 11:44:27 +0000 [MT] Skipping profile for item: <IDEDistributionItem: 0x7fd2ef8f48e0; bundleID='com.apple.dt.runtime.swiftCoreLocation', path='<DVTFilePath:0x7fd2ef8e89d0:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftCoreLocation.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2ef9fb600; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2f99244b0; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2ef8ccb70>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='(null)', teamID='ZGE5H849X4', identifier='com.apple.dt.runtime.swiftCoreLocation', executablePath='<DVTFilePath:0x7fd2ef8e89d0:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftCoreLocation.dylib'>', hardenedRuntime='0'>'>
+2021-10-10 11:44:27 +0000 [MT] Skipping profile for item: <IDEDistributionItem: 0x7fd2ef9ed3e0; bundleID='com.apple.dt.runtime.swiftDarwin', path='<DVTFilePath:0x7fd2efb3ca10:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftDarwin.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2ef985fb0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2f9921d20; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2ef8b9360>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='(null)', teamID='ZGE5H849X4', identifier='com.apple.dt.runtime.swiftDarwin', executablePath='<DVTFilePath:0x7fd2efb3ca10:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftDarwin.dylib'>', hardenedRuntime='0'>'>
+2021-10-10 11:44:27 +0000 [MT] Skipping profile for item: <IDEDistributionItem: 0x7fd2ef8f2dd0; bundleID='com.apple.dt.runtime.swiftDispatch', path='<DVTFilePath:0x7fd2ef9cd860:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftDispatch.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2ef9f3a80; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2efb7bfd0; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2edc490d0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='(null)', teamID='ZGE5H849X4', identifier='com.apple.dt.runtime.swiftDispatch', executablePath='<DVTFilePath:0x7fd2ef9cd860:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftDispatch.dylib'>', hardenedRuntime='0'>'>
+2021-10-10 11:44:27 +0000 [MT] Skipping profile for item: <IDEDistributionItem: 0x7fd2efac7c60; bundleID='com.apple.dt.runtime.swiftFoundation', path='<DVTFilePath:0x7fd2efad3d00:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftFoundation.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2ef8f6bc0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2f9946b20; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2ef835230>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='(null)', teamID='ZGE5H849X4', identifier='com.apple.dt.runtime.swiftFoundation', executablePath='<DVTFilePath:0x7fd2efad3d00:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftFoundation.dylib'>', hardenedRuntime='0'>'>
+2021-10-10 11:44:27 +0000 [MT] Skipping profile for item: <IDEDistributionItem: 0x7fd2ef9fccc0; bundleID='com.apple.dt.runtime.swiftMetal', path='<DVTFilePath:0x7fd2ef8e3d00:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftMetal.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2efae19c0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2f9921cd0; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2ef8c7340>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='(null)', teamID='ZGE5H849X4', identifier='com.apple.dt.runtime.swiftMetal', executablePath='<DVTFilePath:0x7fd2ef8e3d00:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftMetal.dylib'>', hardenedRuntime='0'>'>
+2021-10-10 11:44:27 +0000 [MT] Skipping profile for item: <IDEDistributionItem: 0x7fd2ef9faeb0; bundleID='com.apple.dt.runtime.swiftObjectiveC', path='<DVTFilePath:0x7fd2ef8e2390:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftObjectiveC.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2ef8f3500; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2efb7bfd0; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2efb5c0d0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='(null)', teamID='ZGE5H849X4', identifier='com.apple.dt.runtime.swiftObjectiveC', executablePath='<DVTFilePath:0x7fd2ef8e2390:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftObjectiveC.dylib'>', hardenedRuntime='0'>'>
+2021-10-10 11:44:27 +0000 [MT] Skipping profile for item: <IDEDistributionItem: 0x7fd2f720a770; bundleID='com.apple.dt.runtime.swiftQuartzCore', path='<DVTFilePath:0x7fd2ef8e7b90:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftQuartzCore.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2f7209fd0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2efafd420; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2efaf9680>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='(null)', teamID='ZGE5H849X4', identifier='com.apple.dt.runtime.swiftQuartzCore', executablePath='<DVTFilePath:0x7fd2ef8e7b90:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftQuartzCore.dylib'>', hardenedRuntime='0'>'>
+2021-10-10 11:44:27 +0000 [MT] Skipping profile for item: <IDEDistributionItem: 0x7fd2efb3b450; bundleID='com.apple.dt.runtime.swiftUIKit', path='<DVTFilePath:0x7fd2efb2a7d0:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftUIKit.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2ef8f5880; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2f992a990; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2ef8c7340>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='(null)', teamID='ZGE5H849X4', identifier='com.apple.dt.runtime.swiftUIKit', executablePath='<DVTFilePath:0x7fd2efb2a7d0:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftUIKit.dylib'>', hardenedRuntime='0'>'>
+2021-10-10 11:44:27 +0000 [MT] Skipping profile for item: <IDEDistributionItem: 0x7fd2ef8f61b0; bundleID='com.apple.dt.runtime.swiftos', path='<DVTFilePath:0x7fd2ef8e4af0:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftos.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2efac7ad0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2f7257ae0; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2ef989af0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='(null)', teamID='ZGE5H849X4', identifier='com.apple.dt.runtime.swiftos', executablePath='<DVTFilePath:0x7fd2ef8e4af0:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftos.dylib'>', hardenedRuntime='0'>'>
+2021-10-10 11:44:27 +0000 [MT] Processing step: IDEDistributionInfoPlistStep
+2021-10-10 11:44:27 +0000 [MT] Skipping step: IDEDistributionInfoPlistStep because it said so
+2021-10-10 11:44:27 +0000 [MT] Skipping step: IDEDistributionInfoPlistStep because it said so
+2021-10-10 11:44:27 +0000 [MT] Skipping step: IDEDistributionInfoPlistStep because it said so
+2021-10-10 11:44:27 +0000 [MT] Skipping step: IDEDistributionInfoPlistStep because it said so
+2021-10-10 11:44:27 +0000 [MT] Skipping step: IDEDistributionInfoPlistStep because it said so
+2021-10-10 11:44:27 +0000 [MT] Skipping step: IDEDistributionInfoPlistStep because it said so
+2021-10-10 11:44:27 +0000 [MT] Skipping step: IDEDistributionInfoPlistStep because it said so
+2021-10-10 11:44:27 +0000 [MT] Skipping step: IDEDistributionInfoPlistStep because it said so
+2021-10-10 11:44:27 +0000 [MT] Skipping step: IDEDistributionInfoPlistStep because it said so
+2021-10-10 11:44:27 +0000 [MT] Skipping step: IDEDistributionInfoPlistStep because it said so
+2021-10-10 11:44:27 +0000 [MT] Skipping step: IDEDistributionInfoPlistStep because it said so
+2021-10-10 11:44:27 +0000 [MT] Skipping step: IDEDistributionInfoPlistStep because it said so
+2021-10-10 11:44:27 +0000 [MT] Skipping step: IDEDistributionInfoPlistStep because it said so
+2021-10-10 11:44:27 +0000 [MT] Skipping step: IDEDistributionInfoPlistStep because it said so
+2021-10-10 11:44:27 +0000 [MT] Skipping step: IDEDistributionInfoPlistStep because it said so
+2021-10-10 11:44:27 +0000 [MT] Skipping step: IDEDistributionInfoPlistStep because it said so
+2021-10-10 11:44:27 +0000 [MT] Processing step: IDEDistributionAppThinningPlistStep
+2021-10-10 11:44:27 +0000 [MT] Skipping step: IDEDistributionAppThinningPlistStep because it said so
+2021-10-10 11:44:27 +0000 [MT] Processing step: IDEDistributionCompileBitcodeStep
+2021-10-10 11:44:27 +0000 [MT] Skipping step: IDEDistributionCompileBitcodeStep because it said so
+2021-10-10 11:44:27 +0000 [MT] Processing step: IDEDistributionCodeSlimmingStep
+2021-10-10 11:44:27 +0000 [MT] Processing step: IDEDistributionCopyBCSymbolMapsStep
+2021-10-10 11:44:27 +0000 [MT] Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2021-10-10 11:44:27 +0000 [MT] Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2021-10-10 11:44:27 +0000 [MT] Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2021-10-10 11:44:27 +0000 [MT] Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2021-10-10 11:44:27 +0000 [MT] Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2021-10-10 11:44:27 +0000 [MT] Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2021-10-10 11:44:27 +0000 [MT] Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2021-10-10 11:44:27 +0000 [MT] Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2021-10-10 11:44:27 +0000 [MT] Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2021-10-10 11:44:27 +0000 [MT] Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2021-10-10 11:44:27 +0000 [MT] Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2021-10-10 11:44:27 +0000 [MT] Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2021-10-10 11:44:27 +0000 [MT] Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2021-10-10 11:44:27 +0000 [MT] Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2021-10-10 11:44:27 +0000 [MT] Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2021-10-10 11:44:27 +0000 [MT] Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2021-10-10 11:44:27 +0000 [MT] Processing step: IDEDistributionSymbolsStep
+2021-10-10 11:44:27 +0000 [MT] Skipping step: IDEDistributionSymbolsStep because it said so
+2021-10-10 11:44:27 +0000 [MT] Skipping step: IDEDistributionSymbolsStep because it said so
+2021-10-10 11:44:27 +0000 [MT] Skipping step: IDEDistributionSymbolsStep because it said so
+2021-10-10 11:44:27 +0000 [MT] Skipping step: IDEDistributionSymbolsStep because it said so
+2021-10-10 11:44:27 +0000 [MT] Skipping step: IDEDistributionSymbolsStep because it said so
+2021-10-10 11:44:27 +0000 [MT] Skipping step: IDEDistributionSymbolsStep because it said so
+2021-10-10 11:44:27 +0000 [MT] Skipping step: IDEDistributionSymbolsStep because it said so
+2021-10-10 11:44:27 +0000 [MT] Skipping step: IDEDistributionSymbolsStep because it said so
+2021-10-10 11:44:27 +0000 [MT] Skipping step: IDEDistributionSymbolsStep because it said so
+2021-10-10 11:44:27 +0000 [MT] Skipping step: IDEDistributionSymbolsStep because it said so
+2021-10-10 11:44:27 +0000 [MT] Skipping step: IDEDistributionSymbolsStep because it said so
+2021-10-10 11:44:27 +0000 [MT] Skipping step: IDEDistributionSymbolsStep because it said so
+2021-10-10 11:44:27 +0000 [MT] Skipping step: IDEDistributionSymbolsStep because it said so
+2021-10-10 11:44:27 +0000 [MT] Skipping step: IDEDistributionSymbolsStep because it said so
+2021-10-10 11:44:27 +0000 [MT] Skipping step: IDEDistributionSymbolsStep because it said so
+2021-10-10 11:44:27 +0000 [MT] Skipping step: IDEDistributionSymbolsStep because it said so
+2021-10-10 11:44:27 +0000 [MT] Processing step: IDEDistributionAppThinningStep
+2021-10-10 11:44:27 +0000 [MT] Skipping step: IDEDistributionAppThinningStep because it said so
+2021-10-10 11:44:27 +0000 [MT] Processing step: IDEDistributionArchThinningStep
+2021-10-10 11:44:27 +0000 [MT] Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/AppceleratorBle.framework/AppceleratorBle' '-verify_arch' 'arm64e'
+2021-10-10 11:44:27 +0000 [MT] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 1
+2021-10-10 11:44:27 +0000 [MT] Skipping architecture thinning for item "AppceleratorBle" because arch "arm64e" wasn't found
+2021-10-10 11:44:27 +0000 [MT] Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/TitaniumKit.framework/TitaniumKit' '-verify_arch' 'arm64e'
+2021-10-10 11:44:27 +0000 [MT] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 1
+2021-10-10 11:44:27 +0000 [MT] Skipping architecture thinning for item "TitaniumKit" because arch "arm64e" wasn't found
+2021-10-10 11:44:27 +0000 [MT] Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftCore.dylib' '-verify_arch' 'arm64e'
+2021-10-10 11:44:27 +0000 [MT] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2021-10-10 11:44:27 +0000 [MT] Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftCore.dylib' '-remove' 'arm64e' '-output' '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftCore.dylib'
+2021-10-10 11:44:27 +0000 [MT] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2021-10-10 11:44:27 +0000 [MT] Successfully thinned item "libswiftCore.dylib", arch "arm64e"
+2021-10-10 11:44:27 +0000 [MT] Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftCoreFoundation.dylib' '-verify_arch' 'arm64e'
+2021-10-10 11:44:27 +0000 [MT] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2021-10-10 11:44:27 +0000 [MT] Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftCoreFoundation.dylib' '-remove' 'arm64e' '-output' '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftCoreFoundation.dylib'
+2021-10-10 11:44:27 +0000 [MT] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2021-10-10 11:44:27 +0000 [MT] Successfully thinned item "libswiftCoreFoundation.dylib", arch "arm64e"
+2021-10-10 11:44:27 +0000 [MT] Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftCoreGraphics.dylib' '-verify_arch' 'arm64e'
+2021-10-10 11:44:27 +0000 [MT] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2021-10-10 11:44:27 +0000 [MT] Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftCoreGraphics.dylib' '-remove' 'arm64e' '-output' '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftCoreGraphics.dylib'
+2021-10-10 11:44:27 +0000 [MT] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2021-10-10 11:44:27 +0000 [MT] Successfully thinned item "libswiftCoreGraphics.dylib", arch "arm64e"
+2021-10-10 11:44:27 +0000 [MT] Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftCoreImage.dylib' '-verify_arch' 'arm64e'
+2021-10-10 11:44:27 +0000 [MT] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2021-10-10 11:44:27 +0000 [MT] Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftCoreImage.dylib' '-remove' 'arm64e' '-output' '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftCoreImage.dylib'
+2021-10-10 11:44:27 +0000 [MT] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2021-10-10 11:44:27 +0000 [MT] Successfully thinned item "libswiftCoreImage.dylib", arch "arm64e"
+2021-10-10 11:44:27 +0000 [MT] Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftCoreLocation.dylib' '-verify_arch' 'arm64e'
+2021-10-10 11:44:27 +0000 [MT] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2021-10-10 11:44:27 +0000 [MT] Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftCoreLocation.dylib' '-remove' 'arm64e' '-output' '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftCoreLocation.dylib'
+2021-10-10 11:44:27 +0000 [MT] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2021-10-10 11:44:27 +0000 [MT] Successfully thinned item "libswiftCoreLocation.dylib", arch "arm64e"
+2021-10-10 11:44:27 +0000 [MT] Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftDarwin.dylib' '-verify_arch' 'arm64e'
+2021-10-10 11:44:27 +0000 [MT] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2021-10-10 11:44:27 +0000 [MT] Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftDarwin.dylib' '-remove' 'arm64e' '-output' '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftDarwin.dylib'
+2021-10-10 11:44:27 +0000 [MT] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2021-10-10 11:44:27 +0000 [MT] Successfully thinned item "libswiftDarwin.dylib", arch "arm64e"
+2021-10-10 11:44:27 +0000 [MT] Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftDispatch.dylib' '-verify_arch' 'arm64e'
+2021-10-10 11:44:27 +0000 [MT] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2021-10-10 11:44:27 +0000 [MT] Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftDispatch.dylib' '-remove' 'arm64e' '-output' '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftDispatch.dylib'
+2021-10-10 11:44:27 +0000 [MT] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2021-10-10 11:44:27 +0000 [MT] Successfully thinned item "libswiftDispatch.dylib", arch "arm64e"
+2021-10-10 11:44:27 +0000 [MT] Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftFoundation.dylib' '-verify_arch' 'arm64e'
+2021-10-10 11:44:27 +0000 [MT] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2021-10-10 11:44:27 +0000 [MT] Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftFoundation.dylib' '-remove' 'arm64e' '-output' '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftFoundation.dylib'
+2021-10-10 11:44:27 +0000 [MT] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2021-10-10 11:44:27 +0000 [MT] Successfully thinned item "libswiftFoundation.dylib", arch "arm64e"
+2021-10-10 11:44:27 +0000 [MT] Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftMetal.dylib' '-verify_arch' 'arm64e'
+2021-10-10 11:44:27 +0000 [MT] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2021-10-10 11:44:27 +0000 [MT] Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftMetal.dylib' '-remove' 'arm64e' '-output' '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftMetal.dylib'
+2021-10-10 11:44:27 +0000 [MT] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2021-10-10 11:44:27 +0000 [MT] Successfully thinned item "libswiftMetal.dylib", arch "arm64e"
+2021-10-10 11:44:27 +0000 [MT] Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftObjectiveC.dylib' '-verify_arch' 'arm64e'
+2021-10-10 11:44:27 +0000 [MT] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2021-10-10 11:44:27 +0000 [MT] Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftObjectiveC.dylib' '-remove' 'arm64e' '-output' '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftObjectiveC.dylib'
+2021-10-10 11:44:27 +0000 [MT] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2021-10-10 11:44:27 +0000 [MT] Successfully thinned item "libswiftObjectiveC.dylib", arch "arm64e"
+2021-10-10 11:44:27 +0000 [MT] Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftQuartzCore.dylib' '-verify_arch' 'arm64e'
+2021-10-10 11:44:27 +0000 [MT] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2021-10-10 11:44:27 +0000 [MT] Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftQuartzCore.dylib' '-remove' 'arm64e' '-output' '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftQuartzCore.dylib'
+2021-10-10 11:44:27 +0000 [MT] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2021-10-10 11:44:27 +0000 [MT] Successfully thinned item "libswiftQuartzCore.dylib", arch "arm64e"
+2021-10-10 11:44:27 +0000 [MT] Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftUIKit.dylib' '-verify_arch' 'arm64e'
+2021-10-10 11:44:27 +0000 [MT] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2021-10-10 11:44:27 +0000 [MT] Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftUIKit.dylib' '-remove' 'arm64e' '-output' '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftUIKit.dylib'
+2021-10-10 11:44:27 +0000 [MT] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2021-10-10 11:44:27 +0000 [MT] Successfully thinned item "libswiftUIKit.dylib", arch "arm64e"
+2021-10-10 11:44:27 +0000 [MT] Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftos.dylib' '-verify_arch' 'arm64e'
+2021-10-10 11:44:27 +0000 [MT] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2021-10-10 11:44:27 +0000 [MT] Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftos.dylib' '-remove' 'arm64e' '-output' '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftos.dylib'
+2021-10-10 11:44:27 +0000 [MT] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2021-10-10 11:44:27 +0000 [MT] Successfully thinned item "libswiftos.dylib", arch "arm64e"
+2021-10-10 11:44:27 +0000 [MT] Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/InetTiBeacon' '-verify_arch' 'arm64e'
+2021-10-10 11:44:27 +0000 [MT] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 1
+2021-10-10 11:44:27 +0000 [MT] Skipping architecture thinning for item "InetTiBeacon" because arch "arm64e" wasn't found
+2021-10-10 11:44:27 +0000 [MT] Processing step: IDEDistributionODRStep
+2021-10-10 11:44:27 +0000 [MT] Processing step: IDEDistributionStripXattrsStep
+2021-10-10 11:44:27 +0000 [MT] Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fd2ef9edae0; bundleID='com.appcelerator.BluetoothLowEnergy', path='<DVTFilePath:0x7fd2ef9cc0d0:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/AppceleratorBle.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2ef9ee530; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2f993dcd0; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2f9950160>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='(null)', teamID='ZGE5H849X4', identifier='com.appcelerator.BluetoothLowEnergy', executablePath='<DVTFilePath:0x7fd2ef9ce0e0:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/AppceleratorBle.framework/AppceleratorBle'>', hardenedRuntime='0'>'>
+2021-10-10 11:44:27 +0000 [MT] Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fd2ef9ee820; bundleID='com.appcelerator.TitaniumKit', path='<DVTFilePath:0x7fd2ef9e3bb0:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/TitaniumKit.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2ef9f2230; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2efb73de0; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2efb604d0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='(null)', teamID='ZGE5H849X4', identifier='com.appcelerator.TitaniumKit', executablePath='<DVTFilePath:0x7fd2ef9d8130:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/TitaniumKit.framework/TitaniumKit'>', hardenedRuntime='0'>'>
+2021-10-10 11:44:27 +0000 [MT] Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fd2ef9efa50; bundleID='com.apple.dt.runtime.swiftCore', path='<DVTFilePath:0x7fd2efb19930:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftCore.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2efb391f0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2f9938ae0; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2ef8b5480>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='(null)', teamID='ZGE5H849X4', identifier='com.apple.dt.runtime.swiftCore', executablePath='<DVTFilePath:0x7fd2efb19930:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftCore.dylib'>', hardenedRuntime='0'>'>
+2021-10-10 11:44:27 +0000 [MT] Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fd2ef8f5cd0; bundleID='com.apple.dt.runtime.swiftCoreFoundation', path='<DVTFilePath:0x7fd2ef9e2af0:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftCoreFoundation.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2ef8f60d0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2f9927ed0; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2f9927fb0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='(null)', teamID='ZGE5H849X4', identifier='com.apple.dt.runtime.swiftCoreFoundation', executablePath='<DVTFilePath:0x7fd2ef9e2af0:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftCoreFoundation.dylib'>', hardenedRuntime='0'>'>
+2021-10-10 11:44:27 +0000 [MT] Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fd2efb3ec10; bundleID='com.apple.dt.runtime.swiftCoreGraphics', path='<DVTFilePath:0x7fd2efb2a0f0:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftCoreGraphics.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2ef8fbf80; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2df70ebf0; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2efaff740>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='(null)', teamID='ZGE5H849X4', identifier='com.apple.dt.runtime.swiftCoreGraphics', executablePath='<DVTFilePath:0x7fd2efb2a0f0:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftCoreGraphics.dylib'>', hardenedRuntime='0'>'>
+2021-10-10 11:44:27 +0000 [MT] Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fd2f9905c40; bundleID='com.apple.dt.runtime.swiftCoreImage', path='<DVTFilePath:0x7fd2ef9e2380:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftCoreImage.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2efae2720; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2f9930830; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2ef8b5480>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='(null)', teamID='ZGE5H849X4', identifier='com.apple.dt.runtime.swiftCoreImage', executablePath='<DVTFilePath:0x7fd2ef9e2380:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftCoreImage.dylib'>', hardenedRuntime='0'>'>
+2021-10-10 11:44:27 +0000 [MT] Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fd2ef8f48e0; bundleID='com.apple.dt.runtime.swiftCoreLocation', path='<DVTFilePath:0x7fd2ef8e89d0:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftCoreLocation.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2ef9fb600; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2f99426e0; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2f9942860>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='(null)', teamID='ZGE5H849X4', identifier='com.apple.dt.runtime.swiftCoreLocation', executablePath='<DVTFilePath:0x7fd2ef8e89d0:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftCoreLocation.dylib'>', hardenedRuntime='0'>'>
+2021-10-10 11:44:27 +0000 [MT] Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fd2ef9ed3e0; bundleID='com.apple.dt.runtime.swiftDarwin', path='<DVTFilePath:0x7fd2efb3ca10:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftDarwin.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2ef985fb0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2ede54ed0; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2edeedc90>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='(null)', teamID='ZGE5H849X4', identifier='com.apple.dt.runtime.swiftDarwin', executablePath='<DVTFilePath:0x7fd2efb3ca10:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftDarwin.dylib'>', hardenedRuntime='0'>'>
+2021-10-10 11:44:27 +0000 [MT] Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fd2ef8f2dd0; bundleID='com.apple.dt.runtime.swiftDispatch', path='<DVTFilePath:0x7fd2ef9cd860:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftDispatch.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2ef9f3a80; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2f9942960; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2f99427f0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='(null)', teamID='ZGE5H849X4', identifier='com.apple.dt.runtime.swiftDispatch', executablePath='<DVTFilePath:0x7fd2ef9cd860:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftDispatch.dylib'>', hardenedRuntime='0'>'>
+2021-10-10 11:44:27 +0000 [MT] Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fd2efac7c60; bundleID='com.apple.dt.runtime.swiftFoundation', path='<DVTFilePath:0x7fd2efad3d00:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftFoundation.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2ef8f6bc0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2f72275f0; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2edeedc90>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='(null)', teamID='ZGE5H849X4', identifier='com.apple.dt.runtime.swiftFoundation', executablePath='<DVTFilePath:0x7fd2efad3d00:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftFoundation.dylib'>', hardenedRuntime='0'>'>
+2021-10-10 11:44:27 +0000 [MT] Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fd2ef9fccc0; bundleID='com.apple.dt.runtime.swiftMetal', path='<DVTFilePath:0x7fd2ef8e3d00:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftMetal.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2efae19c0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2efb743a0; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2efb604d0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='(null)', teamID='ZGE5H849X4', identifier='com.apple.dt.runtime.swiftMetal', executablePath='<DVTFilePath:0x7fd2ef8e3d00:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftMetal.dylib'>', hardenedRuntime='0'>'>
+2021-10-10 11:44:27 +0000 [MT] Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fd2ef9faeb0; bundleID='com.apple.dt.runtime.swiftObjectiveC', path='<DVTFilePath:0x7fd2ef8e2390:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftObjectiveC.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2ef8f3500; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2efb75fb0; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2efb604d0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='(null)', teamID='ZGE5H849X4', identifier='com.apple.dt.runtime.swiftObjectiveC', executablePath='<DVTFilePath:0x7fd2ef8e2390:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftObjectiveC.dylib'>', hardenedRuntime='0'>'>
+2021-10-10 11:44:28 +0000 [MT] Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fd2f720a770; bundleID='com.apple.dt.runtime.swiftQuartzCore', path='<DVTFilePath:0x7fd2ef8e7b90:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftQuartzCore.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2f7209fd0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2df70efb0; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2efaff740>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='(null)', teamID='ZGE5H849X4', identifier='com.apple.dt.runtime.swiftQuartzCore', executablePath='<DVTFilePath:0x7fd2ef8e7b90:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftQuartzCore.dylib'>', hardenedRuntime='0'>'>
+2021-10-10 11:44:28 +0000 [MT] Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fd2efb3b450; bundleID='com.apple.dt.runtime.swiftUIKit', path='<DVTFilePath:0x7fd2efb2a7d0:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftUIKit.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2ef8f5880; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2f722e5e0; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2edeedc90>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='(null)', teamID='ZGE5H849X4', identifier='com.apple.dt.runtime.swiftUIKit', executablePath='<DVTFilePath:0x7fd2efb2a7d0:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftUIKit.dylib'>', hardenedRuntime='0'>'>
+2021-10-10 11:44:28 +0000 [MT] Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fd2ef8f61b0; bundleID='com.apple.dt.runtime.swiftos', path='<DVTFilePath:0x7fd2ef8e4af0:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftos.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2efac7ad0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2f7233520; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2ede4ace0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='(null)', teamID='ZGE5H849X4', identifier='com.apple.dt.runtime.swiftos', executablePath='<DVTFilePath:0x7fd2ef8e4af0:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftos.dylib'>', hardenedRuntime='0'>'>
+2021-10-10 11:44:28 +0000 [MT] Running /usr/bin/xattr '-crs' '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app'
+2021-10-10 11:44:29 +0000 [MT] /usr/bin/xattr exited with 0
+2021-10-10 11:44:29 +0000 [MT] Processing step: IDEDistributionCodesignStep
+2021-10-10 11:44:29 +0000 [MT] Entitlements for <IDEDistributionItem: 0x7fd2ef9edae0; bundleID='com.appcelerator.BluetoothLowEnergy', path='<DVTFilePath:0x7fd2ef9cc0d0:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/AppceleratorBle.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2ef9ee530; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2efb6e960; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2efb604d0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='(null)', teamID='ZGE5H849X4', identifier='com.appcelerator.BluetoothLowEnergy', executablePath='<DVTFilePath:0x7fd2ef9ce0e0:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/AppceleratorBle.framework/AppceleratorBle'>', hardenedRuntime='0'>'>: {
+}
+2021-10-10 11:44:29 +0000 [MT] Entitlements for <IDEDistributionItem: 0x7fd2ef9edae0; bundleID='com.appcelerator.BluetoothLowEnergy', path='<DVTFilePath:0x7fd2ef9cc0d0:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/AppceleratorBle.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2ef9ee530; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2f72ac340; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2f72a44f0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='(null)', teamID='ZGE5H849X4', identifier='com.appcelerator.BluetoothLowEnergy', executablePath='<DVTFilePath:0x7fd2ef9ce0e0:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/AppceleratorBle.framework/AppceleratorBle'>', hardenedRuntime='0'>'> are: {
+}
+2021-10-10 11:44:29 +0000 [MT] Writing entitlements for <IDEDistributionItem: 0x7fd2ef9edae0; bundleID='com.appcelerator.BluetoothLowEnergy', path='<DVTFilePath:0x7fd2ef9cc0d0:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/AppceleratorBle.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2ef9ee530; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2f9920a90; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2f72ad290>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='(null)', teamID='ZGE5H849X4', identifier='com.appcelerator.BluetoothLowEnergy', executablePath='<DVTFilePath:0x7fd2ef9ce0e0:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/AppceleratorBle.framework/AppceleratorBle'>', hardenedRuntime='0'>'> to: /var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/entitlements~~~nLsSWl
+2021-10-10 11:44:29 +0000 [MT] Running /usr/bin/codesign '-vvv' '--force' '--sign' 'A9ED9D832676392CEB1531107F179565B777E6CF' '--entitlements' '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/entitlements~~~nLsSWl' '--preserve-metadata=identifier,flags,runtime' '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/AppceleratorBle.framework'
+2021-10-10 11:44:29 +0000  /var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/AppceleratorBle.framework: replacing existing signature
+2021-10-10 11:44:29 +0000  /var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/AppceleratorBle.framework: signed bundle with Mach-O universal (armv7 arm64) [com.appcelerator.BluetoothLowEnergy]
+2021-10-10 11:44:29 +0000 [MT] /usr/bin/codesign exited with 0
+2021-10-10 11:44:29 +0000 [MT] Entitlements for <IDEDistributionItem: 0x7fd2ef9ee820; bundleID='com.appcelerator.TitaniumKit', path='<DVTFilePath:0x7fd2ef9e3bb0:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/TitaniumKit.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2ef9f2230; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2efb76620; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2efb5ed60>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='(null)', teamID='ZGE5H849X4', identifier='com.appcelerator.TitaniumKit', executablePath='<DVTFilePath:0x7fd2ef9d8130:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/TitaniumKit.framework/TitaniumKit'>', hardenedRuntime='0'>'>: {
+}
+2021-10-10 11:44:29 +0000 [MT] Entitlements for <IDEDistributionItem: 0x7fd2ef9ee820; bundleID='com.appcelerator.TitaniumKit', path='<DVTFilePath:0x7fd2ef9e3bb0:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/TitaniumKit.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2ef9f2230; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2f72a3da0; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2ef9dbe60>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='(null)', teamID='ZGE5H849X4', identifier='com.appcelerator.TitaniumKit', executablePath='<DVTFilePath:0x7fd2ef9d8130:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/TitaniumKit.framework/TitaniumKit'>', hardenedRuntime='0'>'> are: {
+}
+2021-10-10 11:44:29 +0000 [MT] Writing entitlements for <IDEDistributionItem: 0x7fd2ef9ee820; bundleID='com.appcelerator.TitaniumKit', path='<DVTFilePath:0x7fd2ef9e3bb0:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/TitaniumKit.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2ef9f2230; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2f7282840; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2f7239810>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='(null)', teamID='ZGE5H849X4', identifier='com.appcelerator.TitaniumKit', executablePath='<DVTFilePath:0x7fd2ef9d8130:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/TitaniumKit.framework/TitaniumKit'>', hardenedRuntime='0'>'> to: /var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/entitlements~~~3s7DWp
+2021-10-10 11:44:29 +0000 [MT] Running /usr/bin/codesign '-vvv' '--force' '--sign' 'A9ED9D832676392CEB1531107F179565B777E6CF' '--entitlements' '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/entitlements~~~3s7DWp' '--preserve-metadata=identifier,flags,runtime' '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/TitaniumKit.framework'
+2021-10-10 11:44:29 +0000  /var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/TitaniumKit.framework: replacing existing signature
+2021-10-10 11:44:29 +0000  /var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/TitaniumKit.framework: signed bundle with Mach-O thin (arm64) [com.appcelerator.TitaniumKit]
+2021-10-10 11:44:29 +0000 [MT] /usr/bin/codesign exited with 0
+2021-10-10 11:44:29 +0000 [MT] Entitlements for <IDEDistributionItem: 0x7fd2ef9efa50; bundleID='com.apple.dt.runtime.swiftCore', path='<DVTFilePath:0x7fd2efb19930:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftCore.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2efb391f0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2f72a4360; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2f72a4280>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='(null)', teamID='ZGE5H849X4', identifier='com.apple.dt.runtime.swiftCore', executablePath='<DVTFilePath:0x7fd2efb19930:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftCore.dylib'>', hardenedRuntime='0'>'>: {
+}
+2021-10-10 11:44:29 +0000 [MT] Entitlements for <IDEDistributionItem: 0x7fd2ef9efa50; bundleID='com.apple.dt.runtime.swiftCore', path='<DVTFilePath:0x7fd2efb19930:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftCore.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2efb391f0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2f993dc40; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2f9945320>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='(null)', teamID='ZGE5H849X4', identifier='com.apple.dt.runtime.swiftCore', executablePath='<DVTFilePath:0x7fd2efb19930:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftCore.dylib'>', hardenedRuntime='0'>'> are: {
+}
+2021-10-10 11:44:29 +0000 [MT] Writing entitlements for <IDEDistributionItem: 0x7fd2ef9efa50; bundleID='com.apple.dt.runtime.swiftCore', path='<DVTFilePath:0x7fd2efb19930:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftCore.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2efb391f0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2efb75900; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2efb75b60>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='(null)', teamID='ZGE5H849X4', identifier='com.apple.dt.runtime.swiftCore', executablePath='<DVTFilePath:0x7fd2efb19930:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftCore.dylib'>', hardenedRuntime='0'>'> to: /var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/entitlements~~~Z9M4cY
+2021-10-10 11:44:29 +0000 [MT] Running /usr/bin/codesign '-vvv' '--force' '--sign' 'A9ED9D832676392CEB1531107F179565B777E6CF' '--entitlements' '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/entitlements~~~Z9M4cY' '--preserve-metadata=identifier,flags,runtime' '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftCore.dylib'
+2021-10-10 11:44:29 +0000  /var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftCore.dylib: replacing existing signature
+2021-10-10 11:44:29 +0000  /var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftCore.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftCore]
+2021-10-10 11:44:29 +0000 [MT] /usr/bin/codesign exited with 0
+2021-10-10 11:44:29 +0000 [MT] Entitlements for <IDEDistributionItem: 0x7fd2ef8f5cd0; bundleID='com.apple.dt.runtime.swiftCoreFoundation', path='<DVTFilePath:0x7fd2ef9e2af0:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftCoreFoundation.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2ef8f60d0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2f7231170; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2f7231080>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='(null)', teamID='ZGE5H849X4', identifier='com.apple.dt.runtime.swiftCoreFoundation', executablePath='<DVTFilePath:0x7fd2ef9e2af0:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftCoreFoundation.dylib'>', hardenedRuntime='0'>'>: {
+}
+2021-10-10 11:44:29 +0000 [MT] Entitlements for <IDEDistributionItem: 0x7fd2ef8f5cd0; bundleID='com.apple.dt.runtime.swiftCoreFoundation', path='<DVTFilePath:0x7fd2ef9e2af0:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftCoreFoundation.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2ef8f60d0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2f722f590; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2f722f640>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='(null)', teamID='ZGE5H849X4', identifier='com.apple.dt.runtime.swiftCoreFoundation', executablePath='<DVTFilePath:0x7fd2ef9e2af0:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftCoreFoundation.dylib'>', hardenedRuntime='0'>'> are: {
+}
+2021-10-10 11:44:29 +0000 [MT] Writing entitlements for <IDEDistributionItem: 0x7fd2ef8f5cd0; bundleID='com.apple.dt.runtime.swiftCoreFoundation', path='<DVTFilePath:0x7fd2ef9e2af0:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftCoreFoundation.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2ef8f60d0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2f7282850; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2f72345c0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='(null)', teamID='ZGE5H849X4', identifier='com.apple.dt.runtime.swiftCoreFoundation', executablePath='<DVTFilePath:0x7fd2ef9e2af0:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftCoreFoundation.dylib'>', hardenedRuntime='0'>'> to: /var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/entitlements~~~qkheuD
+2021-10-10 11:44:29 +0000 [MT] Running /usr/bin/codesign '-vvv' '--force' '--sign' 'A9ED9D832676392CEB1531107F179565B777E6CF' '--entitlements' '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/entitlements~~~qkheuD' '--preserve-metadata=identifier,flags,runtime' '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftCoreFoundation.dylib'
+2021-10-10 11:44:30 +0000  /var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftCoreFoundation.dylib: replacing existing signature
+2021-10-10 11:44:30 +0000  
+2021-10-10 11:44:30 +0000  /var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftCoreFoundation.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftCoreFoundation]
+2021-10-10 11:44:30 +0000 [MT] /usr/bin/codesign exited with 0
+2021-10-10 11:44:30 +0000 [MT] Entitlements for <IDEDistributionItem: 0x7fd2efb3ec10; bundleID='com.apple.dt.runtime.swiftCoreGraphics', path='<DVTFilePath:0x7fd2efb2a0f0:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftCoreGraphics.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2ef8fbf80; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2efb75360; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2efb75460>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='(null)', teamID='ZGE5H849X4', identifier='com.apple.dt.runtime.swiftCoreGraphics', executablePath='<DVTFilePath:0x7fd2efb2a0f0:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftCoreGraphics.dylib'>', hardenedRuntime='0'>'>: {
+}
+2021-10-10 11:44:30 +0000 [MT] Entitlements for <IDEDistributionItem: 0x7fd2efb3ec10; bundleID='com.apple.dt.runtime.swiftCoreGraphics', path='<DVTFilePath:0x7fd2efb2a0f0:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftCoreGraphics.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2ef8fbf80; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2efb7c680; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2efb7c7b0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='(null)', teamID='ZGE5H849X4', identifier='com.apple.dt.runtime.swiftCoreGraphics', executablePath='<DVTFilePath:0x7fd2efb2a0f0:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftCoreGraphics.dylib'>', hardenedRuntime='0'>'> are: {
+}
+2021-10-10 11:44:30 +0000 [MT] Writing entitlements for <IDEDistributionItem: 0x7fd2efb3ec10; bundleID='com.apple.dt.runtime.swiftCoreGraphics', path='<DVTFilePath:0x7fd2efb2a0f0:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftCoreGraphics.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2ef8fbf80; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2f9919550; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2f99194f0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='(null)', teamID='ZGE5H849X4', identifier='com.apple.dt.runtime.swiftCoreGraphics', executablePath='<DVTFilePath:0x7fd2efb2a0f0:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftCoreGraphics.dylib'>', hardenedRuntime='0'>'> to: /var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/entitlements~~~oY8UhF
+2021-10-10 11:44:30 +0000 [MT] Running /usr/bin/codesign '-vvv' '--force' '--sign' 'A9ED9D832676392CEB1531107F179565B777E6CF' '--entitlements' '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/entitlements~~~oY8UhF' '--preserve-metadata=identifier,flags,runtime' '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftCoreGraphics.dylib'
+2021-10-10 11:44:30 +0000  /var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftCoreGraphics.dylib: replacing existing signature
+2021-10-10 11:44:30 +0000  /var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftCoreGraphics.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftCoreGraphics]
+2021-10-10 11:44:30 +0000 [MT] /usr/bin/codesign exited with 0
+2021-10-10 11:44:30 +0000 [MT] Entitlements for <IDEDistributionItem: 0x7fd2f9905c40; bundleID='com.apple.dt.runtime.swiftCoreImage', path='<DVTFilePath:0x7fd2ef9e2380:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftCoreImage.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2efae2720; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2f991aec0; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2f9924a00>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='(null)', teamID='ZGE5H849X4', identifier='com.apple.dt.runtime.swiftCoreImage', executablePath='<DVTFilePath:0x7fd2ef9e2380:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftCoreImage.dylib'>', hardenedRuntime='0'>'>: {
+}
+2021-10-10 11:44:30 +0000 [MT] Entitlements for <IDEDistributionItem: 0x7fd2f9905c40; bundleID='com.apple.dt.runtime.swiftCoreImage', path='<DVTFilePath:0x7fd2ef9e2380:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftCoreImage.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2efae2720; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2efb603c0; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2efb60370>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='(null)', teamID='ZGE5H849X4', identifier='com.apple.dt.runtime.swiftCoreImage', executablePath='<DVTFilePath:0x7fd2ef9e2380:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftCoreImage.dylib'>', hardenedRuntime='0'>'> are: {
+}
+2021-10-10 11:44:30 +0000 [MT] Writing entitlements for <IDEDistributionItem: 0x7fd2f9905c40; bundleID='com.apple.dt.runtime.swiftCoreImage', path='<DVTFilePath:0x7fd2ef9e2380:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftCoreImage.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2efae2720; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2efb74910; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2efaff740>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='(null)', teamID='ZGE5H849X4', identifier='com.apple.dt.runtime.swiftCoreImage', executablePath='<DVTFilePath:0x7fd2ef9e2380:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftCoreImage.dylib'>', hardenedRuntime='0'>'> to: /var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/entitlements~~~fxYdaN
+2021-10-10 11:44:30 +0000 [MT] Running /usr/bin/codesign '-vvv' '--force' '--sign' 'A9ED9D832676392CEB1531107F179565B777E6CF' '--entitlements' '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/entitlements~~~fxYdaN' '--preserve-metadata=identifier,flags,runtime' '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftCoreImage.dylib'
+2021-10-10 11:44:30 +0000  /var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftCoreImage.dylib: replacing existing signature
+2021-10-10 11:44:30 +0000  /var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftCoreImage.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftCoreImage]
+2021-10-10 11:44:30 +0000 [MT] /usr/bin/codesign exited with 0
+2021-10-10 11:44:30 +0000 [MT] Entitlements for <IDEDistributionItem: 0x7fd2ef8f48e0; bundleID='com.apple.dt.runtime.swiftCoreLocation', path='<DVTFilePath:0x7fd2ef8e89d0:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftCoreLocation.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2ef9fb600; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2f991a070; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2f991c680>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='(null)', teamID='ZGE5H849X4', identifier='com.apple.dt.runtime.swiftCoreLocation', executablePath='<DVTFilePath:0x7fd2ef8e89d0:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftCoreLocation.dylib'>', hardenedRuntime='0'>'>: {
+}
+2021-10-10 11:44:30 +0000 [MT] Entitlements for <IDEDistributionItem: 0x7fd2ef8f48e0; bundleID='com.apple.dt.runtime.swiftCoreLocation', path='<DVTFilePath:0x7fd2ef8e89d0:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftCoreLocation.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2ef9fb600; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2f72a36b0; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2ef989af0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='(null)', teamID='ZGE5H849X4', identifier='com.apple.dt.runtime.swiftCoreLocation', executablePath='<DVTFilePath:0x7fd2ef8e89d0:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftCoreLocation.dylib'>', hardenedRuntime='0'>'> are: {
+}
+2021-10-10 11:44:30 +0000 [MT] Writing entitlements for <IDEDistributionItem: 0x7fd2ef8f48e0; bundleID='com.apple.dt.runtime.swiftCoreLocation', path='<DVTFilePath:0x7fd2ef8e89d0:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftCoreLocation.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2ef9fb600; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2df730570; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2efafff90>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='(null)', teamID='ZGE5H849X4', identifier='com.apple.dt.runtime.swiftCoreLocation', executablePath='<DVTFilePath:0x7fd2ef8e89d0:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftCoreLocation.dylib'>', hardenedRuntime='0'>'> to: /var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/entitlements~~~Ok70Qu
+2021-10-10 11:44:30 +0000 [MT] Running /usr/bin/codesign '-vvv' '--force' '--sign' 'A9ED9D832676392CEB1531107F179565B777E6CF' '--entitlements' '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/entitlements~~~Ok70Qu' '--preserve-metadata=identifier,flags,runtime' '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftCoreLocation.dylib'
+2021-10-10 11:44:30 +0000  /var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftCoreLocation.dylib: replacing existing signature
+2021-10-10 11:44:30 +0000  /var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftCoreLocation.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftCoreLocation]
+2021-10-10 11:44:30 +0000 [MT] /usr/bin/codesign exited with 0
+2021-10-10 11:44:30 +0000 [MT] Entitlements for <IDEDistributionItem: 0x7fd2ef9ed3e0; bundleID='com.apple.dt.runtime.swiftDarwin', path='<DVTFilePath:0x7fd2efb3ca10:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftDarwin.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2ef985fb0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2df711980; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2efac1a50>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='(null)', teamID='ZGE5H849X4', identifier='com.apple.dt.runtime.swiftDarwin', executablePath='<DVTFilePath:0x7fd2efb3ca10:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftDarwin.dylib'>', hardenedRuntime='0'>'>: {
+}
+2021-10-10 11:44:30 +0000 [MT] Entitlements for <IDEDistributionItem: 0x7fd2ef9ed3e0; bundleID='com.apple.dt.runtime.swiftDarwin', path='<DVTFilePath:0x7fd2efb3ca10:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftDarwin.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2ef985fb0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2f72a37a0; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2ef9c5810>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='(null)', teamID='ZGE5H849X4', identifier='com.apple.dt.runtime.swiftDarwin', executablePath='<DVTFilePath:0x7fd2efb3ca10:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftDarwin.dylib'>', hardenedRuntime='0'>'> are: {
+}
+2021-10-10 11:44:30 +0000 [MT] Writing entitlements for <IDEDistributionItem: 0x7fd2ef9ed3e0; bundleID='com.apple.dt.runtime.swiftDarwin', path='<DVTFilePath:0x7fd2efb3ca10:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftDarwin.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2ef985fb0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2f7231190; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2ef8ca3b0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='(null)', teamID='ZGE5H849X4', identifier='com.apple.dt.runtime.swiftDarwin', executablePath='<DVTFilePath:0x7fd2efb3ca10:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftDarwin.dylib'>', hardenedRuntime='0'>'> to: /var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/entitlements~~~zAFRTe
+2021-10-10 11:44:30 +0000 [MT] Running /usr/bin/codesign '-vvv' '--force' '--sign' 'A9ED9D832676392CEB1531107F179565B777E6CF' '--entitlements' '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/entitlements~~~zAFRTe' '--preserve-metadata=identifier,flags,runtime' '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftDarwin.dylib'
+2021-10-10 11:44:30 +0000  /var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftDarwin.dylib: replacing existing signature
+2021-10-10 11:44:30 +0000  /var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftDarwin.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftDarwin]
+2021-10-10 11:44:30 +0000 [MT] /usr/bin/codesign exited with 0
+2021-10-10 11:44:30 +0000 [MT] Entitlements for <IDEDistributionItem: 0x7fd2ef8f2dd0; bundleID='com.apple.dt.runtime.swiftDispatch', path='<DVTFilePath:0x7fd2ef9cd860:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftDispatch.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2ef9f3a80; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2f991c790; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2edbc0420>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='(null)', teamID='ZGE5H849X4', identifier='com.apple.dt.runtime.swiftDispatch', executablePath='<DVTFilePath:0x7fd2ef9cd860:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftDispatch.dylib'>', hardenedRuntime='0'>'>: {
+}
+2021-10-10 11:44:30 +0000 [MT] Entitlements for <IDEDistributionItem: 0x7fd2ef8f2dd0; bundleID='com.apple.dt.runtime.swiftDispatch', path='<DVTFilePath:0x7fd2ef9cd860:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftDispatch.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2ef9f3a80; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2f9943c90; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2edbbfd70>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='(null)', teamID='ZGE5H849X4', identifier='com.apple.dt.runtime.swiftDispatch', executablePath='<DVTFilePath:0x7fd2ef9cd860:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftDispatch.dylib'>', hardenedRuntime='0'>'> are: {
+}
+2021-10-10 11:44:30 +0000 [MT] Writing entitlements for <IDEDistributionItem: 0x7fd2ef8f2dd0; bundleID='com.apple.dt.runtime.swiftDispatch', path='<DVTFilePath:0x7fd2ef9cd860:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftDispatch.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2ef9f3a80; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2f725b4e0; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2ef9c5810>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='(null)', teamID='ZGE5H849X4', identifier='com.apple.dt.runtime.swiftDispatch', executablePath='<DVTFilePath:0x7fd2ef9cd860:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftDispatch.dylib'>', hardenedRuntime='0'>'> to: /var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/entitlements~~~6DncJv
+2021-10-10 11:44:30 +0000 [MT] Running /usr/bin/codesign '-vvv' '--force' '--sign' 'A9ED9D832676392CEB1531107F179565B777E6CF' '--entitlements' '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/entitlements~~~6DncJv' '--preserve-metadata=identifier,flags,runtime' '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftDispatch.dylib'
+2021-10-10 11:44:30 +0000  /var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftDispatch.dylib: replacing existing signature
+2021-10-10 11:44:31 +0000  /var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftDispatch.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftDispatch]
+2021-10-10 11:44:31 +0000 [MT] /usr/bin/codesign exited with 0
+2021-10-10 11:44:31 +0000 [MT] Entitlements for <IDEDistributionItem: 0x7fd2efac7c60; bundleID='com.apple.dt.runtime.swiftFoundation', path='<DVTFilePath:0x7fd2efad3d00:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftFoundation.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2ef8f6bc0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2f72a35b0; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2f7231280>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='(null)', teamID='ZGE5H849X4', identifier='com.apple.dt.runtime.swiftFoundation', executablePath='<DVTFilePath:0x7fd2efad3d00:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftFoundation.dylib'>', hardenedRuntime='0'>'>: {
+}
+2021-10-10 11:44:31 +0000 [MT] Entitlements for <IDEDistributionItem: 0x7fd2efac7c60; bundleID='com.apple.dt.runtime.swiftFoundation', path='<DVTFilePath:0x7fd2efad3d00:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftFoundation.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2ef8f6bc0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2f7282890; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2f7231650>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='(null)', teamID='ZGE5H849X4', identifier='com.apple.dt.runtime.swiftFoundation', executablePath='<DVTFilePath:0x7fd2efad3d00:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftFoundation.dylib'>', hardenedRuntime='0'>'> are: {
+}
+2021-10-10 11:44:31 +0000 [MT] Writing entitlements for <IDEDistributionItem: 0x7fd2efac7c60; bundleID='com.apple.dt.runtime.swiftFoundation', path='<DVTFilePath:0x7fd2efad3d00:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftFoundation.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2ef8f6bc0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2f72ad910; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2f72354e0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='(null)', teamID='ZGE5H849X4', identifier='com.apple.dt.runtime.swiftFoundation', executablePath='<DVTFilePath:0x7fd2efad3d00:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftFoundation.dylib'>', hardenedRuntime='0'>'> to: /var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/entitlements~~~YVIj7x
+2021-10-10 11:44:31 +0000 [MT] Running /usr/bin/codesign '-vvv' '--force' '--sign' 'A9ED9D832676392CEB1531107F179565B777E6CF' '--entitlements' '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/entitlements~~~YVIj7x' '--preserve-metadata=identifier,flags,runtime' '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftFoundation.dylib'
+2021-10-10 11:44:31 +0000  /var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftFoundation.dylib: replacing existing signature
+2021-10-10 11:44:31 +0000  /var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftFoundation.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftFoundation]
+2021-10-10 11:44:31 +0000 [MT] /usr/bin/codesign exited with 0
+2021-10-10 11:44:31 +0000 [MT] Entitlements for <IDEDistributionItem: 0x7fd2ef9fccc0; bundleID='com.apple.dt.runtime.swiftMetal', path='<DVTFilePath:0x7fd2ef8e3d00:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftMetal.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2efae19c0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2f991c790; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2ef8c33b0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='(null)', teamID='ZGE5H849X4', identifier='com.apple.dt.runtime.swiftMetal', executablePath='<DVTFilePath:0x7fd2ef8e3d00:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftMetal.dylib'>', hardenedRuntime='0'>'>: {
+}
+2021-10-10 11:44:31 +0000 [MT] Entitlements for <IDEDistributionItem: 0x7fd2ef9fccc0; bundleID='com.apple.dt.runtime.swiftMetal', path='<DVTFilePath:0x7fd2ef8e3d00:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftMetal.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2efae19c0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2f9943fc0; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2ef8c61e0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='(null)', teamID='ZGE5H849X4', identifier='com.apple.dt.runtime.swiftMetal', executablePath='<DVTFilePath:0x7fd2ef8e3d00:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftMetal.dylib'>', hardenedRuntime='0'>'> are: {
+}
+2021-10-10 11:44:31 +0000 [MT] Writing entitlements for <IDEDistributionItem: 0x7fd2ef9fccc0; bundleID='com.apple.dt.runtime.swiftMetal', path='<DVTFilePath:0x7fd2ef8e3d00:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftMetal.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2efae19c0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2df711220; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2efaedfb0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='(null)', teamID='ZGE5H849X4', identifier='com.apple.dt.runtime.swiftMetal', executablePath='<DVTFilePath:0x7fd2ef8e3d00:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftMetal.dylib'>', hardenedRuntime='0'>'> to: /var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/entitlements~~~fWCgep
+2021-10-10 11:44:31 +0000 [MT] Running /usr/bin/codesign '-vvv' '--force' '--sign' 'A9ED9D832676392CEB1531107F179565B777E6CF' '--entitlements' '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/entitlements~~~fWCgep' '--preserve-metadata=identifier,flags,runtime' '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftMetal.dylib'
+2021-10-10 11:44:31 +0000  /var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftMetal.dylib: replacing existing signature
+2021-10-10 11:44:31 +0000  /var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftMetal.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftMetal]
+2021-10-10 11:44:31 +0000 [MT] /usr/bin/codesign exited with 0
+2021-10-10 11:44:31 +0000 [MT] Entitlements for <IDEDistributionItem: 0x7fd2ef9faeb0; bundleID='com.apple.dt.runtime.swiftObjectiveC', path='<DVTFilePath:0x7fd2ef8e2390:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftObjectiveC.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2ef8f3500; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2f991c790; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2ef8c61e0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='(null)', teamID='ZGE5H849X4', identifier='com.apple.dt.runtime.swiftObjectiveC', executablePath='<DVTFilePath:0x7fd2ef8e2390:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftObjectiveC.dylib'>', hardenedRuntime='0'>'>: {
+}
+2021-10-10 11:44:31 +0000 [MT] Entitlements for <IDEDistributionItem: 0x7fd2ef9faeb0; bundleID='com.apple.dt.runtime.swiftObjectiveC', path='<DVTFilePath:0x7fd2ef8e2390:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftObjectiveC.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2ef8f3500; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2f9943e70; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2ef8c3360>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='(null)', teamID='ZGE5H849X4', identifier='com.apple.dt.runtime.swiftObjectiveC', executablePath='<DVTFilePath:0x7fd2ef8e2390:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftObjectiveC.dylib'>', hardenedRuntime='0'>'> are: {
+}
+2021-10-10 11:44:31 +0000 [MT] Writing entitlements for <IDEDistributionItem: 0x7fd2ef9faeb0; bundleID='com.apple.dt.runtime.swiftObjectiveC', path='<DVTFilePath:0x7fd2ef8e2390:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftObjectiveC.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2ef8f3500; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2f99451b0; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2ef8bdf10>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='(null)', teamID='ZGE5H849X4', identifier='com.apple.dt.runtime.swiftObjectiveC', executablePath='<DVTFilePath:0x7fd2ef8e2390:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftObjectiveC.dylib'>', hardenedRuntime='0'>'> to: /var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/entitlements~~~vDfNYh
+2021-10-10 11:44:31 +0000 [MT] Running /usr/bin/codesign '-vvv' '--force' '--sign' 'A9ED9D832676392CEB1531107F179565B777E6CF' '--entitlements' '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/entitlements~~~vDfNYh' '--preserve-metadata=identifier,flags,runtime' '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftObjectiveC.dylib'
+2021-10-10 11:44:31 +0000  /var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftObjectiveC.dylib: replacing existing signature
+2021-10-10 11:44:31 +0000  /var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftObjectiveC.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftObjectiveC]
+2021-10-10 11:44:31 +0000 [MT] /usr/bin/codesign exited with 0
+2021-10-10 11:44:31 +0000 [MT] Entitlements for <IDEDistributionItem: 0x7fd2f720a770; bundleID='com.apple.dt.runtime.swiftQuartzCore', path='<DVTFilePath:0x7fd2ef8e7b90:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftQuartzCore.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2f7209fd0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2f7238c80; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2f72a1650>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='(null)', teamID='ZGE5H849X4', identifier='com.apple.dt.runtime.swiftQuartzCore', executablePath='<DVTFilePath:0x7fd2ef8e7b90:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftQuartzCore.dylib'>', hardenedRuntime='0'>'>: {
+}
+2021-10-10 11:44:31 +0000 [MT] Entitlements for <IDEDistributionItem: 0x7fd2f720a770; bundleID='com.apple.dt.runtime.swiftQuartzCore', path='<DVTFilePath:0x7fd2ef8e7b90:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftQuartzCore.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2f7209fd0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2ef8c2da0; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2edbc0930>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='(null)', teamID='ZGE5H849X4', identifier='com.apple.dt.runtime.swiftQuartzCore', executablePath='<DVTFilePath:0x7fd2ef8e7b90:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftQuartzCore.dylib'>', hardenedRuntime='0'>'> are: {
+}
+2021-10-10 11:44:31 +0000 [MT] Writing entitlements for <IDEDistributionItem: 0x7fd2f720a770; bundleID='com.apple.dt.runtime.swiftQuartzCore', path='<DVTFilePath:0x7fd2ef8e7b90:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftQuartzCore.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2f7209fd0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2efb0f840; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2edc75fa0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='(null)', teamID='ZGE5H849X4', identifier='com.apple.dt.runtime.swiftQuartzCore', executablePath='<DVTFilePath:0x7fd2ef8e7b90:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftQuartzCore.dylib'>', hardenedRuntime='0'>'> to: /var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/entitlements~~~6DIHjw
+2021-10-10 11:44:31 +0000 [MT] Running /usr/bin/codesign '-vvv' '--force' '--sign' 'A9ED9D832676392CEB1531107F179565B777E6CF' '--entitlements' '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/entitlements~~~6DIHjw' '--preserve-metadata=identifier,flags,runtime' '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftQuartzCore.dylib'
+2021-10-10 11:44:31 +0000  /var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftQuartzCore.dylib: replacing existing signature
+2021-10-10 11:44:31 +0000  /var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftQuartzCore.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftQuartzCore]
+2021-10-10 11:44:31 +0000 [MT] /usr/bin/codesign exited with 0
+2021-10-10 11:44:31 +0000 [MT] Entitlements for <IDEDistributionItem: 0x7fd2efb3b450; bundleID='com.apple.dt.runtime.swiftUIKit', path='<DVTFilePath:0x7fd2efb2a7d0:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftUIKit.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2ef8f5880; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2f991c790; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2edbc0580>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='(null)', teamID='ZGE5H849X4', identifier='com.apple.dt.runtime.swiftUIKit', executablePath='<DVTFilePath:0x7fd2efb2a7d0:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftUIKit.dylib'>', hardenedRuntime='0'>'>: {
+}
+2021-10-10 11:44:31 +0000 [MT] Entitlements for <IDEDistributionItem: 0x7fd2efb3b450; bundleID='com.apple.dt.runtime.swiftUIKit', path='<DVTFilePath:0x7fd2efb2a7d0:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftUIKit.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2ef8f5880; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2df711730; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2efaa0810>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='(null)', teamID='ZGE5H849X4', identifier='com.apple.dt.runtime.swiftUIKit', executablePath='<DVTFilePath:0x7fd2efb2a7d0:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftUIKit.dylib'>', hardenedRuntime='0'>'> are: {
+}
+2021-10-10 11:44:31 +0000 [MT] Writing entitlements for <IDEDistributionItem: 0x7fd2efb3b450; bundleID='com.apple.dt.runtime.swiftUIKit', path='<DVTFilePath:0x7fd2efb2a7d0:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftUIKit.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2ef8f5880; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2f7234580; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2ef9b49b0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='(null)', teamID='ZGE5H849X4', identifier='com.apple.dt.runtime.swiftUIKit', executablePath='<DVTFilePath:0x7fd2efb2a7d0:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftUIKit.dylib'>', hardenedRuntime='0'>'> to: /var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/entitlements~~~Ui8reL
+2021-10-10 11:44:31 +0000 [MT] Running /usr/bin/codesign '-vvv' '--force' '--sign' 'A9ED9D832676392CEB1531107F179565B777E6CF' '--entitlements' '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/entitlements~~~Ui8reL' '--preserve-metadata=identifier,flags,runtime' '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftUIKit.dylib'
+2021-10-10 11:44:31 +0000  /var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftUIKit.dylib: replacing existing signature
+2021-10-10 11:44:32 +0000  /var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftUIKit.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftUIKit]
+2021-10-10 11:44:32 +0000 [MT] /usr/bin/codesign exited with 0
+2021-10-10 11:44:32 +0000 [MT] Entitlements for <IDEDistributionItem: 0x7fd2ef8f61b0; bundleID='com.apple.dt.runtime.swiftos', path='<DVTFilePath:0x7fd2ef8e4af0:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftos.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2efac7ad0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2f722f170; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2f7231280>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='(null)', teamID='ZGE5H849X4', identifier='com.apple.dt.runtime.swiftos', executablePath='<DVTFilePath:0x7fd2ef8e4af0:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftos.dylib'>', hardenedRuntime='0'>'>: {
+}
+2021-10-10 11:44:32 +0000 [MT] Entitlements for <IDEDistributionItem: 0x7fd2ef8f61b0; bundleID='com.apple.dt.runtime.swiftos', path='<DVTFilePath:0x7fd2ef8e4af0:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftos.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2efac7ad0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2df730570; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2eccffff0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='(null)', teamID='ZGE5H849X4', identifier='com.apple.dt.runtime.swiftos', executablePath='<DVTFilePath:0x7fd2ef8e4af0:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftos.dylib'>', hardenedRuntime='0'>'> are: {
+}
+2021-10-10 11:44:32 +0000 [MT] Writing entitlements for <IDEDistributionItem: 0x7fd2ef8f61b0; bundleID='com.apple.dt.runtime.swiftos', path='<DVTFilePath:0x7fd2ef8e4af0:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftos.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2efac7ad0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2f7231170; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2f72a21f0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='(null)', teamID='ZGE5H849X4', identifier='com.apple.dt.runtime.swiftos', executablePath='<DVTFilePath:0x7fd2ef8e4af0:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/Frameworks/libswiftos.dylib'>', hardenedRuntime='0'>'> to: /var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/entitlements~~~RWHEf8
+2021-10-10 11:44:32 +0000 [MT] Running /usr/bin/codesign '-vvv' '--force' '--sign' 'A9ED9D832676392CEB1531107F179565B777E6CF' '--entitlements' '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/entitlements~~~RWHEf8' '--preserve-metadata=identifier,flags,runtime' '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftos.dylib'
+2021-10-10 11:44:32 +0000  /var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftos.dylib: replacing existing signature
+2021-10-10 11:44:32 +0000  
+2021-10-10 11:44:32 +0000  /var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftos.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftos]
+2021-10-10 11:44:32 +0000 [MT] /usr/bin/codesign exited with 0
+2021-10-10 11:44:32 +0000 [MT] Entitlements for <IDEDistributionItem: 0x7fd2f7214f80; bundleID='com.appcelerator.InetTiBeacon', path='<DVTFilePath:0x7fd2efa9d590:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2f7210c00; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2f7238d00; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2f72a0be0>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='{
+    "application-identifier" = "ZGE5H849X4.com.appcelerator.InetTiBeacon";
+    "aps-environment" = production;
+    "com.apple.developer.team-identifier" = ZGE5H849X4;
+    "get-task-allow" = 0;
+    "keychain-access-groups" =     (
+        "ZGE5H849X4.com.appcelerator.InetTiBeacon"
+    );
+}', teamID='ZGE5H849X4', identifier='com.appcelerator.InetTiBeacon', executablePath='<DVTFilePath:0x7fd2efac4cc0:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/InetTiBeacon'>', hardenedRuntime='0'>'>: {
+    "application-identifier" = "ZGE5H849X4.com.appcelerator.InetTiBeacon";
+    "aps-environment" = production;
+    "com.apple.developer.team-identifier" = ZGE5H849X4;
+    "get-task-allow" = 0;
+    "keychain-access-groups" =     (
+        "ZGE5H849X4.com.appcelerator.InetTiBeacon"
+    );
+}
+2021-10-10 11:44:32 +0000 [MT] Entitlements for <IDEDistributionItem: 0x7fd2f7214f80; bundleID='com.appcelerator.InetTiBeacon', path='<DVTFilePath:0x7fd2efa9d590:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2f7210c00; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2ef9c3fd0; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2f7282750>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='{
+    "application-identifier" = "ZGE5H849X4.com.appcelerator.InetTiBeacon";
+    "aps-environment" = production;
+    "com.apple.developer.team-identifier" = ZGE5H849X4;
+    "get-task-allow" = 0;
+    "keychain-access-groups" =     (
+        "ZGE5H849X4.com.appcelerator.InetTiBeacon"
+    );
+}', teamID='ZGE5H849X4', identifier='com.appcelerator.InetTiBeacon', executablePath='<DVTFilePath:0x7fd2efac4cc0:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/InetTiBeacon'>', hardenedRuntime='0'>'> are: {
+    "application-identifier" = "ZGE5H849X4.com.appcelerator.InetTiBeacon";
+    "aps-environment" = production;
+    "com.apple.developer.team-identifier" = ZGE5H849X4;
+    "get-task-allow" = 0;
+    "keychain-access-groups" =     (
+        "ZGE5H849X4.com.appcelerator.InetTiBeacon"
+    );
+}
+2021-10-10 11:44:32 +0000 [MT] Writing entitlements for <IDEDistributionItem: 0x7fd2f7214f80; bundleID='com.appcelerator.InetTiBeacon', path='<DVTFilePath:0x7fd2efa9d590:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fd2f7210c00; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fd2df7111a0; name='iPhone Distribution: NEXPIE COMPANY LIMITED (ZGE5H849X4)', hash='A9ED9D832676392CEB1531107F179565B777E6CF', serialNumber='<DVTSigningCertificateSerialNumber: 0x7fd2eddc9230>', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2021-10-08 10:47:21 +0000''>', entitlements='{
+    "application-identifier" = "ZGE5H849X4.com.appcelerator.InetTiBeacon";
+    "aps-environment" = production;
+    "com.apple.developer.team-identifier" = ZGE5H849X4;
+    "get-task-allow" = 0;
+    "keychain-access-groups" =     (
+        "ZGE5H849X4.com.appcelerator.InetTiBeacon"
+    );
+}', teamID='ZGE5H849X4', identifier='com.appcelerator.InetTiBeacon', executablePath='<DVTFilePath:0x7fd2efac4cc0:'/Users/inet-onecentric/Desktop/titanum/InetTiBeacon/build/iphone/InetTiBeacon.xcarchive/Products/Applications/InetTiBeacon.app/InetTiBeacon'>', hardenedRuntime='0'>'> to: /var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/entitlements~~~Ihn1ZK
+2021-10-10 11:44:32 +0000 [MT] Running /usr/bin/codesign '-vvv' '--force' '--sign' 'A9ED9D832676392CEB1531107F179565B777E6CF' '--entitlements' '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/entitlements~~~Ihn1ZK' '--preserve-metadata=identifier,flags,runtime' '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app'
+2021-10-10 11:44:32 +0000  /var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app: replacing existing signature
+2021-10-10 11:44:32 +0000  /var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app: signed app bundle with Mach-O thin (arm64) [com.appcelerator.InetTiBeacon]
+2021-10-10 11:44:32 +0000 [MT] /usr/bin/codesign exited with 0
+2021-10-10 11:44:32 +0000 [MT] Processing step: IDEDistributionZipODRItemStep
+2021-10-10 11:44:32 +0000 [MT] Skipping step: IDEDistributionZipODRItemStep because it said so
+2021-10-10 11:44:32 +0000 [MT] Skipping step: IDEDistributionZipODRItemStep because it said so
+2021-10-10 11:44:32 +0000 [MT] Skipping step: IDEDistributionZipODRItemStep because it said so
+2021-10-10 11:44:32 +0000 [MT] Skipping step: IDEDistributionZipODRItemStep because it said so
+2021-10-10 11:44:32 +0000 [MT] Skipping step: IDEDistributionZipODRItemStep because it said so
+2021-10-10 11:44:32 +0000 [MT] Skipping step: IDEDistributionZipODRItemStep because it said so
+2021-10-10 11:44:32 +0000 [MT] Skipping step: IDEDistributionZipODRItemStep because it said so
+2021-10-10 11:44:32 +0000 [MT] Skipping step: IDEDistributionZipODRItemStep because it said so
+2021-10-10 11:44:32 +0000 [MT] Skipping step: IDEDistributionZipODRItemStep because it said so
+2021-10-10 11:44:32 +0000 [MT] Skipping step: IDEDistributionZipODRItemStep because it said so
+2021-10-10 11:44:32 +0000 [MT] Skipping step: IDEDistributionZipODRItemStep because it said so
+2021-10-10 11:44:32 +0000 [MT] Skipping step: IDEDistributionZipODRItemStep because it said so
+2021-10-10 11:44:32 +0000 [MT] Skipping step: IDEDistributionZipODRItemStep because it said so
+2021-10-10 11:44:32 +0000 [MT] Skipping step: IDEDistributionZipODRItemStep because it said so
+2021-10-10 11:44:32 +0000 [MT] Skipping step: IDEDistributionZipODRItemStep because it said so
+2021-10-10 11:44:32 +0000 [MT] Skipping step: IDEDistributionZipODRItemStep because it said so
+2021-10-10 11:44:32 +0000 [MT] Processing step: IDEDistributionCreateIPAStep
+2021-10-10 11:44:32 +0000 [MT] Running /usr/bin/ditto '-V' '-c' '-k' '--norsrc' '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root' '/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Packages/InetTiBeacon.ipa'
+2021-10-10 11:44:32 +0000  >>> Copying /var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root 
+2021-10-10 11:44:32 +0000  copying file ./Payload/InetTiBeacon.app/_CodeSignature/CodeResources ... 
+2021-10-10 11:44:32 +0000  14981 bytes for ./Payload/InetTiBeacon.app/_CodeSignature/CodeResources
+2021-10-10 11:44:32 +0000  copying file ./Payload/InetTiBeacon.app/LaunchImage-1100-Portrait-2436h@3x.png ... 
+2021-10-10 11:44:32 +0000  417310 bytes for ./Payload/InetTiBeacon.app/LaunchImage-1100-Portrait-2436h@3x.png
+2021-10-10 11:44:32 +0000  copying file ./Payload/InetTiBeacon.app/iTunesArtwork ... 
+2021-10-10 11:44:32 +0000  121895 bytes for ./Payload/InetTiBeacon.app/iTunesArtwork
+2021-10-10 11:44:32 +0000  copying file ./Payload/InetTiBeacon.app/LaunchImage-1200-Landscape-1792h@2x.png ... 
+2021-10-10 11:44:32 +0000  548300 bytes for ./Payload/InetTiBeacon.app/LaunchImage-1200-Landscape-1792h@2x.png
+2021-10-10 11:44:32 +0000  copying file ./Payload/InetTiBeacon.app/ti.cloud/LICENSE ... 
+122 bytes for ./Payload/InetTiBeacon.app/ti.cloud/LICENSE
+copying file ./Payload/InetTiBeacon.app/ti.cloud/manifest ... 
+492 bytes for ./Payload/InetTiBeacon.app/ti.cloud/manifest
+copying file ./Payload/InetTiBeacon.app/ti.cloud/package.json ... 
+172 bytes for ./Payload/InetTiBeacon.app/ti.cloud/package.json
+copying file ./Payload/InetTiBeacon.app/AppIcon60x60@2x.png ... 
+21087 bytes for ./Payload/InetTiBeacon.app/AppIcon60x60@2x.png
+copying file ./Payload/InetTiBeacon.app/InetTiBeacon ... 
+2021-10-10 11:44:32 +0000  1616976 bytes for ./Payload/InetTiBeacon.app/InetTiBeacon
+2021-10-10 11:44:32 +0000  copying file ./Payload/InetTiBeacon.app/LaunchImage-1100-Landscape-2436h@3x.png ... 
+2021-10-10 11:44:32 +0000  503768 bytes for ./Payload/InetTiBeacon.app/LaunchImage-1100-Landscape-2436h@3x.png
+2021-10-10 11:44:32 +0000  copying file ./Payload/InetTiBeacon.app/LaunchImage-800-667h@2x.png ... 
+2021-10-10 11:44:32 +0000  198206 bytes for ./Payload/InetTiBeacon.app/LaunchImage-800-667h@2x.png
+2021-10-10 11:44:32 +0000  copying file ./Payload/InetTiBeacon.app/LaunchImage-1200-Portrait-2688h@3x.png ... 
+2021-10-10 11:44:32 +0000  614136 bytes for ./Payload/InetTiBeacon.app/LaunchImage-1200-Portrait-2688h@3x.png
+2021-10-10 11:44:32 +0000  copying file ./Payload/InetTiBeacon.app/readme.md ... 
+576 bytes for ./Payload/InetTiBeacon.app/readme.md
+2021-10-10 11:44:32 +0000  copying file ./Payload/InetTiBeacon.app/LaunchImage-700-Portrait~ipad.png ... 
+2021-10-10 11:44:32 +0000  193157 bytes for ./Payload/InetTiBeacon.app/LaunchImage-700-Portrait~ipad.png
+copying file ./Payload/InetTiBeacon.app/Assets.car ... 
+2021-10-10 11:44:32 +0000  1287231 bytes for ./Payload/InetTiBeacon.app/Assets.car
+2021-10-10 11:44:32 +0000  copying file ./Payload/InetTiBeacon.app/AppIcon76x76@2x~ipad.png ... 
+2021-10-10 11:44:32 +0000  28017 bytes for ./Payload/InetTiBeacon.app/AppIcon76x76@2x~ipad.png
+2021-10-10 11:44:32 +0000  copying file ./Payload/InetTiBeacon.app/LaunchImage-800-Portrait-736h@3x.png ... 
+2021-10-10 11:44:32 +0000  350744 bytes for ./Payload/InetTiBeacon.app/LaunchImage-800-Portrait-736h@3x.png
+2021-10-10 11:44:32 +0000  copying file ./Payload/InetTiBeacon.app/LaunchImage-700@2x.png ... 
+2021-10-10 11:44:32 +0000  131420 bytes for ./Payload/InetTiBeacon.app/LaunchImage-700@2x.png
+2021-10-10 11:44:32 +0000  copying file ./Payload/InetTiBeacon.app/LaunchImage-700-568h@2x.png ... 
+2021-10-10 11:44:32 +0000  162522 bytes for ./Payload/InetTiBeacon.app/LaunchImage-700-568h@2x.png
+2021-10-10 11:44:32 +0000  copying file ./Payload/InetTiBeacon.app/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib ... 
+2021-10-10 11:44:32 +0000  2421 bytes for ./Payload/InetTiBeacon.app/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib
+copying file ./Payload/InetTiBeacon.app/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib ... 
+2021-10-10 11:44:32 +0000  896 bytes for ./Payload/InetTiBeacon.app/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib
+2021-10-10 11:44:32 +0000  copying file ./Payload/InetTiBeacon.app/LaunchScreen.storyboardc/Info.plist ... 
+258 bytes for ./Payload/InetTiBeacon.app/LaunchScreen.storyboardc/Info.plist
+copying file ./Payload/InetTiBeacon.app/LaunchImage-1200-Portrait-1792h@2x.png ... 
+2021-10-10 11:44:32 +0000  419731 bytes for ./Payload/InetTiBeacon.app/LaunchImage-1200-Portrait-1792h@2x.png
+2021-10-10 11:44:32 +0000  copying file ./Payload/InetTiBeacon.app/LaunchImage-700-Landscape@2x~ipad.png ... 
+2021-10-10 11:44:32 +0000  446976 bytes for ./Payload/InetTiBeacon.app/LaunchImage-700-Landscape@2x~ipad.png
+2021-10-10 11:44:32 +0000  copying file ./Payload/InetTiBeacon.app/Frameworks/libswiftCoreImage.dylib ... 
+2021-10-10 11:44:32 +0000  253648 bytes for ./Payload/InetTiBeacon.app/Frameworks/libswiftCoreImage.dylib
+copying file ./Payload/InetTiBeacon.app/Frameworks/libswiftObjectiveC.dylib ... 
+2021-10-10 11:44:32 +0000  302640 bytes for ./Payload/InetTiBeacon.app/Frameworks/libswiftObjectiveC.dylib
+copying file ./Payload/InetTiBeacon.app/Frameworks/libswiftCore.dylib ... 
+2021-10-10 11:44:33 +0000  16915056 bytes for ./Payload/InetTiBeacon.app/Frameworks/libswiftCore.dylib
+2021-10-10 11:44:33 +0000  copying file ./Payload/InetTiBeacon.app/Frameworks/libswiftCoreGraphics.dylib ... 
+2021-10-10 11:44:33 +0000  646864 bytes for ./Payload/InetTiBeacon.app/Frameworks/libswiftCoreGraphics.dylib
+copying file ./Payload/InetTiBeacon.app/Frameworks/libswiftUIKit.dylib ... 
+2021-10-10 11:44:33 +0000  477168 bytes for ./Payload/InetTiBeacon.app/Frameworks/libswiftUIKit.dylib
+copying file ./Payload/InetTiBeacon.app/Frameworks/libswiftMetal.dylib ... 
+2021-10-10 11:44:33 +0000  298112 bytes for ./Payload/InetTiBeacon.app/Frameworks/libswiftMetal.dylib
+2021-10-10 11:44:33 +0000  copying file ./Payload/InetTiBeacon.app/Frameworks/libswiftDispatch.dylib ... 
+2021-10-10 11:44:33 +0000  1018928 bytes for ./Payload/InetTiBeacon.app/Frameworks/libswiftDispatch.dylib
+2021-10-10 11:44:33 +0000  copying file ./Payload/InetTiBeacon.app/Frameworks/libswiftos.dylib ... 
+2021-10-10 11:44:33 +0000  299440 bytes for ./Payload/InetTiBeacon.app/Frameworks/libswiftos.dylib
+2021-10-10 11:44:33 +0000  copying file ./Payload/InetTiBeacon.app/Frameworks/AppceleratorBle.framework/_CodeSignature/CodeResources ... 
+1798 bytes for ./Payload/InetTiBeacon.app/Frameworks/AppceleratorBle.framework/_CodeSignature/CodeResources
+copying file ./Payload/InetTiBeacon.app/Frameworks/AppceleratorBle.framework/AppceleratorBle ... 
+2021-10-10 11:44:33 +0000  646976 bytes for ./Payload/InetTiBeacon.app/Frameworks/AppceleratorBle.framework/AppceleratorBle
+2021-10-10 11:44:33 +0000  copying file ./Payload/InetTiBeacon.app/Frameworks/AppceleratorBle.framework/Info.plist ... 
+727 bytes for ./Payload/InetTiBeacon.app/Frameworks/AppceleratorBle.framework/Info.plist
+copying file ./Payload/InetTiBeacon.app/Frameworks/libswiftCoreFoundation.dylib ... 
+2021-10-10 11:44:33 +0000  253792 bytes for ./Payload/InetTiBeacon.app/Frameworks/libswiftCoreFoundation.dylib
+2021-10-10 11:44:33 +0000  copying file ./Payload/InetTiBeacon.app/Frameworks/libswiftDarwin.dylib ... 
+2021-10-10 11:44:33 +0000  369744 bytes for ./Payload/InetTiBeacon.app/Frameworks/libswiftDarwin.dylib
+2021-10-10 11:44:33 +0000  copying file ./Payload/InetTiBeacon.app/Frameworks/TitaniumKit.framework/_CodeSignature/CodeResources ... 
+1798 bytes for ./Payload/InetTiBeacon.app/Frameworks/TitaniumKit.framework/_CodeSignature/CodeResources
+copying file ./Payload/InetTiBeacon.app/Frameworks/TitaniumKit.framework/TitaniumKit ... 
+2021-10-10 11:44:33 +0000  1095856 bytes for ./Payload/InetTiBeacon.app/Frameworks/TitaniumKit.framework/TitaniumKit
+2021-10-10 11:44:33 +0000  copying file ./Payload/InetTiBeacon.app/Frameworks/TitaniumKit.framework/Info.plist ... 
+761 bytes for ./Payload/InetTiBeacon.app/Frameworks/TitaniumKit.framework/Info.plist
+copying file ./Payload/InetTiBeacon.app/Frameworks/libswiftQuartzCore.dylib ... 
+2021-10-10 11:44:33 +0000  256864 bytes for ./Payload/InetTiBeacon.app/Frameworks/libswiftQuartzCore.dylib
+copying file ./Payload/InetTiBeacon.app/Frameworks/libswiftFoundation.dylib ... 
+2021-10-10 11:44:34 +0000  8479552 bytes for ./Payload/InetTiBeacon.app/Frameworks/libswiftFoundation.dylib
+2021-10-10 11:44:34 +0000  copying file ./Payload/InetTiBeacon.app/Frameworks/libswiftCoreLocation.dylib ... 
+2021-10-10 11:44:34 +0000  304128 bytes for ./Payload/InetTiBeacon.app/Frameworks/libswiftCoreLocation.dylib
+2021-10-10 11:44:34 +0000  copying file ./Payload/InetTiBeacon.app/modules/ui/images/photoDefault.png ... 
+3126 bytes for ./Payload/InetTiBeacon.app/modules/ui/images/photoDefault.png
+copying file ./Payload/InetTiBeacon.app/modules/ui/images/badge.png ... 
+1130 bytes for ./Payload/InetTiBeacon.app/modules/ui/images/badge.png
+copying file ./Payload/InetTiBeacon.app/modules/ui/images/closeButton.png ... 
+361 bytes for ./Payload/InetTiBeacon.app/modules/ui/images/closeButton.png
+copying file ./Payload/InetTiBeacon.app/modules/appcelerator.ble/README ... 
+381 bytes for ./Payload/InetTiBeacon.app/modules/appcelerator.ble/README
+2021-10-10 11:44:34 +0000  copying file ./Payload/InetTiBeacon.app/embedded.mobileprovision ... 
+2021-10-10 11:44:34 +0000  13061 bytes for ./Payload/InetTiBeacon.app/embedded.mobileprovision
+2021-10-10 11:44:34 +0000  copying file ./Payload/InetTiBeacon.app/LaunchImage-800-Landscape-736h@3x.png ... 
+2021-10-10 11:44:34 +0000  539739 bytes for ./Payload/InetTiBeacon.app/LaunchImage-800-Landscape-736h@3x.png
+copying file ./Payload/InetTiBeacon.app/LaunchImage-700-Portrait@2x~ipad.png ... 
+2021-10-10 11:44:34 +0000  422033 bytes for ./Payload/InetTiBeacon.app/LaunchImage-700-Portrait@2x~ipad.png
+copying file ./Payload/InetTiBeacon.app/LaunchImage-700-Landscape~ipad.png ... 
+2021-10-10 11:44:34 +0000  177978 bytes for ./Payload/InetTiBeacon.app/LaunchImage-700-Landscape~ipad.png
+2021-10-10 11:44:34 +0000  copying file ./Payload/InetTiBeacon.app/Info.plist ... 
+2984 bytes for ./Payload/InetTiBeacon.app/Info.plist
+copying file ./Payload/InetTiBeacon.app/LaunchImage-1200-Landscape-2688h@3x.png ... 
+2021-10-10 11:44:34 +0000  950592 bytes for ./Payload/InetTiBeacon.app/LaunchImage-1200-Landscape-2688h@3x.png
+2021-10-10 11:44:34 +0000  copying file ./Payload/InetTiBeacon.app/_index_.json ... 
+839 bytes for ./Payload/InetTiBeacon.app/_index_.json
+copying file ./Payload/InetTiBeacon.app/PkgInfo ... 
+8 bytes for ./Payload/InetTiBeacon.app/PkgInfo
+copying file ./Payload/InetTiBeacon.app/iTunesArtwork@2x ... 
+2021-10-10 11:44:34 +0000  207661 bytes for ./Payload/InetTiBeacon.app/iTunesArtwork@2x
+2021-10-10 11:44:34 +0000 [MT] /usr/bin/ditto exited with 0
+2021-10-10 11:44:34 +0000 [MT] Processing step: IDEDistributionAppStoreInformationStep
+2021-10-10 11:44:34 +0000 [MT] Skipping step: IDEDistributionAppStoreInformationStep because it said so
+2021-10-10 11:44:34 +0000 [MT] Processing step: IDEDistributionGenerateProcessedDistributionItems
+2021-10-10 11:44:34 +0000 [MT] IDEDistributionItem init <DVTFilePath:0x7fd2df7114d0:'/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftQuartzCore.dylib'>
+2021-10-10 11:44:34 +0000 [MT] [OPTIONAL] Can't have a profile, not a bundle at <DVTFilePath:0x7fd2df7114d0:'/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftQuartzCore.dylib'>
+2021-10-10 11:44:34 +0000 [MT] IDEDistributionItem init <DVTFilePath:0x7fd2f7243020:'/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftDarwin.dylib'>
+2021-10-10 11:44:34 +0000 [MT] [OPTIONAL] Can't have a profile, not a bundle at <DVTFilePath:0x7fd2f7243020:'/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftDarwin.dylib'>
+2021-10-10 11:44:34 +0000 [MT] IDEDistributionItem init <DVTFilePath:0x7fd2f723e040:'/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftUIKit.dylib'>
+2021-10-10 11:44:34 +0000 [MT] [OPTIONAL] Can't have a profile, not a bundle at <DVTFilePath:0x7fd2f723e040:'/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftUIKit.dylib'>
+2021-10-10 11:44:34 +0000 [MT] IDEDistributionItem init <DVTFilePath:0x7fd2f723c2b0:'/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftMetal.dylib'>
+2021-10-10 11:44:34 +0000 [MT] [OPTIONAL] Can't have a profile, not a bundle at <DVTFilePath:0x7fd2f723c2b0:'/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftMetal.dylib'>
+2021-10-10 11:44:34 +0000 [MT] IDEDistributionItem init <DVTFilePath:0x7fd2f992c960:'/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftCoreGraphics.dylib'>
+2021-10-10 11:44:34 +0000 [MT] [OPTIONAL] Can't have a profile, not a bundle at <DVTFilePath:0x7fd2f992c960:'/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftCoreGraphics.dylib'>
+2021-10-10 11:44:34 +0000 [MT] IDEDistributionItem init <DVTFilePath:0x7fd2efb74db0:'/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftos.dylib'>
+2021-10-10 11:44:34 +0000 [MT] [OPTIONAL] Can't have a profile, not a bundle at <DVTFilePath:0x7fd2efb74db0:'/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftos.dylib'>
+2021-10-10 11:44:34 +0000 [MT] IDEDistributionItem init <DVTFilePath:0x7fd2f7243ee0:'/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/TitaniumKit.framework'>
+2021-10-10 11:44:34 +0000 [MT] IDEDistributionItem init <DVTFilePath:0x7fd2efb5f440:'/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftDispatch.dylib'>
+2021-10-10 11:44:34 +0000 [MT] [OPTIONAL] Can't have a profile, not a bundle at <DVTFilePath:0x7fd2efb5f440:'/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftDispatch.dylib'>
+2021-10-10 11:44:34 +0000 [MT] IDEDistributionItem init <DVTFilePath:0x7fd2f723d7c0:'/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftObjectiveC.dylib'>
+2021-10-10 11:44:34 +0000 [MT] [OPTIONAL] Can't have a profile, not a bundle at <DVTFilePath:0x7fd2f723d7c0:'/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftObjectiveC.dylib'>
+2021-10-10 11:44:34 +0000 [MT] IDEDistributionItem init <DVTFilePath:0x7fd2f72313a0:'/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftCoreImage.dylib'>
+2021-10-10 11:44:34 +0000 [MT] [OPTIONAL] Can't have a profile, not a bundle at <DVTFilePath:0x7fd2f72313a0:'/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftCoreImage.dylib'>
+2021-10-10 11:44:34 +0000 [MT] IDEDistributionItem init <DVTFilePath:0x7fd2f7247b00:'/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftCoreLocation.dylib'>
+2021-10-10 11:44:34 +0000 [MT] [OPTIONAL] Can't have a profile, not a bundle at <DVTFilePath:0x7fd2f7247b00:'/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftCoreLocation.dylib'>
+2021-10-10 11:44:34 +0000 [MT] IDEDistributionItem init <DVTFilePath:0x7fd2df7115f0:'/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftFoundation.dylib'>
+2021-10-10 11:44:34 +0000 [MT] [OPTIONAL] Can't have a profile, not a bundle at <DVTFilePath:0x7fd2df7115f0:'/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftFoundation.dylib'>
+2021-10-10 11:44:34 +0000 [MT] IDEDistributionItem init <DVTFilePath:0x7fd2df7116b0:'/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftCore.dylib'>
+2021-10-10 11:44:34 +0000 [MT] [OPTIONAL] Can't have a profile, not a bundle at <DVTFilePath:0x7fd2df7116b0:'/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftCore.dylib'>
+2021-10-10 11:44:34 +0000 [MT] IDEDistributionItem init <DVTFilePath:0x7fd2f7242440:'/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftCoreFoundation.dylib'>
+2021-10-10 11:44:34 +0000 [MT] [OPTIONAL] Can't have a profile, not a bundle at <DVTFilePath:0x7fd2f7242440:'/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/libswiftCoreFoundation.dylib'>
+2021-10-10 11:44:34 +0000 [MT] IDEDistributionItem init <DVTFilePath:0x7fd2f992c8d0:'/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app/Frameworks/AppceleratorBle.framework'>
+2021-10-10 11:44:34 +0000 [MT] IDEDistributionItem init <DVTFilePath:0x7fd2f7252d50:'/var/folders/xh/y8d5j7p95ndccyrb4yxv3l3c0000gn/T/XcodeDistPipeline.~~~kyHg0m/Root/Payload/InetTiBeacon.app'>
+2021-10-10 11:44:34 +0000 [MT] Processing step: IDEDistributionCreateManifestStep

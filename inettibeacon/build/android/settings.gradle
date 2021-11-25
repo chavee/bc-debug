@@ -1,0 +1,2 @@
+rootProject.name = 'InetTiBeacon'
+include ':app'
