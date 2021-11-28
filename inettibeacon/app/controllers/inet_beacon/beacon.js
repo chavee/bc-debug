@@ -23,12 +23,14 @@ function isSameStateBefore(uuid, minor, major) {
   return false;
 }
 
+console.log("begin:", Math.floor(Date.now()));
 var BLE = null;
 if (OS_IOS) {
   BLE = require("appcelerator.ble");
 } else {
   BLE = require("com.liferay.beacons");
 }
+console.log("after lode lib:", Math.floor(Date.now()));
 // --- ios ----------
 var manager = null;
 var iosDidRangeBeacons = null;
@@ -198,6 +200,8 @@ function beaconStartScan() {
       }
     });
 
+    console.log("after check perm:", Math.floor(Date.now()));
+
     //androidEntered callback
     var isEnterRegion = false;
     androidEntered = function (e) {
@@ -277,27 +281,61 @@ function beaconStartScan() {
       }
     };
 
+    androidBindingCallback = function (e) {
+      tag = "androidBindingCallback: "
+      
+      console.log(tag, e);
+    }
+
     BLE.addEventListener("enteredRegion", androidEntered);
     BLE.addEventListener("exitedRegion", androidExited);
     BLE.addEventListener("beaconProximity", androidBeaconProximityCallback);
-
+    BLE.addEventListener("onIBeaconServiceConnect", androidBindingCallback);
+    
+    console.log("add evnt complete:", Math.floor(Date.now()));
+    
     // Airports Beacon
     // UUID: 5991e161-bb46-432f-9bd8-b271f76f67d9
 
     // MyHome
     // c8a94f42-3cd5-483a-8adc-97473197b8b4
-    BLE.startMonitoringForRegion({
-      identifier: beaconIdentifier,
-      uuid: beaconUUID,
-    });
-    BLE.setBackgroundMode(false);
-    
-    BLE.setScanPeriods({
-      foregroundScanPeriod: 5000,
-      foregroundBetweenScanPeriod: 200,
-      backgroundScanPeriod: 5000,
-      backgroundBetweenScanPeriod: 200
-    });
+
+  var when_ready;
+  var not_ready_count = 0;
+
+  BLE.bindBeaconService();
+
+  when_ready = setInterval(function(){
+  if(!BLE.isReady())
+  {
+    console.log("not_ready_count=", not_ready_count);
+    console.log("BLE Not ready");
+    not_ready_count++;
+    return;
+  }
+
+  console.log("ble ready:", Math.floor(Date.now()));
+
+  Ti.API.info("Try", not_ready_count, "time, ",  "Okay! Module is ready!");  
+  clearInterval(when_ready);
+  when_ready = null;
+
+  console.log("checkAvailability=", BLE.checkAvailability());
+
+  BLE.startMonitoringForRegion({
+    identifier: beaconIdentifier,
+    uuid: beaconUUID,
+  });
+  BLE.setBackgroundMode(false);
+  
+  BLE.setScanPeriods({
+    foregroundScanPeriod: 5000,
+    foregroundBetweenScanPeriod: 200,
+    backgroundScanPeriod: 5000,
+    backgroundBetweenScanPeriod: 200
+  });
+      //setup your event listeners here
+  }, 1000);
   // end android
   }
 }
@@ -339,6 +377,11 @@ function putApi(major, minor){
       minor: minor
   };
   xhr.send(JSON.stringify(params));
+}
+
+function bleIsReady()
+{
+  return BLE.isReady();
 }
 
 exports.beaconStartScan = beaconStartScan;

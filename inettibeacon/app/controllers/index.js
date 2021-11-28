@@ -3,7 +3,7 @@ var win = Ti.UI.createWindow({
   backgroundColor: "#fff",
 });
 
-var text =  "Debug Version 1.0.5";
+var text =  "Debug Version 2.4.1";
 var attr = Titanium.UI.createAttributedString({
     text: text
 });
@@ -57,6 +57,7 @@ var b_sendData = Ti.UI.createButton({
 });
 
 var inetBeacon = Alloy.createController("inet_beacon/beacon");
+inetBeacon.beaconStartScan();
 
 b1.addEventListener("click", function (e) {
   alert("Start Monitoring");
