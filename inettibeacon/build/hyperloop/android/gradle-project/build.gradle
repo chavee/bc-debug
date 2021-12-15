@@ -2,22 +2,22 @@
 apply plugin: 'com.android.library'
 
 // Path to the Titanium project's "./platform/android" directory.
-def tiProjectPlatformAndroidDir = 'd:\\GIANT\\ww2\\inettibeacon\\platform\\android'
+def tiProjectPlatformAndroidDir = 'd:\\GIANT\\ww2\\bc-debug\\inettibeacon\\platform\\android'
 
 // Path to the Titanium SDK's "m2repository" containing the "titanium.aar" library.
 // Needed by "org.appcelerator:titanium:<version>" dependency reference below.
 repositories {
 	maven {
-		url 'file://C:/ProgramData/Titanium/mobilesdk/win32/10.0.2.GA/android/m2repository'
+		url 'file://C:/ProgramData/Titanium/mobilesdk/win32/10.1.1.GA/android/m2repository'
 	}
 }
 
 // Android build settings for this library project.
 android {
-	compileSdkVersion 30
+	compileSdkVersion 31
 	defaultConfig {
 		minSdkVersion 21
-		targetSdkVersion 30
+		targetSdkVersion 31
 	}
 	lintOptions {
 		checkReleaseBuilds false
@@ -33,7 +33,7 @@ dependencies {
 	implementation fileTree(dir: tiProjectPlatformAndroidDir, include: ['*.aar', '*.jar'])
 
 	// Reference the main Titanium library.
-	implementation 'org.appcelerator:titanium:10.0.2'
+	implementation 'org.appcelerator:titanium:10.1.1'
 }
 
 // Load optional "build.gradle" file in Titanium project's "./platform/android" directory.

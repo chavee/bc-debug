@@ -77,4 +77,4 @@ Ti.UI.addEventListener('sessionbegin', function () {
 if (typeof Ti.UI.hasSession === 'undefined' || Ti.UI.hasSession) {
   Alloy.createController('index');
 }
-//# sourceMappingURL=file://d:\GIANT\ww2\inettibeacon/build/map/Resources\android\app.js.map
+//# sourceMappingURL=file://d:\GIANT\ww2\bc-debug\inettibeacon/build/map/Resources\android\app.js.map

@@ -1,0 +1,423 @@
+<h1>Appcelerator Bluetooth Low Energy Module</h1>
+
+<ul><li>This module brings Bluetooth Low Energy into the mobile apps for titanium app developers.</li><li>Using Bluetooth Low Energy module, developers can bring feature like:</li><li>Act as BLE Central :<ul><li>Central can scan nearby peripheral, connect and exchange data with the peripherals</li><li>Central can subscribe with peripheral to get latest updates for peripheral</li></ul></li><li>Act as BLE Peripheral:<ul><li>Peripheral can advertise services, connect and exchange data with multiple central.</li></ul></li><li>Use L2CAP Channel:<ul><li>L2CAP is introduced with IOS 11 and Android 10, its used to transfer large amount of data between central and
+peripheral at real time.</li></ul></li><li>Main use case addressed by this module is Exchange of Data and Communicating with Central and
+Peripherals that supports Bluetooth Low Energy.</li></ul>
+
+<h2>Getting Started</h2>
+
+<h3>Android</h3>
+
+<ul><li><p>Set the <code> &lt;module&gt; </code> element in tiapp.xml, such as this:
+<code>
+&lt;modules&gt;
+	&lt;module platform=&quot;android&quot;&gt;appcelerator.ble&lt;/module&gt;
+&lt;/modules&gt;
+</code></p></li><li><p>To access this module from JavaScript, you would do the following:</p></li></ul>
+
+<p><code>
+var BLE = require(&quot;appcelerator.ble&quot;);
+</code>
+The BLE variable is a reference to the Module object.</p>
+
+<h3>iOS</h3>
+
+<ul><li><p>Edit the <code>plist</code> with following <code>uses-permission</code> element to the ios plist section of the
+tiapp.xml file.
+<code>
+&lt;ti:app&gt;
+&lt;ios&gt;
+  &lt;plist&gt;
+    &lt;key&gt;NSBluetoothAlwaysUsageDescription&lt;/key&gt;
+    &lt;string&gt;usage description string&lt;/string&gt;
+    &lt;key&gt;NSBluetoothPeripheralUsageDescription&lt;/key&gt;
+    &lt;string&gt;usage description string&lt;/string&gt;
+  &lt;/plist&gt;
+&lt;/ios&gt;
+&lt;/ti:app&gt;
+</code></p></li><li><p>If your app needs to run in background to perform certain Bluetooth-related tasks, Edit the <code>plist</code> with following <code>uses-permission</code> element to the ios plist section of the
+tiapp.xml file.
+<code>
+&lt;ti:app&gt;
+&lt;ios&gt;
+  &lt;plist&gt;
+    &lt;key&gt;UIBackgroundModes&lt;/key&gt;
+    &lt;array&gt;
+      &lt;string&gt;bluetooth-central&lt;/string&gt;
+      &lt;string&gt;bluetooth-peripheral&lt;/string&gt;
+    &lt;/array&gt;
+  &lt;/plist&gt;
+&lt;/ios&gt;
+&lt;/ti:app&gt;
+</code></p><ul><li><p>Set the <code> &lt;module&gt; </code> element in tiapp.xml, such as this:
+<code>
+&lt;modules&gt;
+&lt;module platform=&quot;ios&quot;&gt;appcelerator.ble&lt;/module&gt;
+&lt;/modules&gt;
+</code></p></li><li><p>To access this module from JavaScript, you would do the following:</p></li></ul></li></ul>
+
+<p><code>
+var BLE = require(&quot;appcelerator.ble&quot;);
+</code>
+The BLE variable is a reference to the Module object.</p>
+
+<h1>Act As Central Application</h1>
+
+<h2>Follow basic steps to create Central application:</h2>
+
+<ul><li>Use <code>initCentralManager</code> to create Central Manager
+<code>
+var centralManager = BLE.initCentralManager();
+</code></li><li>Check for <code>didUpdateState</code> event for <code>centralManager</code> status</li><li>Once <code>centralManager</code> is in <code>BLE.MANAGER_STATE_POWERED_ON</code> state, scan for peripherals using <code>startScan</code>
+<code>
+centralManager.startScan();
+</code></li><li>Use <code>peripherals</code> property to get all discovered peripherals
+<code>
+var peripherals = centralManager.peripherals;
+</code></li><li>Use <code>connect</code> to connect to peripheral
+<code>
+centralManager.connectPeripheral({
+        peripheral: peripheral,
+        options: {
+            [BLE.CONNECT_PERIPHERAL_OPTIONS_KEY_NOTIFY_ON_CONNECTION]: true,
+            [BLE.CONNECT_PERIPHERAL_OPTIONS_KEY_NOTIFY_ON_DISCONNECTION]: true
+        }
+});
+</code></li><li><p>Use <code>isConnected</code> to check if connected
+<code>
+peripheral.isConnected
+</code></p></li><li><p>Use <code>discoverServices</code> to discover services
+<code>
+peripheral.discoverServices();
+</code>
+result will be return in <code>didDiscoverServices</code> event</p><p><code>
+peripheral.addEventListener(&#39;didDiscoverServices&#39;, function (e) {});
+</code></p></li><li><p>Use <code>discoverCharacteristics</code>
+<code>
+peripheral.discoverCharacteristics({
+    service: service
+});
+</code></p><p>result will be return in <code>didDiscoverCharacteristics</code> event</p><p><code>
+connectedPeripheral.addEventListener(&#39;didDiscoverCharacteristics&#39;, function (e) {});
+</code></p></li><li><p>Use <code>subscribeToCharacteristic</code> and <code>unsubscribeFromCharacteristic</code> to subscribe or unsubscribe
+<code>
+peripheral.subscribeToCharacteristic({
+    characteristic: charactersticObject
+});
+peripheral.unsubscribeFromCharacteristic({
+    characteristic: charactersticObject
+});
+</code></p></li><li><p>Use <code>cancelPeripheralConnection</code> to disconnect the connection
+<code>
+centralManager.cancelPeripheralConnection({ peripheral: peripheral });
+</code></p></li><li><p>As the module currently provides support to act only as central for the Android, hence to test the example application, user can use any heart-rate peripheral
+or the peripheral simulator in order to do the connection and data-exchange with the central.</p></li></ul>
+
+<h2>Follow basic steps to create Central application and use Channel for communication:</h2>
+
+<ul><li>Use <code>initCentralManager</code> to create Central Manager
+<code>
+var centralManager = BLE.initCentralManager();
+</code></li><li><p>Check for <code>didUpdateState</code> event for <code>centralManager</code> status</p></li><li><p>Once <code>centralManager</code> is in <code>BLE.MANAGER_STATE_POWERED_ON</code> state, scan for perpherals using <code>startScan</code>
+<code>
+centralManager.startScan();
+</code></p></li><li>Use <code>peripherals</code> property to get all discovered peripherals
+<code>
+var peripherals = centralManager.peripherals;
+</code></li><li><p>Use <code>connect</code> to connect to peripheral
+<code>
+centralManager.connectPeripheral({
+    peripheral: peripheral,
+    options: {
+        [BLE.CONNECT_PERIPHERAL_OPTIONS_KEY_NOTIFY_ON_CONNECTION]: true,
+        [BLE.CONNECT_PERIPHERAL_OPTIONS_KEY_NOTIFY_ON_DISCONNECTION]: true
+    }
+});
+</code></p></li><li><p>Use <code>isConnected</code> to check if connected
+<code>
+peripheral.isConnected
+</code></p></li><li><p>Use <code>discoverServices</code> to discover services
+<code>
+peripheral.discoverServices();
+</code>
+result will be return in <code>didDiscoverServices</code> event</p><p><code>
+peripheral.addEventListener(&#39;didDiscoverServices&#39;, function (e) {});
+</code></p></li><li><p>Use <code>discoverCharacteristics</code>
+<code>
+peripheral.discoverCharacteristics({
+    service: service
+});
+</code></p><p>result will be return in <code>didDiscoverCharacteristics</code> event</p><p><code>
+connectedPeripheral.addEventListener(&#39;didDiscoverCharacteristics&#39;, function (e) {});
+</code></p></li><li><p>Use <code>subscribeToCharacteristic</code> and <code>unsubscribeFromCharacteristic</code> to subscribe or unsubscribe</p><p><code>
+peripheral.subscribeToCharacteristic({
+    characteristic: charactersticObject
+});
+peripheral.unsubscribeFromCharacteristic({
+    characteristic: charactersticObject
+});
+</code></p></li><li><p>Get <code>psmIdentifier</code> from <code>didUpdateValueForCharacteristic</code> event and open <code>channel</code></p><p><code>
+peripheral.addEventListener(&#39;didUpdateValueForCharacteristic&#39;, function (e) {
+    if (e.errorCode !== null) {
+        alert(&#39;Error while didUpdateValueForCharacteristic&#39; + e.errorCode + &#39;/&#39; + e.errorDomain + &#39;/&#39; + e.errorDescription);
+        return;
+    }
+    let value = e.value.toString();
+    if (value) {
+        e.sourcePeripheral.openL2CAPChannel({
+             psmIdentifier: Number(e.value.toString())
+        });
+    }
+});
+</code></p></li><li><p>Get <code>channel</code> object from <code>didOpenChannel</code> event and set event <code>onDataReceived</code> for received data and <code>onStreamError</code> for stream errors</p><p><code>
+connectedPeripheral.addEventListener(&#39;didOpenChannel&#39;, function (e) {
+    if (e.errorCode !== null) {
+        alert(&#39;Error while opening channel&#39; + e.errorCode + &#39;/&#39; + e.errorDomain + &#39;/&#39; + e.errorDescription);
+            return;
+    }
+    channel = e.channel;
+    channel.addEventListener(&#39;onDataReceived&#39;, function (e) {
+        var data = e.data;
+    });
+    channel.addEventListener(&#39;onStreamError&#39;, function (e) {
+              alert(&#39;Error &#39; + e.errorCode + &#39;/&#39; + e.errorDomain + &#39;/&#39; + e.errorDescription);
+    });
+});
+</code></p></li><li><p>Use <code>write</code> function from channel to write values</p><p><code>
+var newBuffer = Ti.createBuffer({ value: &#39;hello world&#39; });
+channel.write({
+    data: newBuffer
+});
+</code></p></li><li><p>Use <code>cancelPeripheralConnection</code> to disconnect the connection</p><p><code>
+centralManager.cancelPeripheralConnection({ peripheral: peripheral });
+</code></p></li><li><p>Use <code>close</code> function to close channel</p><p><code>
+channel.close();
+</code></p></li></ul>
+
+<h1>Act As Peripheral Application</h1>
+
+<h2>Follow basic steps to create Peripheral application:</h2>
+
+<ul><li><p>Use <code>initPeripheralManager</code> to create Peripheral Manager</p><p><code>
+var peripheralManager = BLE.initPeripheralManager();
+</code></p></li><li><p>Use <code>createMutableCharacteristic</code> to create charracteristic</p><p><code>
+charProperties = [ BLE.CHARACTERISTIC_PROPERTIES_READ, BLE.CHARACTERISTIC_PROPERTIES_WRITE_WITHOUT_RESPONSE, BLE.CHARACTERISTIC_PROPERTIES_NOTIFY ];
+charPermissions = [ BLE.CHARACTERISTIC_PERMISSION_READABLE, BLE.CHARACTERISTIC_PERMISSION_WRITEABLE ];
+var characteristic = BLE.createMutableCharacteristic({
+        uuid: characteristicUUID,
+        properties: charProperties,
+        permissions: charPermissions
+});
+</code></p></li><li><p>Use <code>addService</code> to add service</p><p><code>
+service = peripheralManager.addService({
+    uuid: serviceUUID,
+    primary: true,
+    characteristics: [ characteristic ]
+});
+</code></p></li><li><p>Once <code>peripheralManager</code> is in <code>BLE.MANAGER_STATE_POWERED_ON</code> state, start advertising using <code>startAdvertising</code></p><p><code>
+var name = IOS ? &#39;BLE-Sample&#39; : true;
+peripheralManager.startAdvertising({
+    localName: name,
+    serviceUUIDs: servicesUUIDs
+});
+</code></p></li><li><p>Use <code>updateValue</code> to update charracteristic value</p><p><code>
+var buffer = Ti.createBuffer({ value: &#39;hello world&#39; });
+    peripheralManager.updateValue({
+    characteristic: characteristic,
+    data: buffer,
+    central: centrals
+});
+</code></p></li><li><p>Use <code>stopAdvertising</code> to stop advertising
+<code>
+    peripheralManager.stopAdvertising();
+</code></p></li><li><p>Use <code>closePeripheral</code> to close the peripheral after it is done with the peripheral operations. (Android only)
+<code>
+peripheralManager.closePeripheral();
+</code></p></li></ul>
+
+<h2>Follow basic steps to create Peripheral application which use channels for communication:</h2>
+
+<ul><li><p>Use <code>initPeripheralManager</code> to create Peripheral Manager</p><p><code>
+var peripheralManager = BLE.initPeripheralManager();
+</code></p></li><li><p>Use <code>createMutableCharacteristic</code> to create charracteristic</p><p><code>
+ var characteristic = BLE.createMutableCharacteristic({
+    uuid: BLE.CBUUID_L2CAPPSM_CHARACTERISTIC_STRING,
+    properties: [ BLE.CHARACTERISTIC_PROPERTIES_READ, BLE.CHARACTERISTIC_PROPERTIES_INDICATE ],
+    permissions: [ BLE.CHARACTERISTIC_PERMISSION_READABLE ]
+});
+</code></p></li><li><p>Use <code>addService</code> to add service</p><p><code></code>`
+var service = peripheralManager.addService({
+    uuid: serviceUUID,
+    primary: true,
+    characteristics: [ characteristic ]
+});</p><p><code></code>`</p></li><li><p>Once <code>peripheralManager</code> is in <code>BLE.MANAGER_STATE_POWERED_ON</code> state, use <code>publishL2CAPChannel</code> to publish channel and start advertising using <code>startAdvertising</code>
+<code></code>`
+peripheralManager.publishL2CAPChannel({
+     encryptionRequired: false
+});</p><p>peripheralManager.startAdvertising({
+    localName: name,
+    serviceUUIDs: servicesUUIDs
+});
+<code></code>`</p></li><li><p>Update <code>psmIdentifier</code> to characteristic in <code>didPublishL2CAPChannel</code> event</p><p><code>
+peripheralManager.addEventListener(&#39;didPublishL2CAPChannel&#39;, function (e) {
+    var psmBuffer = Ti.createBuffer({ value: e.psm + &#39;&#39; });
+    manager.updateValue({
+        characteristic: characteristic,
+        data: psmBuffer,
+        central: centrals
+    });
+});
+</code></p></li><li><p>Get Channel from <code>didOpenL2CAPChannel</code> event and set <code>onDataReceived</code> event to read values and <code>onStreamError</code> event for check stream errors</p><p><code>
+peripheralManager.addEventListener(&#39;didOpenL2CAPChannel&#39;, function (e) {
+    var channel = e.channel;
+    channel.addEventListener(&#39;onDataReceived&#39;, function (e) {
+        var data = e.data;
+    });
+    channel.addEventListener(&#39;onStreamError&#39;, function (e) {});
+});
+</code></p></li><li><p>Use <code>write</code> function from channel to write values</p><p><code>
+var newBuffer = Ti.createBuffer({ value: &#39;hello world&#39; });
+channel.write({
+    data: newBuffer
+});
+</code></p></li><li><p>Use <code>close</code> function to close channel</p><p><code>
+channel.close();
+</code></p></li><li><p>Use <code>stopAdvertising</code> to stop advertising
+<code>
+peripheralManager.stopAdvertising();
+</code></p></li><li><p>Use <code>closePeripheral</code> to close the peripheral after it is done with the peripheral operations. (Android only)
+<code>
+peripheralManager.closePeripheral();
+</code></p></li></ul>
+
+<h1>iBeacon Application (iOS Only)</h1>
+
+<h2>Follow basic steps to adverstise iBeacon:</h2>
+
+<ul><li><p>Use <code>initPeripheralManager</code> to create Peripheral Manager</p><p><code>
+var peripheralManager = BLE.initPeripheralManager();
+</code></p></li><li><p>Use <code>createBeaconRegion</code> to create BeaconRegion</p><p><code>
+	var beaconRegion = BLE.createBeaconRegion({
+		uuid: &#39;135C8F13-6A2D-46ED-AA71-FB956FC23742&#39;,
+		major: 1,
+		minor: 100,
+		identifier: &#39;com.appcelerator.BluetoothLowEnergy.beacon&#39;
+	});
+</code></p></li><li>Once <code>peripheralManager</code> is in <code>BLE.MANAGER_STATE_POWERED_ON</code> state, start advertising using <code>startAdvertisingBeaconRegion</code>
+<code>
+peripheralManager.startAdvertisingBeaconRegion({
+		beaconRegion: beaconRegion
+	});
+</code></li></ul>
+
+<h2>Follow basic steps to create iBeacon Scanner application:</h2>
+
+<ul><li><p>Edit the <code>plist</code> with following <code>uses-permission</code> element to the ios plist section
+<code>
+&lt;ti:app&gt;
+    &lt;ios&gt;
+        &lt;plist&gt;
+            &lt;key&gt;NSLocationWhenInUseUsageDescription&lt;/key&gt;
+            &lt;string&gt;Allow Location permission&lt;/string&gt;
+            &lt;key&gt;NSLocationAlwaysUsageDescription&lt;/key&gt;
+            &lt;string&gt;Allow Location permission&lt;/string&gt; 
+        &lt;/plist&gt;
+    &lt;/ios&gt;
+&lt;/ti:app&gt;
+</code></p><ul><li><p>Use <code>initPeripheralManager</code> to create Region Manager</p><p><code>
+var regionManager = BLE.createRegionManager();
+</code></p></li><li><p>Use <code>requestWhenInUseAuthorization</code> to request location permission
+<code>
+	regionManager.requestWhenInUseAuthorization();
+</code></p></li><li><p>Use <code>createBeaconRegion</code> to create BeaconRegion
+<code>
+var beaconRegion = BLE.createBeaconRegion({
+	uuid: &#39;135C8F13-6A2D-46ED-AA71-FB956FC23742&#39;,
+	major: 1,
+	minor: 100,
+	identifier: &#39;com.appcelerator.BluetoothLowEnergy.beacon&#39;
+});
+</code></p></li><li><p>Once <code>regionManager</code> is in <code>BLE.LOCATION_MANAGER_AUTHORIZATION_STATUS_AUTHORIZED_WHEN_IN_USE | BLE.LOCATION_MANAGER_AUTHORIZATION_STATUS_AUTHORIZED_ALWAYS</code> state, use <code>startRegionMonitoring</code> to start monitoring and start ranging using <code>startRangingBeaconsInRegion</code>
+<code>
+regionManager.startRegionMonitoring({
+			beaconRegion: beaconRegion
+});
+regionManager.startRangingBeaconsInRegion({
+			beaconRegion: beaconRegion
+});
+</code></p></li><li><p>Get ranged beacons from <code>didRangeBeacons</code> event and check <code>proximity</code> and <code>accuracy</code> to check beacon location</p><p><code></code>`
+var didRangeBeacons = (e) =&gt; {
+	var becaons = e.beacons;
+	if (becaons.length === 0) {
+		alert(&#39;No beacon in range&#39;);
+		return;
+	}
+	var proximity = becaons[0].proximity;
+	var accuracy = becaons[0].accuracy;
+	switch (proximity) {
+		case BLE.BEACON<em>PROXIMITY</em>UNKNOWN:
+			alert(&#39;Beacon Location : UNKNOWN&#39;);
+			break;</p><pre><code>case BLE.BEACON_PROXIMITY_IMMEDIATE:
+	alert(&#39;Beacon Location : IMMEDIATE (approx. &#39; + accuracy + &#39;m)&#39;);
+	break;
+
+case BLE.BEACON_PROXIMITY_NEAR:
+	alert(&#39;Beacon Location : NEAR (approx. &#39; + accuracy + &#39;m)&#39;);
+	break;</code></pre></li></ul></li></ul>
+
+<pre><code>		case BLE.BEACON_PROXIMITY_FAR:
+			alert(&#39;Beacon Location : FAR (approx. &#39; + accuracy + &#39;m)&#39;);
+			break;
+		default:
+			alert(&#39;Beacon Location : UNKNOWN&#39;);
+			break;
+	}
+};
+regionManager.addEventListener(&#39;didRangeBeacons&#39;, didRangeBeacons);
+```</code></pre>
+
+<ul><li><p>Use <code>stopRegionMonitoring</code> to stop monitoring and stop ranging using <code>stopRangingBeaconsInRegion</code></p><p><code>                   
+regionManager.stopRegionMonitoring({
+			beaconRegion: beaconRegion
+});
+regionManager.stopRangingBeaconsInRegion({
+			beaconRegion: beaconRegion
+});
+</code></p></li></ul>
+
+<h2>Read Data from TiBuffer</h2>
+
+<ul><li><p>you can access bytes from TiBuffer using:</p><p><code>
+for (i = 0; i &lt; buffer.length; i++) {
+    var byte = buffer[i];
+}
+</code></p></li></ul>
+
+<h2>Example</h2>
+
+<ul><li>Please see the <code>example/</code> folder.</li><li>Please see the <code>example/ImageTransferUsingChannelStream</code> folder for how to use channel stream API&#39;s to transfer bigger data like images.</li><li>Please see the <code>example/beacon</code> folder for iBeacon sample.</li></ul>
+
+<h2>Observations</h2>
+
+<h3>Android</h3>
+
+<ul><li>This behaviour is observed on certain android devices. While starting the BLE scan, make sure the location service is turned-on in order to receive the scan results.</li><li>It is observed with certain fitness watches (may be other BLE hardware too) that upon connecting them with android-central application, the connection gets auto-disconnected after certain period of time(ranging from immediately to up-to 50s or more).
+The fix is to first pair your peripheral-device(watch or any other hardware) with android device via Settings-&gt;Bluetooth screen and then do the connection procedure from central-application.</li></ul>
+
+<h3>iOS</h3>
+
+<ul><li>Beacon do not have background support</li></ul>
+
+<h2>Building</h2>
+
+<p>Simply run <code>appc run -p ios --build-only</code> and <code>appc run -p android --build-only</code> which will compile and package your module.</p>
+
+<p>Copy the module zip file into the root folder of your Titanium application or in the Titanium system folder (e.g. /Library/Application Support/Titanium).</p>
+
+<h2>Author</h2>
+
+<p>Axway</p>
+
+<h2>License</h2>
+
+<p>Copyright (c) 2020 by Axway, Inc. Please see the LICENSE file for further details.</p>

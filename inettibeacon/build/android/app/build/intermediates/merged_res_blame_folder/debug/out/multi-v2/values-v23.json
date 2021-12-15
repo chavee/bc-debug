@@ -1,29 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\GIANT\\ww2\\inettibeacon\\build\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
+            "outputFile": "D:\\GIANT\\ww2\\bc-debug\\inettibeacon\\build\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\5610110106\\.gradle\\caches\\transforms-3\\4a62bf30a23fe1e91380b2da05eabc8e\\transformed\\material-1.3.0\\res\\values-v23\\values-v23.xml",
-                    "from": {
-                        "startLines": "2,6",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,320",
-                        "endLines": "5,9",
-                        "endColumns": "10,10",
-                        "endOffsets": "315,588"
-                    },
-                    "to": {
-                        "startLines": "53,57",
-                        "startColumns": "4,4",
-                        "startOffsets": "3674,3939",
-                        "endLines": "56,60",
-                        "endColumns": "10,10",
-                        "endOffsets": "3934,4207"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\5610110106\\.gradle\\caches\\transforms-3\\35b6ec9cb20709149a4a7302f6938202\\transformed\\appcompat-1.3.0\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\5610110106\\.gradle\\caches\\transforms-3\\2c6f62d21dc441aa2a2c084eb539ac0d\\transformed\\appcompat-1.3.1\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,20,34,35,36,39,43,44,45,46",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -34,7 +15,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\5610110106\\.gradle\\caches\\transforms-3\\c3c728c6c012d0e1f7a24d293bec2857\\transformed\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\5610110106\\.gradle\\caches\\transforms-3\\d4295c34d539f5297eca44d836d6748b\\transformed\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -50,6 +31,63 @@
                         "endLines": "52",
                         "endColumns": "12",
                         "endOffsets": "3669"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\5610110106\\.gradle\\caches\\transforms-3\\d6cf1c96671c919cf125787b7435c1b6\\transformed\\jetified-titanium-10.1.1\\res\\values-v23\\values-v23.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "9",
+                        "endColumns": "9",
+                        "endOffsets": "548"
+                    },
+                    "to": {
+                        "startLines": "59",
+                        "startColumns": "4",
+                        "startOffsets": "4001",
+                        "endLines": "66",
+                        "endColumns": "9",
+                        "endOffsets": "4494"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\5610110106\\.gradle\\caches\\transforms-3\\ecb44e9db50331d7f619fbb742715a36\\transformed\\material-1.4.0\\res\\values-v23\\values-v23.xml",
+                    "from": {
+                        "startLines": "2,6",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,320",
+                        "endLines": "5,9",
+                        "endColumns": "10,10",
+                        "endOffsets": "315,588"
+                    },
+                    "to": {
+                        "startLines": "67,71",
+                        "startColumns": "4,4",
+                        "startOffsets": "4499,4764",
+                        "endLines": "70,74",
+                        "endColumns": "10,10",
+                        "endOffsets": "4759,5032"
+                    }
+                },
+                {
+                    "source": "D:\\GIANT\\ww2\\bc-debug\\inettibeacon\\build\\android\\app\\src\\main\\res\\values-v23\\ti_styles.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "1",
+                        "startOffsets": "52",
+                        "endLines": "7",
+                        "endColumns": "9",
+                        "endOffsets": "374"
+                    },
+                    "to": {
+                        "startLines": "53",
+                        "startColumns": "4",
+                        "startOffsets": "3674",
+                        "endLines": "58",
+                        "endColumns": "9",
+                        "endOffsets": "3996"
                     }
                 }
             ]

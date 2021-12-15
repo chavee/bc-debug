@@ -44,7 +44,8 @@ function Controller() {
   // Controller code directly from the developer's controller file
   // let beaconUUID = "c8a94f42-3cd5-483a-8adc-97473197b8b4";
   let beaconUUID = "5991e161-bb46-432f-9bd8-b271f76f67d9";
-  let beaconIdentifier = "MyHome";
+  let beaconIdentifier = "Morprom";
+  Ti.App.Properties.setString("f_beacon", "");
 
   function resetStateBeacon() {
     Ti.App.Properties.setString("inetBeaconData_major", null);
@@ -67,12 +68,48 @@ function Controller() {
     return false;
   }
 
+  console.log("begin:", Math.floor(Date.now()));
   var BLE = null;
-  if (false) {
+  var GATT = null;
+  var centralManager = null;
+  // var androidPlatformTools = require('bencoding.android.tools').createPlatform();
+  var isForeground = true;
+
+  if (false)
+  {
     BLE = require("appcelerator.ble");
-  } else {
+  } else
+  {
     BLE = require("com.liferay.beacons");
+    GATT = require('ti.bluetooth');
+    centralManager = GATT.createCentralManager();
   }
+
+  function isInterestedRegion(rssi)
+  {
+    tag = "isInterestRegion:";
+    let min_rssi = -96;
+    if (false)
+    {
+      // interested all
+      return true;
+    } else
+
+    {
+      if (rssi <= min_rssi)
+      {
+        // not interested region
+        return false;
+      } else
+
+      {
+        // interested region
+        return true;
+      }
+    }
+  }
+
+  console.log("after lode lib:", Math.floor(Date.now()));
   // --- ios ----------
   var manager = null;
   var iosDidRangeBeacons = null;
@@ -111,7 +148,6 @@ function Controller() {
       };
 
       iosDidRangeBeacons = (e) => {
-
         Ti.API.info("didRangeBeacons");
         var becaons = e.beacons;
 
@@ -138,6 +174,11 @@ function Controller() {
         var haveCase = true;
 
         // check state before
+
+        if (!isInterestedRegion(proximity))
+        {
+          console.log("Too far...");
+        }
         if (isSameStateBefore(e.region.uuid, major, minor)) {
           return;
         }
@@ -242,6 +283,8 @@ function Controller() {
         }
       });
 
+      console.log("after check perm:", Math.floor(Date.now()));
+
       //androidEntered callback
       var isEnterRegion = false;
       androidEntered = function (e) {
@@ -258,6 +301,24 @@ function Controller() {
       androidBeaconProximityCallback = function (e) {
         let tag = "proxCallback:";
         if (isEnterRegion) {
+          console.log(tag, "identifer: " + e.identifier);
+          console.log(tag, "uuid: " + e.uuid);
+          console.log(tag, "major: " + e.major);
+          console.log(tag, "minor: " + e.minor);
+          console.log(tag, "proximity: " + e.proximity);
+          console.log(tag, "accuracy: " + e.accuracy);
+          console.log(tag, "rssi: " + e.rssi);
+          console.log(tag, "power: " + e.power);
+          alert(tag + "minor:" + e.minor + ", prox:" + e.proximity + ", rssi:" + e.rssi + ", accuracy:" + e.accuracy);
+
+
+          // if not interested region, ignore it !!
+          if (!isInterestedRegion(e.rssi))
+          {
+            console.log("Too far...");
+            alert("Too far...rssi:" + e.rssi);
+            return;
+          }
           // check is same state befor
           if (isSameStateBefore(e.uuid, e.major, e.minor)) {
             console.log(tag, "Same beacon");
@@ -267,20 +328,15 @@ function Controller() {
           // just record beacon, not use proximity
           setStateBeacon(e.uuid, e.major, e.minor);
           alert(
-          tag + " " + e.uuid + " Major: " + e.major + " Minor: " + e.minor);
+          tag + "putApi->" + e.uuid + " Major: " + e.major + " Minor: " + e.minor + " prox:" + e.proximity);
 
           //put message to bot
           putApi(e.major, e.minor);
+          var my_text = " " + e.major + ", " + e.minor;
+          my_text = Ti.App.Properties.getString("f_beacon") + my_text;
+          Ti.App.Properties.setString("f_beacon", my_text);
           isEnterRegion = false;
         }
-        console.log(tag, "identifer: " + e.identifier);
-        console.log(tag, "uuid: " + e.uuid);
-        console.log(tag, "major: " + e.major);
-        console.log(tag, "minor: " + e.minor);
-        console.log(tag, "proximity: " + e.proximity);
-        console.log(tag, "accuracy: " + e.accuracy);
-        console.log(tag, "rssi: " + e.rssi);
-        console.log(tag, "power: " + e.power);
       };
 
       //androidExited callback
@@ -321,26 +377,99 @@ function Controller() {
         }
       };
 
+      androidBindingCallback = function (e) {
+        tag = "androidBindingCallback: ";
+        console.log(tag, e);
+      };
+
+      var inBeconRange = function (e) {
+        var tag = "beaconRanges: ";
+        console.log(tag, "I am in the " + e.identifier + " region");
+        console.log(tag, "I see " + e.beacons.length + " beacons in this region:");
+        console.log(tag, "----------------");
+        e.beacons.forEach(function (beacon, index) {
+          console.log(tag, "Beacon number: " + index);
+          console.log(tag, "uuid: " + beacon.uuid);
+          console.log(tag, "major: " + beacon.major);
+          console.log(tag, "minor: " + beacon.minor);
+          console.log(tag, "proximity: " + beacon.proximity);
+          console.log(tag, "accuracy: " + beacon.accuracy);
+          console.log(tag, "rssi: " + beacon.rssi);
+          console.log(tag, "power: " + beacon.power);
+          console.log("----------------");
+        });
+      };
+
+      var regionState = function (e) {
+        var tag = "regionState: ";
+        console.log(tag, "identifer: " + e.regionState);
+      };
+
       BLE.addEventListener("enteredRegion", androidEntered);
       BLE.addEventListener("exitedRegion", androidExited);
       BLE.addEventListener("beaconProximity", androidBeaconProximityCallback);
+      BLE.addEventListener("onIBeaconServiceConnect", androidBindingCallback);
+      BLE.addEventListener("beaconRanges", inBeconRange);
+      BLE.addEventListener("determinedRegionState", regionState);
+
+      console.log("add evnt complete:", Math.floor(Date.now()));
 
       // Airports Beacon
       // UUID: 5991e161-bb46-432f-9bd8-b271f76f67d9
 
       // MyHome
       // c8a94f42-3cd5-483a-8adc-97473197b8b4
-      BLE.startMonitoringForRegion({
-        identifier: beaconIdentifier,
-        uuid: beaconUUID });
 
-      BLE.setBackgroundMode(false);
+      var when_ready;
+      var not_ready_count = 0;
 
-      BLE.setScanPeriods({
-        foregroundScanPeriod: 5000,
-        foregroundBetweenScanPeriod: 200,
-        backgroundScanPeriod: 5000,
-        backgroundBetweenScanPeriod: 200 });
+      BLE.bindBeaconService();
+
+      when_ready = setInterval(function () {
+        if (!BLE.isReady())
+        {
+          console.log("not_ready_count=", not_ready_count);
+          console.log("BLE Not ready");
+          not_ready_count++;
+          return;
+        }
+
+        Ti.API.info("Try", not_ready_count, "time, ", "Okay! Module is ready!");
+
+        // console.log("checkAvailability=", BLE.checkAvailability());
+        if (!BLE.checkAvailability())
+        {
+          alert("It's not support in your device!");
+          return;
+        }
+
+        BLE.setBackgroundMode(false);
+        BLE.setScanPeriods({
+          foregroundScanPeriod: 5000,
+          foregroundBetweenScanPeriod: 200,
+          backgroundScanPeriod: 5000,
+          backgroundBetweenScanPeriod: 200 });
+
+
+        BLE.startMonitoringForRegion({
+          identifier: beaconIdentifier,
+          uuid: beaconUUID });
+
+
+        clearInterval(when_ready);
+        when_ready = null;
+      }, 1000);
+
+      var monit;
+
+      monit = setInterval(function () {
+        // var isForeground = androidPlatformTools.isInForeground();
+        if (!isForeground) {
+          console.log("App in background. Stop scan.");
+          BLE.stopScan();
+          return;
+        }
+      });
 
       // end android
     }
@@ -385,9 +514,77 @@ function Controller() {
     xhr.send(JSON.stringify(params));
   }
 
+  function BLEScan() {
+    if (false)
+    {
+      console.log("IOS");
+    } else
+
+    {
+      console.log("Android");
+      if (centralManager.isScanning()) {
+        console.log("Already scanning, please stop scan first!");
+        return;
+      }
+
+      var gatt_handle;
+      gatt_handle = setInterval(function (e) {
+        if (centralManager.didUpdateState != BLE.MANAGER_STATE_POWERED_ON)
+        {
+          console.log("didState=", centralManager.didUpdateState);
+          return;
+        }
+        if (centralManager.getState() != BLE.MANAGER_STATE_POWERED_ON)
+        {
+          console.log("BLE manager needs to be powered on before. Call initialize().");
+        }
+
+        console.log("BLE.MANAGER_STATE_POWERED_ON");
+        // Start Scan
+        centralManager.startScan();
+        console.log("Start BLE");
+        clearInterval(gatt_handle);
+        gatt_handle = null;
+      }, 1000);
+    }
+  }
+
+  var gattDidDiscover = function (e) {
+    Ti.API.info('didDiscoverPeripheral');
+    Ti.API.info(e.peripheral.uuids.uuid, "Address:", e.peripheral.address, e.peripheral.name);
+    // Ti.API.info(e.peripheral.services);
+    // _.each(e.peripheral.uuids, function(item) {
+    //   console.log(e.peripheral.name, ":", e.peripheral.address, "uuid:", e.peripheral.uuids.uuid);
+    // });
+    // Ti.API.info(discoverServices());
+  };
+
+  centralManager.addEventListener("didDiscoverPeripheral", gattDidDiscover);
+
+  function stopBLE() {
+    if (centralManager.isScanning) {
+      console.log("Stop BLE");
+      centralManager.stopScan();
+    } else
+    {
+      console.log("No scan session!");
+    }
+  }
+
+  function md5_hash() {
+    var tag = "md5_hash";
+    var my_cid = Ti.App.Properties.getString("inetBeaconData_cid");
+    console.log(tag, "cid:", my_cid);
+    var my_md5 = Ti.Utils.md5HexDigest(`b1cf4b7ec203:${my_cid}:32780:1102`);
+    alert(my_md5);
+  }
+
   exports.beaconStartScan = beaconStartScan;
   exports.beaconStopScan = beaconStopScan;
   exports.putApi = putApi;
+  exports.BLEScan = BLEScan;
+  exports.stopBLE = stopBLE;
+  exports.md5_hash = md5_hash;
 
   // Generated code that must be executed after all UI and
   // controller code. One example deferred event handlers whose
@@ -401,4 +598,4 @@ function Controller() {
 }
 
 module.exports = Controller;
-//# sourceMappingURL=file://d:\GIANT\ww2\inettibeacon/build/map/Resources\android\alloy\controllers\inet_beacon\beacon.js.map
+//# sourceMappingURL=file://d:\GIANT\ww2\bc-debug\inettibeacon/build/map/Resources\android\alloy\controllers\inet_beacon\beacon.js.map

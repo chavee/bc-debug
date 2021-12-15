@@ -1,0 +1,47 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\GIANT\\ww2\\bc-debug\\inettibeacon\\build\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v27\\values-v27.xml",
+            "map": [
+                {
+                    "source": "D:\\GIANT\\ww2\\bc-debug\\inettibeacon\\build\\android\\app\\src\\main\\res\\values-v27\\ti_styles.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "1",
+                        "startOffsets": "52",
+                        "endLines": "8",
+                        "endColumns": "9",
+                        "endOffsets": "435"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "8",
+                        "endColumns": "9",
+                        "endOffsets": "438"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\5610110106\\.gradle\\caches\\transforms-3\\d6cf1c96671c919cf125787b7435c1b6\\transformed\\jetified-titanium-10.1.1\\res\\values-v27\\values-v27.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "10",
+                        "endColumns": "9",
+                        "endOffsets": "617"
+                    },
+                    "to": {
+                        "startLines": "9",
+                        "startColumns": "4",
+                        "startOffsets": "443",
+                        "endLines": "17",
+                        "endColumns": "9",
+                        "endOffsets": "1005"
+                    }
+                }
+            ]
+        }
+    ]
+}

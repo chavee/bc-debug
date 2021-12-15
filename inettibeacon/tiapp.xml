@@ -12,7 +12,7 @@
   <fullscreen>false</fullscreen>
   <navbar-hidden>false</navbar-hidden>
   <analytics>true</analytics>
-  <guid>d79ca631-036f-4d97-9111-621bd74348e6</guid>  
+  <guid>7e514358-7571-4909-9666-17bdc2f12fe3</guid>
   <property name="ti.ui.defaultunit" type="string">dp</property>
   <property name="run-on-main-thread" type="bool">true</property>
   <ios>
@@ -22,7 +22,7 @@
       <dict>
         <key>BGTaskSchedulerPermittedIdentifiers</key>
         <array>
-            <string>com.appcelerator.InetTiBeacon</string>
+          <string>com.appcelerator.InetTiBeacon</string>
         </array>
         <key>UISupportedInterfaceOrientations~iphone</key>
         <array>
@@ -43,7 +43,6 @@
         <false/>
         <key>UIStatusBarStyle</key>
         <string>UIStatusBarStyleDefault</string>
-        
         <!-- for beacon permission -->
         <key>NSBluetoothAlwaysUsageDescription</key>
         <string>Can we connect to Bluetooth devices?</string>
@@ -69,32 +68,31 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
     <manifest 
       xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1">
-       <!-- for beacon permission -->
-      <uses-permission
-        android:name="android.permission.BLUETOOTH"/>
-      <uses-permission
-        android:name="android.permission.BLUETOOTH_ADMIN"/>
-      <uses-permission
-        android:name="android.permission.ACCESS_FINE_LOCATION"/>
-      <uses-permission
-        android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+      <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="31"/>
+       
+      
+      <!-- for beacon permission -->
       <application>
-        <service	android:enabled="true"
-              android:exported="true"
-              android:isolatedProcess="false"
-              android:label="iBeacon"
-              android:name="com.radiusnetworks.ibeacon.service.IBeaconService">
-        </service>
-        <service	android:enabled="true"
-              android:name="com.radiusnetworks.ibeacon.IBeaconIntentProcessor">
-              <meta-data android:name="background" android:value="true" />
-          <intent-filter
-            android:priority="1" >
+        <!-- <activity android:name=".MainActivity" android:exported="true">
+        </activity> -->
+        <service android:enabled="true" android:exported="true" android:isolatedProcess="false" android:label="iBeacon" android:name="com.radiusnetworks.ibeacon.service.IBeaconService"/>
+        <service android:enabled="true" android:exported="true" android:name="com.radiusnetworks.ibeacon.IBeaconIntentProcessor">
+          <meta-data android:name="background" android:value="true"/>
+          <intent-filter android:priority="1">
             <action android:name="com.appcelerator.InetTiBeacon.DID_RANGING"/>
             <action android:name="com.appcelerator.InetTiBeacon.DID_MONITORING"/>
           </intent-filter>
         </service>
       </application>
+      <uses-permission android:name="android.permission.BLUETOOTH"/>
+      <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+      <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+      <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+      <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+      <uses-permission android:name="android.permission.BLUETOOTH_SCAN"/>
+      <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+      <!-- <uses-permission
+        android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/> -->
     </manifest>
   </android>
   <modules>
@@ -103,6 +101,8 @@
     <module platform="commonjs">ti.cloud</module>
     <!-- Beacon module -->
     <module platform="android">com.liferay.beacons</module>
+    <module platform="android">ti.bluetooth</module>
+    <!-- <module platform="android">bencoding.android.tools</module> -->
     <module platform="iphone">appcelerator.ble</module>
   </modules>
   <deployment-targets>
@@ -110,25 +110,26 @@
     <target device="ipad">true</target>
     <target device="iphone">true</target>
   </deployment-targets>
-  <sdk-version>10.0.2.GA</sdk-version>
+  <sdk-version>10.1.1.GA</sdk-version>
   <plugins>
     <plugin version="1.0">ti.alloy</plugin>
   </plugins>
-  <property name="appc-app-id" type="string">6153d4a2cd4dbf7c84f31e23</property>
+  <!-- <property name="appc-app-id" type="string">6153d4a2cd4dbf7c84f31e23</property> -->
   <property name="acs-authbase-url-development" type="string"></property>
   <property name="acs-base-url-development" type="string">https://api.cloud.appcelerator.com</property>
-  <property name="acs-oauth-secret-development" type="string">XAUdEq9VRNEVZVXBV1g4r78gF3PMavse</property>
-  <property name="acs-oauth-key-development" type="string">se2JoUOiJQZBhdlYCG8z10iNbrO52jUm</property>
-  <property name="acs-api-key-development" type="string">jwMwIiswpjGf1nMBXSyjWU2nTHsO6qas</property>
+  <property name="acs-oauth-secret-development" type="string">FfPdOyZ3Fc6ktegVgvDdXhQ0zwm0SHsb</property>
+  <property name="acs-oauth-key-development" type="string">736HeXGIHXXLDEX1pGke2WmdT0vn2ci8</property>
+  <property name="acs-api-key-development" type="string">7xTz5sXJgoGh1xL4b37TAIuNF8lQPC1E</property>
   <property name="acs-username-development" type="string">appc_app_user_dev</property>
-  <property name="acs-password-development" type="string">d0NYwSQQW0J6gnzutf</property>
+  <property name="acs-password-development" type="string">1d5zFHx1gTfDOACl2B</property>
   <property name="acs-authbase-url-production" type="string"></property>
   <property name="acs-base-url-production" type="string"></property>
-  <property name="acs-oauth-secret-production" type="string">6YE4bmJhtqfKkOkOz5j9dLcQjlgJ5bV2</property>
-  <property name="acs-oauth-key-production" type="string">uujVxrpcXhdeGqvk33veSDjmA0OB9JdX</property>
-  <property name="acs-api-key-production" type="string">hndjJrXnkmf5ebHKWKhvhKde96uU0rih</property>
+  <property name="acs-oauth-secret-production" type="string">W5slGmArLuRlz0OkqOV6q9Cw4kRnrWvt</property>
+  <property name="acs-oauth-key-production" type="string">TnR9OUeTsXhNa1KQw8WRhjxGwqhsZ5fC</property>
+  <property name="acs-api-key-production" type="string">ccoEPmRxFleMFq50elSy5mlupprD96uZ</property>
   <property name="acs-username-production" type="string">appc_app_user</property>
-  <property name="acs-password-production" type="string">VAGdJiTgfTD7WSRL6I</property>
-  <property name="appc-org-id" type="string">950847331978144</property>
-  <property name="appc-creator-user-id" type="string">42f52810-d424-42b7-aba5-175e3dde6115</property>
+  <property name="acs-password-production" type="string">zmAXU7flNsQhz8R42R</property>
+  <property name="appc-org-id" type="string">800637146118559</property>
+  <property name="appc-creator-user-id" type="string">08a1f3b0-1510-40ca-a846-c716c460f3e3</property>
+  <property name="appc-app-id" type="string">61a340881bb69f389d5fbf06</property>
 </ti:app>
