@@ -63,6 +63,7 @@ function Controller() {
   if (cidTextField == null || cidTextField == "") {
     cidTextField = "Enter Your CID";
   }
+
   var textField = Ti.UI.createTextField({
     backgroundColor: '#ffeded',
     color: 'green',
@@ -83,16 +84,6 @@ function Controller() {
     title: "Stop" });
 
 
-  var b_ble = Ti.UI.createButton({
-    top: 250,
-    title: "BLE" });
-
-
-  var b_stop_ble = Ti.UI.createButton({
-    top: 300,
-    title: "Stop BLE" });
-
-
   var b_saveCid = Ti.UI.createButton({
     top: 75,
     // right: 90,
@@ -103,16 +94,6 @@ function Controller() {
   var b_showData = Ti.UI.createButton({
     top: 425,
     title: "Show" });
-
-
-  var b_sendData = Ti.UI.createButton({
-    top: 500,
-    title: "Send Data " });
-
-
-  var b_md5_hash = Ti.UI.createButton({
-    top: 350,
-    title: "Hash" });
 
 
   var inetBeacon = Alloy.createController("inet_beacon/beacon");
@@ -136,32 +117,12 @@ function Controller() {
 
   b_showData.addEventListener("click", function (e) {
     var cid = Ti.App.Properties.getString("inetBeaconData_cid");
-    var minor = Ti.App.Properties.getString("inetBeaconData_minor");
-    var major = Ti.App.Properties.getString("inetBeaconData_major");
-    console.log(cid);
-    var f_beacon = Ti.App.Properties.getString("f_beacon");
-    alert("found " + f_beacon);
-  });
-
-  b_sendData.addEventListener("click", function (e) {
-    var minor = Ti.App.Properties.getString("inetBeaconData_minor");
-    var major = Ti.App.Properties.getString("inetBeaconData_major");
-    inetBeacon.putApi(major, minor);
-  });
-
-  b_ble.addEventListener("click", function (e) {
-    alert("Start BLE");
-    inetBeacon.BLEScan();
-  });
-
-  b_stop_ble.addEventListener("click", function (e) {
-    alert("Stop BLE");
-    inetBeacon.stopBLE();
-  });
-
-  b_md5_hash.addEventListener("click", function (e) {
-    alert("Hash!");
-    inetBeacon.md5_hash();
+    // var minor = Ti.App.Properties.getString("inetBeaconData_minor");
+    // var major = Ti.App.Properties.getString("inetBeaconData_major");
+    // console.log(cid);
+    // var f_beacon = Ti.App.Properties.getString("f_beacon");
+    // alert("found " + f_beacon);
+    inetBeacon.getLocationList();
   });
 
   win.add(b1);
@@ -170,10 +131,6 @@ function Controller() {
   win.add(textField);
   win.add(b_saveCid);
   win.add(b_showData);
-  win.add(b_ble);
-  win.add(b_stop_ble);
-  // win.add(b_sendData);
-  win.add(b_md5_hash);
   win.open();
 
   // Generated code that must be executed after all UI and

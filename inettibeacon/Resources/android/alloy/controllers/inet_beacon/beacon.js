@@ -45,6 +45,8 @@ function Controller() {
   // let beaconUUID = "c8a94f42-3cd5-483a-8adc-97473197b8b4";
   let beaconUUID = "5991e161-bb46-432f-9bd8-b271f76f67d9";
   let beaconIdentifier = "Morprom";
+  let global_beacons = {};
+
   Ti.App.Properties.setString("f_beacon", "");
 
   function resetStateBeacon() {
@@ -70,8 +72,6 @@ function Controller() {
 
   console.log("begin:", Math.floor(Date.now()));
   var BLE = null;
-  var GATT = null;
-  var centralManager = null;
   // var androidPlatformTools = require('bencoding.android.tools').createPlatform();
   var isForeground = true;
 
@@ -81,8 +81,6 @@ function Controller() {
   } else
   {
     BLE = require("com.liferay.beacons");
-    GATT = require('ti.bluetooth');
-    centralManager = GATT.createCentralManager();
   }
 
   function isInterestedRegion(rssi)
@@ -115,9 +113,7 @@ function Controller() {
   var iosDidRangeBeacons = null;
   var iosDidChangeAuthorization = null;
   // --- android ----------
-  var androidEntered = null;
-  var androidExited = null;
-  var androidBeaconProximityCallback = null;
+  var inBeconRange = null;
 
   function beaconStartScan() {
     resetStateBeacon();
@@ -150,6 +146,7 @@ function Controller() {
       iosDidRangeBeacons = (e) => {
         Ti.API.info("didRangeBeacons");
         var becaons = e.beacons;
+
 
         if (becaons.length === 0) {
           console.log("No beacon in range");
@@ -244,7 +241,8 @@ function Controller() {
 
 
         if (haveCase) {
-          putApi(major, minor);
+          // putApi(major, minor);
+          // ..record beacon
         }
 
       };
@@ -285,109 +283,19 @@ function Controller() {
 
       console.log("after check perm:", Math.floor(Date.now()));
 
-      //androidEntered callback
-      var isEnterRegion = false;
-      androidEntered = function (e) {
-        let tag = "androidEntered:";
-        console.log(tag, "entered region identifer: " + e.identifier);
-        console.log(tag, e);
-        isEnterRegion = true;
-        alert(
-        tag + "Enter");
-
-      };
-
-      //androidBeaconProximityCallback
-      androidBeaconProximityCallback = function (e) {
-        let tag = "proxCallback:";
-        if (isEnterRegion) {
-          console.log(tag, "identifer: " + e.identifier);
-          console.log(tag, "uuid: " + e.uuid);
-          console.log(tag, "major: " + e.major);
-          console.log(tag, "minor: " + e.minor);
-          console.log(tag, "proximity: " + e.proximity);
-          console.log(tag, "accuracy: " + e.accuracy);
-          console.log(tag, "rssi: " + e.rssi);
-          console.log(tag, "power: " + e.power);
-          alert(tag + "minor:" + e.minor + ", prox:" + e.proximity + ", rssi:" + e.rssi + ", accuracy:" + e.accuracy);
-
-
-          // if not interested region, ignore it !!
-          if (!isInterestedRegion(e.rssi))
-          {
-            console.log("Too far...");
-            alert("Too far...rssi:" + e.rssi);
-            return;
-          }
-          // check is same state befor
-          if (isSameStateBefore(e.uuid, e.major, e.minor)) {
-            console.log(tag, "Same beacon");
-            isConfirmExit = false;
-            return;
-          }
-          // just record beacon, not use proximity
-          setStateBeacon(e.uuid, e.major, e.minor);
-          alert(
-          tag + "putApi->" + e.uuid + " Major: " + e.major + " Minor: " + e.minor + " prox:" + e.proximity);
-
-          //put message to bot
-          putApi(e.major, e.minor);
-          var my_text = " " + e.major + ", " + e.minor;
-          my_text = Ti.App.Properties.getString("f_beacon") + my_text;
-          Ti.App.Properties.setString("f_beacon", my_text);
-          isEnterRegion = false;
-        }
-      };
-
-      //androidExited callback
-      var handle = null;
-      var isConfirmExit = false;
-      androidExited = function (e) {
-        isConfirmExit = true;
-        console.log("exited region identifer: " + e.identifier);
-
-        if (Ti.App.Properties.getString("inetBeaconData_uuid") !== null && handle == null) {
-          var countExit = 0;
-          handle = setInterval(function () {
-            console.log("isConfirmExit: " + isConfirmExit);
-            if (countExit > 60 && isConfirmExit) {
-              // Confirm exited signal
-              alert(
-              "Exit uuid: " +
-              Ti.App.Properties.getString("inetBeaconData_uuid") +
-              "  Major: " +
-              Ti.App.Properties.getString("inetBeaconData_major") +
-              "  Minor: " +
-              Ti.App.Properties.getString("inetBeaconData_minor"));
-
-              resetStateBeacon();
-              clearInterval(handle);
-              handle = null;
-              console.log("it's really exit " + handle);
-            } else if (!isConfirmExit) {
-              // Reset Confirm Exit Interval
-              clearInterval(handle);
-              handle = null;
-              console.log("it's not exit " + handle);
-            }
-            countExit++;
-            console.log("count: " + countExit);
-            return;
-          }, 1000);
-        }
-      };
-
       androidBindingCallback = function (e) {
         tag = "androidBindingCallback: ";
         console.log(tag, e);
       };
 
-      var inBeconRange = function (e) {
+      inBeconRange = function (e) {
         var tag = "beaconRanges: ";
         console.log(tag, "I am in the " + e.identifier + " region");
         console.log(tag, "I see " + e.beacons.length + " beacons in this region:");
         console.log(tag, "----------------");
         e.beacons.forEach(function (beacon, index) {
+          // ... check rssi add to dialog
+          // if not interestedRegion(rssi) ... not add to checkin dialog
           console.log(tag, "Beacon number: " + index);
           console.log(tag, "uuid: " + beacon.uuid);
           console.log(tag, "major: " + beacon.major);
@@ -397,28 +305,46 @@ function Controller() {
           console.log(tag, "rssi: " + beacon.rssi);
           console.log(tag, "power: " + beacon.power);
           console.log("----------------");
+          // .. do others ....
+          var beacon_key = beacon.major + "-" + beacon.minor;
+          if (beacon_key in global_beacons)
+          {
+            console.log(beacon_key + " beacon was recorded");
+          } else
+
+          {
+            if (isInterestedRegion(beacon.rssi))
+            {
+              console.log(tag, "call location api");
+              global_beacons[beacon_key] = {
+                "major": beacon.major,
+                "minor": beacon.minor,
+                "rssi": beacon.rssi,
+                "location": "กำลังค้นหาตำแหน่ง",
+                "isRegistered": false,
+                "ts": new Date().getTime() };
+
+              // call locatioon api
+              getLocation(beacon.major, beacon.minor, beacon_key);
+            } else
+
+            {
+              console.log("Not interesed region.");
+            }
+          }
         });
       };
+
+      BLE.addEventListener("beaconRanges", inBeconRange);
 
       var regionState = function (e) {
         var tag = "regionState: ";
         console.log(tag, "identifer: " + e.regionState);
       };
 
-      BLE.addEventListener("enteredRegion", androidEntered);
-      BLE.addEventListener("exitedRegion", androidExited);
-      BLE.addEventListener("beaconProximity", androidBeaconProximityCallback);
       BLE.addEventListener("onIBeaconServiceConnect", androidBindingCallback);
-      BLE.addEventListener("beaconRanges", inBeconRange);
-      BLE.addEventListener("determinedRegionState", regionState);
 
       console.log("add evnt complete:", Math.floor(Date.now()));
-
-      // Airports Beacon
-      // UUID: 5991e161-bb46-432f-9bd8-b271f76f67d9
-
-      // MyHome
-      // c8a94f42-3cd5-483a-8adc-97473197b8b4
 
       var when_ready;
       var not_ready_count = 0;
@@ -470,7 +396,6 @@ function Controller() {
           return;
         }
       });
-
       // end android
     }
   }
@@ -485,106 +410,144 @@ function Controller() {
       manager.removeEventListener("didRangeBeacons", iosDidRangeBeacons);
     } else {
       BLE.stopMonitoringAllRegions();
-      BLE.removeEventListener("enteredRegion", androidEntered);
-      BLE.removeEventListener("exitedRegion", androidExited);
-      BLE.removeEventListener("beaconProximity", androidBeaconProximityCallback);
+      BLE.removeEventListener("beaconRanges", inBeconRange);
     }
   }
 
-  function putApi(major, minor) {
+  function getLocation(this_major, this_minor, this_key) {
+    tag = "getLocation: ";
     var xhr = Ti.Network.createHTTPClient();
+    // hash_value
+    var my_loc_code = md5_hash(`b1cf4b7ec203:1:${this_major}:${this_minor}`);
+    console.log(tag + "my_hash: " + my_loc_code + " major:" + this_major + " minor:" + this_minor);
+
     xhr.onload = function (e) {
-      console.log(this.status);
-      console.log(this.responseText);
+      var res_json = {};
+      console.log(tag, this.status);
+      console.log(tag, this.responseText);
+      // alert(tag + this.responseText);
+      res_json = JSON.parse(this.responseText);
+      global_beacons[this_key]["isRegistered"] = true;
+      console.log(tag, "res_json=", res_json);
+      if ("site_name" in res_json)
+      {
+        global_beacons[this_key]["location"] = res_json["site_name"];
+      } else
+
+      {
+        global_beacons[this_key]["location"] = "-";
+      }
+      if ("location_name" in res_json)
+      {
+        global_beacons[this_key]["location"] = global_beacons[this_key]["location"] + " " + res_json["location_name"];
+      }
+      alert(tag + this_key + ":" + global_beacons[this_key]["location"]);
     };
+
     xhr.onerror = function (e) {
-      console.log(this.status);
-      console.log(this.responseText);
+      console.log(tag, this.status);
+      console.log(tag, this.responseText);
+      if (this.status = 404)
+      {
+        global_beacons[this_key]["location"] = `ไม่พบตำแหน่ง ${global_beacons[this_key]["major"]}/${global_beacons[this_key]["major"]} ในระบบ`;
+      } else
+
+      {
+        global_beacons[this_key]["location"] = "กรุณาลองใหม่";
+      }
     };
     xhr.timeout = 10000;
-    // xhr.open('PUT','https://morprom-beacon.nexpie.io');
-    xhr.open('PUT', 'https://beacon-track.inet.co.th');
-    xhr.setRequestHeader('X-API-KEY', 'RvBmll9opEnVZ3aBH6wygN7VXKr7DIYw');
+    xhr.open('GET', 'https://beacon-track.inet.co.th/beaconinfo?code=' + my_loc_code);
     xhr.setRequestHeader("content-type", "application/json");
-    var params = {
-      uid: Ti.App.Properties.getString("inetBeaconData_cid"),
-      major: major,
-      minor: minor };
-
-    xhr.send(JSON.stringify(params));
+    xhr.send();
   }
 
-  function BLEScan() {
-    if (false)
-    {
-      console.log("IOS");
-    } else
-
-    {
-      console.log("Android");
-      if (centralManager.isScanning()) {
-        console.log("Already scanning, please stop scan first!");
-        return;
+  function sortByProperty(property) {
+    var tag = "sortByProp: ";
+    return function (a, b) {
+      if (a[property] > b[property])
+      {
+        // alert(a["location"] + " " + a[property] + ">" + b["location"] + " " + b[property]);
+        console.log(a["location"] + " " + a[property] + ">" + b["location"] + " " + b[property]);
+        return -1;
+      } else
+      if (a[property] < b[property])
+      {
+        // alert(a["location"] + " " + a[property] + "<" + b["location"] + " " + b[property]);
+        console.log(a["location"] + " " + a[property] + "<" + b["location"] + " " + b[property]);
+        return 1;
       }
-
-      var gatt_handle;
-      gatt_handle = setInterval(function (e) {
-        if (centralManager.didUpdateState != BLE.MANAGER_STATE_POWERED_ON)
-        {
-          console.log("didState=", centralManager.didUpdateState);
-          return;
-        }
-        if (centralManager.getState() != BLE.MANAGER_STATE_POWERED_ON)
-        {
-          console.log("BLE manager needs to be powered on before. Call initialize().");
-        }
-
-        console.log("BLE.MANAGER_STATE_POWERED_ON");
-        // Start Scan
-        centralManager.startScan();
-        console.log("Start BLE");
-        clearInterval(gatt_handle);
-        gatt_handle = null;
-      }, 1000);
-    }
+      return 0;
+    };
   }
 
-  var gattDidDiscover = function (e) {
-    Ti.API.info('didDiscoverPeripheral');
-    Ti.API.info(e.peripheral.uuids.uuid, "Address:", e.peripheral.address, e.peripheral.name);
-    // Ti.API.info(e.peripheral.services);
-    // _.each(e.peripheral.uuids, function(item) {
-    //   console.log(e.peripheral.name, ":", e.peripheral.address, "uuid:", e.peripheral.uuids.uuid);
-    // });
-    // Ti.API.info(discoverServices());
-  };
+  function getLocationList()
+  {
+    var tag = "getLocationList: ";
+    var global_location = [];
+    var location_list = "";
+    // create arr of json of locations, filter only registered device
 
-  centralManager.addEventListener("didDiscoverPeripheral", gattDidDiscover);
+    for (var prop in global_beacons) {
+      console.log(tag, "beacon ", global_beacons[prop]);
+      // brinng registered region first!
+      if (global_beacons[prop]["isRegistered"])
+      {
+        // add to location list
+        global_location.push(global_beacons[prop]);
+      }
+    }
 
-  function stopBLE() {
-    if (centralManager.isScanning) {
-      console.log("Stop BLE");
-      centralManager.stopScan();
-    } else
+    // check number of location is less than 0
+
+    /*
+    var max_location = 3;
+    if((global_beacons.length > global_location.length) && (global_location < max_location)) 
     {
-      console.log("No scan session!");
+      // add non registered beacon for show
+      for(var prop in global_beacons) {
+        if(! global_beacons[prop]["isRegistered"])
+        {
+          global_location.push(global_beacons[prop]);
+        }
+        
+        if(global_location.length >= max_location)
+        {
+          console.log(tag, "location reach limit=", max_location);
+          // sorting by rssi  getSortOrder(prop)
+          global_sorting_loc = global_location.sort(getSortOrder["rssi"]);
+          global_sorting_loc.forEach(function(loc_list, index){
+            console.log(tag, "sorted_loc=", loc_list);
+            location_list = location_list + loc_list["major"] + "-" + loc_list["minor"] + 
+            ":" + loc_list["location"] + " " + loc_list["rssi"] + "dBm" + "; ";
+          });
+          alert(tag + location_list);
+          return global_sorting_loc;
+        }
+      }
     }
+    */
+
+    console.log(tag, "global_location=", global_location);
+    global_location.sort(sortByProperty("rssi"));
+    global_location.forEach(function (sort_loc, index) {
+      console.log(tag, "### sort_id=", index, "data=", sort_loc);
+      location_list = location_list + sort_loc["location"] + " major=" + sort_loc["major"] + " minor=" + sort_loc["minor"] +
+      " rssi=" + sort_loc["rssi"] + "; ";
+    });
+    alert(tag + "sorted_loc=" + location_list);
+    return global_location;
   }
 
-  function md5_hash() {
+  function md5_hash(hash_seed) {
     var tag = "md5_hash";
-    var my_cid = Ti.App.Properties.getString("inetBeaconData_cid");
-    console.log(tag, "cid:", my_cid);
-    var my_md5 = Ti.Utils.md5HexDigest(`b1cf4b7ec203:${my_cid}:32780:1102`);
-    alert(my_md5);
+    var my_md5 = Ti.Utils.md5HexDigest(hash_seed);
+    return my_md5;
   }
 
   exports.beaconStartScan = beaconStartScan;
   exports.beaconStopScan = beaconStopScan;
-  exports.putApi = putApi;
-  exports.BLEScan = BLEScan;
-  exports.stopBLE = stopBLE;
-  exports.md5_hash = md5_hash;
+  exports.getLocationList = getLocationList;
 
   // Generated code that must be executed after all UI and
   // controller code. One example deferred event handlers whose
