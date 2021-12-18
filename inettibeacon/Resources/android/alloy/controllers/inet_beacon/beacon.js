@@ -400,6 +400,22 @@ function Controller() {
     }
   }
 
+  var clearBCCache = setInterval(function () {
+    var tag = "timeToClearBCCach?: ";
+    for (var prop in global_beacons) {
+      console.log(tag + global_beacons[prop]["location"] + " ts=" + global_beacons[prop]["ts"] + " ms");
+      if (new Date().getTime() - global_beacons[prop]["ts"] > 5 * 60 * 1000)
+      {
+        console.log("Yes, clear beacon cache.");
+        delete global_beacons[prop];
+      } else
+
+      {
+        console.log(tag + "No.");
+      }
+    }
+  }, 5000);
+
   function beaconStopScan() {
     resetStateBeacon();
     if (false) {
